@@ -1,5 +1,5 @@
 ---
-templateKey: member-page
+templateKey: member
 name: David You
 andrewID: dsyou
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
