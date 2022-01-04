@@ -36,7 +36,7 @@ collections:
   - name: "members"
     label: "Members"
     folder: "src/pages/members"
-    description: "These are the members currently in CMUBTG"
+    description: "These are the members currently in CMUBTG."
     slug: "{{andrewID}}"
     create: true
     fields:
@@ -48,12 +48,29 @@ collections:
         }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "AndrewID", name: "andrewID", widget: "string" }
-      - {label: "Description", name: "description", widget: "text"}
+      - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
       - { label: "Portfolio", name: "portfolio", widget: "markdown" }
       - { label: "Resume", name: "resume", widget: "file" }
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
 
+  - name: "projects"
+    label: "Projects"
+    folder: "src/pages/projects"
+    description: "These are the current projects for CMUBTG."
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "project",
+        }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text"}
+      - { label: "Photo", name: "photo", widget: image }
+      
   - name: "pages"
     label: "Pages"
     files:
