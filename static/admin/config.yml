@@ -54,12 +54,20 @@ collections:
       - { label: "Portfolio", name: "portfolio", widget: "markdown" }
       - { label: "Resume", name: "resume", widget: "file" }
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
+      - { 
+          label: "Project", 
+          name: "project", 
+          widget: "relation",
+          collection: "projects",
+          value_field: "name",
+          search_fields: ["name"]
+        }
 
   - name: "projects"
     label: "Projects"
     folder: "src/pages/projects"
     description: "These are the current projects for CMUBTG."
-    slug: "{{slug}}"
+    slug: "{{name}}"
     create: true
     fields:
       - {
@@ -71,9 +79,19 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
+      - { 
+          label: "Member", 
+          name: "member", 
+          widget: "relation",
+          collection: "members",
+          value_field: "name",
+          search_fields: ["name"],
+          multiple: true
+        }      
       
   - name: "pages"
     label: "Pages"
+    create: true
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
