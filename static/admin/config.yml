@@ -48,6 +48,7 @@ collections:
         }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "AndrewID", name: "andrewID", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
       - { label: "Portfolio", name: "portfolio", widget: "markdown" }
