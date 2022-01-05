@@ -6,5 +6,4 @@ description: We are working on building out the website's functionality and
 photo: /img/safari-pinned-tab.svg
 member:
   - David You
-  - Harrison Chui
 ---
