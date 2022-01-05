@@ -1,8 +1,8 @@
 ---
 templateKey: member
-name: David You
+title: David You
 andrewID: dsyou
-title: President
+role: President
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -15,6 +15,7 @@ portfolio: |-
   * Thing 2
   * Thing 3
   * Thing 4
+name: David You
 resume: /img/david-you.pdf
 linkedIn: https://www.linkedin.com/in/david-s-you/
 project: Website Reconstruction
