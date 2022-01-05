@@ -54,7 +54,7 @@ export default function MemberList() {
                 frontmatter {
                   title
                   templateKey
-                  name
+                  role
                   photo {
                     childImageSharp {
                       gatsbyImageData(

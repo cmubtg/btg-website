@@ -40,7 +40,7 @@ export default function ProjectList() {
             edges {
               node {
                 frontmatter {
-                  name
+                  title
                 }
               }
             }
