@@ -67,7 +67,7 @@ collections:
     label: "Projects"
     folder: "src/pages/projects"
     description: "These are the current projects for CMUBTG."
-    slug: "{{slug}}"
+    slug: "{{title}}"
     create: true
     fields:
       - {
