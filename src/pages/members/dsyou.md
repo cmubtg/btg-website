@@ -17,4 +17,5 @@ portfolio: |-
   * Thing 4
 resume: /img/david-you.pdf
 linkedIn: https://www.linkedin.com/in/david-s-you/
+project: Website Reconstruction
 ---
