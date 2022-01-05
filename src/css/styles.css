@@ -1,0 +1,224 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+* {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.font-weight-boldest {
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1em;
+}
+
+.text-black {
+  color: #000;
+}
+
+.shadow-custom {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.shadow-custom-danger {
+  box-shadow: 0 5px 10px rgba(255, 0, 0, 0.05),
+    0 15px 40px rgba(255, 82, 82, 0.2);
+}
+
+@media (max-width: 1200px) {
+  legend {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  h1,
+  .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  h2,
+  .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  h4,
+  .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  .display-1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+  .display-2 {
+    font-size: calc(1.675rem + 5.1vw);
+  }
+  .display-3 {
+    font-size: calc(1.775rem + 4.5vw);
+  }
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
+  .close {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  .font-weight-boldest {
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-description {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    z-index: 3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .team-photo-wrapper {
+    padding: 0 15px;
+  }
+
+  .team-description p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .team-gradient {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .team-description {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    z-index: 3;
+    color: white;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    border-top: 1px solid black;
+  }
+}
+
+.profile-img-fluid {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.team-photo-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.team-photo {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  z-index: 1;
+}
+
+.team-gradient {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background: -webkit-linear-gradient(
+    180deg,
+    #43434300,
+    #00000050
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    180deg,
+    #43434300,
+    #00000050
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 2;
+}
+
+::-moz-selection {
+  background: #ff2f44;
+  color: white;
+}
+::selection {
+  background: #ff2f44;
+  color: white;
+}
+
+.text-danger {
+  color: #ff2f44;
+}
+
+.bg-danger {
+  background-color: #ff2f44 !important;
+}
+
+.btn-danger {
+  background-color: #ff2f44;
+  border-color: #ff2f44;
+}
+
+.badge-danger {
+  background-color: #ff2f44;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../images/toggler.svg");
+  border: none;
+  width: 1em;
+  height: 1em;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  border: none;
+  background-image: url("../images/toggler.svg");
+  width: 1em;
+  height: 1em;
+}
+
+.navbar-toggler {
+  border: none;
+  height: 1em;
+  width: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link-text:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.icon-link,
+.icon-link:hover {
+  color: inherit;
+}
