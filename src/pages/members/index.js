@@ -17,7 +17,7 @@ class MemberListTemplate extends React.Component {
               className="title has-text-primary is-size-4"
               to={member.fields.slug}
             >
-              {member.frontmatter.name}
+              {member.frontmatter.title}
             </Link>            
           </p>
 
@@ -47,13 +47,11 @@ export default function MemberList() {
           ) {
             edges {
               node {
-                id
                 fields {
                   slug
                 }
                 frontmatter {
                   title
-                  templateKey
                   role
                   photo {
                     childImageSharp {
