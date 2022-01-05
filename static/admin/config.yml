@@ -46,9 +46,9 @@ collections:
           widget: "hidden",
           default: "member",
         }
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "AndrewID", name: "andrewID", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "AndrewID", name: "andrewID", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
       - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
       - { label: "Portfolio", name: "portfolio", widget: "markdown" }
@@ -67,7 +67,7 @@ collections:
     label: "Projects"
     folder: "src/pages/projects"
     description: "These are the current projects for CMUBTG."
-    slug: "{{name}}"
+    slug: "{{slug}}"
     create: true
     fields:
       - {
@@ -76,8 +76,7 @@ collections:
           widget: "hidden",
           default: "project",
         }
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
       - { 
