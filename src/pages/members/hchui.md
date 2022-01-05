@@ -13,4 +13,5 @@ portfolio: |-
   ***askdfjkasndfsd***
 resume: /img/harrisonchuiresume2.pdf
 linkedIn: lskjdflkasjdf
+project: Website Reconstruction
 ---
