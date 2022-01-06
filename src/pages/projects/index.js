@@ -12,7 +12,7 @@ import BTGCover from "../../images/btg-cover.png";
 
 
 function getMembers(text) {
-  const result = text.split(",");
+  const result = text
   return result
 }
 
@@ -50,7 +50,7 @@ class ProjectListTemplate extends React.Component {
                     {project.frontmatter.title}
                   </Link>  
                 </p>
-                <p>{getMembers(project.frontmatter.member)[0]}</p>
+                <p>{project.frontmatter.description}</p>
               </div>
             ))}          
           </Col>
@@ -89,7 +89,7 @@ export default function ProjectList() {
                 }
                 frontmatter {
                   title
-                  member
+                  description
                 }
               }
             }
