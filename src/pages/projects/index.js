@@ -63,7 +63,7 @@ export default function ProjectList() {
       query={graphql`
         query ProjectListQuery {
           allMarkdownRemark(
-            sort: {order: DESC, fields: [frontmatter___date]}
+            sort: {order: DESC, fields: [frontmatter___title]}
             filter: {frontmatter: {templateKey: {eq: "project"}}}
           ) {
             edges {

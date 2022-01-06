@@ -25,8 +25,8 @@ function Home() {
 
       <Layout>
 
-      <Container className="mt-md-5 pt-md-5">
-        <Row className="pt-5 mt-5">
+      <Container className="mt-md-1 pt-md-4">
+        <Row className="pt-1 mt-5">
           <Col>
             <h1 class="display-3 text-black font-weight-boldest">
               We build the cutting edge
