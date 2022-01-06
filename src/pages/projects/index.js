@@ -11,10 +11,16 @@ import Navigation from "../../components/Navigation";
 import BTGCover from "../../images/btg-cover.png";
 
 
+function getMembers(text) {
+  const result = text.split(",");
+  return result
+}
+
 class ProjectListTemplate extends React.Component {
   render() {
     const { data } = this.props
     const { edges: projects } = data.allMarkdownRemark
+
 
     return (
       <FadeIn>
@@ -35,7 +41,17 @@ class ProjectListTemplate extends React.Component {
         <Row>
           <Col>
             {projects.map(({ node: project }) => (
-              <p>{project.frontmatter.title}</p>
+              <div>
+                <p>
+                  <Link
+                    className="title has-text-primary is-size-4"
+                    to={project.fields.slug}
+                  >
+                    {project.frontmatter.title}
+                  </Link>  
+                </p>
+                <p>{getMembers(project.frontmatter.member)[0]}</p>
+              </div>
             ))}          
           </Col>
         </Row>
@@ -68,8 +84,12 @@ export default function ProjectList() {
           ) {
             edges {
               node {
+                fields {
+                  slug
+                }
                 frontmatter {
                   title
+                  member
                 }
               }
             }
