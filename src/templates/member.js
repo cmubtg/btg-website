@@ -31,7 +31,7 @@ const Member = ({ data }) => {
 
     <Container className="mt-md-1 pt-md-4">
       <Row>
-        <h1 className="display-3 text-black font-weight-boldest">{member.frontmatter.name}</h1>
+        <h1 className="display-3 text-black font-weight-boldest">{member.frontmatter.title}</h1>
       </Row>
       <Row className="pt-1 mt-5">
         <Col xs={8}>
@@ -39,7 +39,7 @@ const Member = ({ data }) => {
           <p>{member.frontmatter.description}</p>
         </Col>
         <Col>
-          <GatsbyImage image={photo} alt={member.frontmatter.name} />
+          <GatsbyImage image={photo} alt={member.frontmatter.title} />
         </Col>
       </Row>
     </Container>

@@ -13,12 +13,29 @@ import FadeIn from "react-fade-in";
 import { Helmet } from "react-helmet";
 import BTGCover from "../images/btg-cover.png";
 
+function getName(text) {
+  const result = text
+  return result
+}
+
+function getAndrewID(text) {
+  const result = text
+  return result
+}
+
+function getPhoto(text) {
+  const result = text
+  return result
+}
+
 const Project = ({ data }) => {
   const { markdownRemark: project } = data;
   const photo = getImage(project.frontmatter.photo)
 
+  // const memberPhoto = getImage()
+
   return (
-<FadeIn>
+    <FadeIn>
     <Helmet>
         <title>Members | CMUBTG</title>
         <meta name="twitter:card" content="summary_large_image"></meta>
@@ -30,8 +47,18 @@ const Project = ({ data }) => {
       <Row>
         <h1 className="display-3 text-black font-weight-boldest">{project.frontmatter.title}</h1>
       </Row>
+      <Row>
+        <GatsbyImage image={photo} alt={project.frontmatter.title} />
+        <h3>Members</h3>
+        <p>{project.frontmatter.member}</p>
+        <p>{project.frontmatter.photo.publicURL}</p>
+        <img src="http://localhost:8000/img/david_you.jpg" alt="David You" />
 
+        <img src="http://localhost:8000/img/products-full-width.jpg" alt="David You" />
+      </Row>
     </Container>
+
+
 
     <Footer />
     </FadeIn>
@@ -56,6 +83,7 @@ export const pageQuery = graphql`
         description
         member
         photo {
+          publicURL
           childImageSharp {
             gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
           }

@@ -11,11 +11,6 @@ import Navigation from "../../components/Navigation";
 import BTGCover from "../../images/btg-cover.png";
 
 
-function getMembers(text) {
-  const result = text
-  return result
-}
-
 class ProjectListTemplate extends React.Component {
   render() {
     const { data } = this.props
