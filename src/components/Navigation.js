@@ -36,11 +36,6 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
-                {/* <Nav.Link href="/team">
-                  <Link className="nav-link-text" to="/team">
-                    Team
-                  </Link>
-                </Nav.Link> */}
                 <Nav.Link href="/members">
                   <Link className="nav-link-text" to="/members" style={{ textDecoration: 'none' }}>
                     Members
@@ -56,7 +51,12 @@ function Navigation() {
                     Alumni
                   </Link>
                 </Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link href="/alumni">
+                  <Link className="nav-link-text" to="/contact" style={{ textDecoration: 'none' }}>
+                    Contact
+                  </Link>
+                </Nav.Link>                
+                {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
           </Navbar>

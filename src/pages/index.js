@@ -2,12 +2,12 @@ import React from "react";
 import Badge from "react-bootstrap/Badge";
 import Col from "react-bootstrap/Col";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import FadeIn from "react-fade-in";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css'
-import TeamSummary from "../components/TeamSummary";
 import Companies from "../components/Companies";
 
 
@@ -122,24 +122,7 @@ function Home() {
         <Companies />
       </Container>
 
-      <div className="bg-light">
-        <Container className="py-5 mt-5">
-          <Row>
-            <Col>
-              <h4 className="font-weight-bold">Meet the team</h4>
-
-              <p className="py-5">
-                The CMUBTG combines hands-on technical training and holistic
-                engagement with the technology industry. Our strong community
-                can be found around campus and reinforces our dedicated yet fun
-                culture.
-              </p>
-            </Col>
-          </Row>
-
-          {/* <TeamSummary /> */}
-        </Container>
-      </div>
+      <Footer />
     </FadeIn>
   );
 }
