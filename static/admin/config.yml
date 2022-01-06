@@ -33,6 +33,9 @@ collections:
       - { label: "Photo", name: "photo", widget: image }
       - { label: "Portfolio", name: "portfolio", widget: "markdown" }
       - { label: "Resume", name: "resume", widget: "file" }
+      - { label: "Year", name: "year", widget: "number", value_type: "int" }
+      - { label: "Degree", name: "degree", widget: "select", options: ["BS", "MS"] }
+      - { label: "Major", name: "major", widget: "string" }
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
       - { 
           label: "Project", 
