@@ -5,8 +5,6 @@ import DavidPhoto from "../images/team/david.jpg";
 import ChloePhoto from "../images/team/chloe.jpg";
 import MeghanaPhoto from "../images/team/meghana.jpg";
 import RaymondPhoto from "../images/team/raymond.jpg";
-import RoshanPhoto from "../images/team/roshan.jpg";
-import RachanaPhoto from "../images/team/rachana.jpg";
 
 
 function TeamSummary() {
@@ -41,23 +39,6 @@ function TeamSummary() {
           description={"BS, Information Systems, 2022, Head of Operations."}
           profile="https://www.linkedin.com/in/raymond-li-983708174/"
         ></TeamPhoto>                           
-      </Row>
-
-      <Row>
-      <TeamPhoto
-          memberName="Roshan Ram"
-          role="Head of Tech"
-          imageUrl={RoshanPhoto}
-          description={"BS, Information Systems, 2023, Head of Tech."}
-          profile="https://www.linkedin.com/in/roshanr11/"
-        ></TeamPhoto> 
-      <TeamPhoto
-          memberName="Rachana Murali Narayanan"
-          role="Head of Outreach"
-          imageUrl={RachanaPhoto}
-          description={"BS, Electrical Engineering and Statistics, 2023, Head of Outreach."}
-          profile="https://www.linkedin.com/in/rachana-m-n/"
-        ></TeamPhoto> 
       </Row>
     </React.Fragment>
   );

@@ -8,6 +8,7 @@ import FadeIn from "react-fade-in";
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
+import TeamSummary from "../../components/TeamSummary";
 import BTGCover from "../../images/btg-cover.png";
 
 
@@ -27,11 +28,31 @@ class MemberListTemplate extends React.Component {
         </Helmet>
 
         <Container className="mt-md-1 pt-md-4">
-        <Row className="pt-1 mt-5">
-          <Col>
-            <h1 className="display-3 text-black font-weight-boldest">Members</h1>
-          </Col>
-        </Row>
+          <Row className="pt-1 mt-5">
+            <Col>
+              <h1 className="display-3 text-black font-weight-boldest">Members</h1>
+            </Col>
+          </Row>
+
+          <div className="bg-light">
+            <Container className="py-5 mt-5">
+              <Row>
+                <Col>
+                  <h4 className="font-weight-bold">Meet the team</h4>
+
+                  <p className="py-5">
+                    The CMUBTG combines hands-on technical training and holistic
+                    engagement with the technology industry. Our strong community
+                    can be found around campus and reinforces our dedicated yet fun
+                    culture.
+                  </p>
+                </Col>
+              </Row>
+
+              {/* <TeamSummary /> */}
+            </Container>
+        </div>        
+
         <Row>
           <Col>
           {members.map(({ node: member }) => (

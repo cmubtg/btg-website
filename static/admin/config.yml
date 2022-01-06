@@ -63,8 +63,8 @@ collections:
       - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
       - { 
-          label: "Member", 
-          name: "member", 
+          label: "Members", 
+          name: "members", 
           widget: "relation",
           collection: "members",
           value_field: "({{fields.title}}, {{fields.andrewID}}, {{fields.photo}})",

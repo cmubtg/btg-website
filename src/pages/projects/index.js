@@ -16,6 +16,7 @@ class ProjectListTemplate extends React.Component {
     const { data } = this.props
     const { edges: projects } = data.allMarkdownRemark
 
+
     return (
       <FadeIn>
         <Navigation />
@@ -35,7 +36,17 @@ class ProjectListTemplate extends React.Component {
         <Row>
           <Col>
             {projects.map(({ node: project }) => (
-              <p>{project.frontmatter.title}</p>
+              <div>
+                <p>
+                  <Link
+                    className="title has-text-primary is-size-4"
+                    to={project.fields.slug}
+                  >
+                    {project.frontmatter.title}
+                  </Link>  
+                </p>
+                <p>{project.frontmatter.description}</p>
+              </div>
             ))}          
           </Col>
         </Row>
@@ -68,8 +79,12 @@ export default function ProjectList() {
           ) {
             edges {
               node {
+                fields {
+                  slug
+                }
                 frontmatter {
                   title
+                  description
                 }
               }
             }
