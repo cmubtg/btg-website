@@ -1,7 +1,14 @@
 import React from 'react';
-import Layout from "../../components/Layout";
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import FadeIn from "react-fade-in";
+import { Helmet } from "react-helmet";
+import Footer from "../../components/Footer";
+import Navigation from "../../components/Navigation";
+import BTGCover from "../../images/btg-cover.png";
 
 
 class MemberListTemplate extends React.Component {
@@ -10,19 +17,39 @@ class MemberListTemplate extends React.Component {
     const { edges: members } = data.allMarkdownRemark
 
     return (
-      <Layout>
-        {members.map(({ node: member }) => (
-          <p>
-            <Link
-              className="title has-text-primary is-size-4"
-              to={member.fields.slug}
-            >
-              {member.frontmatter.title}
-            </Link>            
-          </p>
+      <FadeIn>
+        <Navigation />
 
-        ))}
-      </Layout>
+        <Helmet>
+          <title>Members | CMUBTG</title>
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:image" content={BTGCover}></meta>
+        </Helmet>
+
+        <Container className="mt-md-1 pt-md-4">
+        <Row className="pt-1 mt-5">
+          <Col>
+            <h1 className="display-3 text-black font-weight-boldest">Members</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          {members.map(({ node: member }) => (
+            <p>
+              <Link
+                className="title has-text-primary is-size-4"
+                to={member.fields.slug}
+              >
+                {member.frontmatter.title}
+              </Link>            
+            </p>
+          ))}   
+          </Col>
+        </Row>
+      </Container>
+
+        <Footer />
+      </FadeIn>          
       
     );
   }
@@ -42,7 +69,7 @@ export default function MemberList() {
       query={graphql`
         query MemberListQuery {
           allMarkdownRemark(
-            sort: {order: DESC, fields: [frontmatter___date]}
+            sort: {order: DESC, fields: [frontmatter___title]}
             filter: {frontmatter: {templateKey: {eq: "member"}}}
           ) {
             edges {
