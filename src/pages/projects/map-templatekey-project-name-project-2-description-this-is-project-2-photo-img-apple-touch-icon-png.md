@@ -3,7 +3,7 @@ templateKey: project
 name: Project 2
 title: Project 2.1
 description: This is project 2
-photo: /img/tutorials.png
+photo: https://picsum.photos/200/200
 member:
   - (David You, dsyou, /img/david_you.jpg)
 members:
