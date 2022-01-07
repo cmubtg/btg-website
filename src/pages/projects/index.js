@@ -33,10 +33,10 @@ function WhiteContainer(props) {
       </div>
 
       <div className = 'text-right border-0' style = {{width:700}}>
-      <txt>
-        <h2 style = {{margin:20, marginBottom:20,color:'#ff2f44'}}><u>{props.title}</u></h2>
+        <Link to={props.slug}>
+          <h2 style = {{margin:20, marginBottom:20,color:'#ff2f44'}}><u>{props.title}</u></h2>
+        </Link>
         <ProjectDescriptionText description={props.description} />
-      </txt>
       </div>
     </Row>
   )
@@ -47,10 +47,10 @@ function RedContainer(props) {
   return (
     <Row style = {{marginBottom:30}}>        
       <div className = 'border-0' style = {{backgroundColor:'#ff2f44', color: 'white', width:700}}>
-        <txt>
-          <h2 style = {{margin:20, marginBottom:20}}><u>{props.title}</u></h2>
-          <ProjectDescriptionText description={props.description} />
-        </txt>
+        <Link to={props.slug}>
+          <h2 style = {{margin:20, marginBottom:20, color:'white'}}><u>{props.title}</u></h2>
+        </Link>
+        <ProjectDescriptionText description={props.description} />
       </div>
 
       <div className = 'border-0' style = {{backgroundColor:'#ff2f44', color: '#white', width:'15rem'}}>
