@@ -71,4 +71,4 @@ collections:
           search_fields: ["title", "andrewID"],
           display_fields: ["title"],
           multiple: true
-        }
+        }      
