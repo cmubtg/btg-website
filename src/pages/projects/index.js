@@ -111,7 +111,7 @@ class ProjectListTemplate extends React.Component {
 
       </Container>
 
-        <Footer />
+      <Footer />
       </FadeIn>      
  
       
