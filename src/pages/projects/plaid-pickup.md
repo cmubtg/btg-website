@@ -10,4 +10,5 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 photo: /img/david_you.jpg
 members:
   - (David You, dsyou, /img/david_you.jpg)
+  - (Harrison Chui, hchui, /img/david_you.jpg)
 ---
