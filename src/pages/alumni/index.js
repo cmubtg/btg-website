@@ -4,9 +4,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import FadeIn from "react-fade-in";
 import { Helmet } from "react-helmet";
-import Footer from "../components/Footer";
-import Navigation from "../components/Navigation";
-import BTGCover from "../images/btg-cover.png";
+import Footer from "../../components/Footer";
+import Navigation from "../../components/Navigation";
+import BTGCover from "../../images/btg-cover.png";
 
 class Alumni extends React.Component {
   render() {
