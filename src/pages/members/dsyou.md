@@ -9,12 +9,7 @@ portfolio: |-
   * Thing 4
 name: David You
 role: President
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+description: Hello! My name is David
 photo: /img/david_you.jpg
 resume: /img/david-you.pdf
 year: 2023
