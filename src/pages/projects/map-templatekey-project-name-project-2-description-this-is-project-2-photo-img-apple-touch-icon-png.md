@@ -13,4 +13,5 @@ member:
   - (David You, dsyou, /img/david_you.jpg)
 members:
   - (David You, dsyou, /img/david_you.jpg)
+  - (Harrison Chui, hchui, /img/david_you.jpg)
 ---
