@@ -51,7 +51,7 @@ function Navigation() {
                     Alumni
                   </Link>
                 </Nav.Link>
-                <Nav.Link href="/alumni">
+                <Nav.Link href="/contact">
                   <Link className="nav-link-text" to="/contact" style={{ textDecoration: 'none' }}>
                     Contact
                   </Link>
