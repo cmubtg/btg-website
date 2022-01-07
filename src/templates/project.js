@@ -51,7 +51,7 @@ const Project = ({ data }) => {
         <GatsbyImage image={photo} alt={project.frontmatter.title} />
         <h3>Members</h3>
         <p>{project.frontmatter.member}</p>
-        <p>{project.frontmatter.photo.publicURL}</p>
+        {/* <p>{project.frontmatter.photo.publicURL}</p> */}
         <img src="http://localhost:8000/img/david_you.jpg" alt="David You" />
 
         <img src="http://localhost:8000/img/products-full-width.jpg" alt="David You" />
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        member
+        members
         photo {
           publicURL
           childImageSharp {
