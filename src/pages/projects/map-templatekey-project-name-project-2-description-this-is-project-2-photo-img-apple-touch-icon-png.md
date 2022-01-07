@@ -8,7 +8,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
   esse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat
   non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-photo: https://picsum.photos/200/200
+photo: /img/david_you.jpg
 member:
   - (David You, dsyou, /img/david_you.jpg)
 members:
