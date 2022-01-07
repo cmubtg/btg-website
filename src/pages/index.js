@@ -9,18 +9,19 @@ import FadeIn from "react-fade-in";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css'
 import Companies from "../components/Companies";
-
+import { Helmet } from "react-helmet";
+import BTGCover from "../images/btg-cover.png";
 
 function Home() {
   return (
     <FadeIn>
-      {/* <Helmet>
+      <Helmet>
         <title>Home Page | CMUBTG</title>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:image" content={BTGCover}></meta>
-      </Helmet> */}
+      </Helmet>
 
-<Navigation />
+      <Navigation />
 
       <Container className="mt-md-1 pt-md-4">
         <Row className="pt-1 mt-5">
