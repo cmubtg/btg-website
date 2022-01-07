@@ -10,7 +10,7 @@ portfolio: |-
 name: Harrison Chui
 role: Lead Software Developer
 description: asljdhfajkwhgjkahefkjahdf
-photo: /img/blog-index.jpg
+photo: /img/david_you.jpg
 resume: /img/harrisonchuiresume2.pdf
 year: 2025
 degree: BS
