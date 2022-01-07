@@ -11,5 +11,5 @@ member:
   - (Harrison Chui, hchui, /img/products-full-width.jpg)
 members:
   - (David You, dsyou, /img/david_you.jpg)
-  - (Harrison Chui, hchui, /img/products-full-width.jpg)
+  - (Harrison Chui, hchui, /img/david_you.jpg)
 ---
