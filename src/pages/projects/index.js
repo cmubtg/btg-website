@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -27,7 +29,7 @@ function WhiteContainer(props) {
   return (
     <Row style = {{marginBottom:30}}>          
       <div className = 'border-0' style = {{width:'15rem'}}>
-        <img src = {props.photo} style = {{margin:20}}/>
+        <GatsbyImage image={props.photo} alt={props.title} style = {{margin:20}}/>
       </div>
 
       <div className = 'text-right border-0' style = {{width:700}}>
@@ -52,7 +54,7 @@ function RedContainer(props) {
       </div>
 
       <div className = 'border-0' style = {{backgroundColor:'#ff2f44', color: '#white', width:'15rem'}}>
-        <img src ={props.photo} style = {{margin:20}}/>
+        <GatsbyImage image={props.photo} alt={props.title} style = {{margin:20}}/>
       </div>
     </Row>    
   )
@@ -79,7 +81,7 @@ function ProjectContainer(props) {
 class ProjectListTemplate extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: projects } = data.allMarkdownRemark
+    const { edges: projects } = data.allMarkdownRemark    
 
 
     return (
@@ -104,7 +106,7 @@ class ProjectListTemplate extends React.Component {
               index={index} 
               title={project.frontmatter.title}
               description={project.frontmatter.description}
-              photo={project.frontmatter.photo}
+              photo={getImage(project.frontmatter.photo)}
               slug={project.fields.slug}
             />
           ))}          
@@ -144,6 +146,11 @@ export default function ProjectList() {
                 frontmatter {
                   title
                   description
+                  photo {
+                    childImageSharp {
+                      gatsbyImageData(width: 200, quality: 100, layout: CONSTRAINED)
+                    }
+                  }                  
                 }
               }
             }

@@ -37,7 +37,7 @@ const Project = ({ data }) => {
   return (
     <FadeIn>
     <Helmet>
-        <title>Members | CMUBTG</title>
+        <title>Project | CMUBTG</title>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:image" content={BTGCover}></meta>
     </Helmet>      
