@@ -3,9 +3,9 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
+import { Helmet } from "react-helmet";
 import BTGCover from "../../images/btg-cover.png";
 
 class Alumni extends React.Component {
@@ -16,7 +16,7 @@ class Alumni extends React.Component {
         <Navigation />
 
         <Helmet>
-          <title>Alumni | CMUBTG</title>
+          <title>Contact | CMUBTG</title>
         < meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>

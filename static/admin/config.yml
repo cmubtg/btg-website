@@ -72,7 +72,7 @@ collections:
           display_fields: ["title"],
           multiple: true
         }
-
+                     
   - name: "alumni"
     label: "Alumni"
     folder: "src/pages/alumni"
