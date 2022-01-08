@@ -37,7 +37,7 @@ class Contact extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.name + " " + this.state.email + " " + this.state.message);
+    alert("Thank you for your message! \nThis doesn't actually do anything since we don't have the email linked")
     event.preventDefault();
   }
 
@@ -60,8 +60,7 @@ class Contact extends React.Component {
               <h1 className="display-3 text-black font-weight-boldest">Contact</h1>
             </Col>
           </Row>
-        </Container>
-        <Container className="ml-3">
+          
           <form onSubmit={this.handleSubmit}>
             <Row className="pt-1 mt-3 col-md-5">
               <input 
@@ -94,9 +93,21 @@ class Contact extends React.Component {
               />              
             </Row>            
 
-            <input type="submit" value="Submit" />  
-          </form>
+            <Row className="pt-4 mt-3 col-md-2">
+              <button 
+                type="submit" 
+                value="Submit" 
+                class="btn btn-danger" 
+              >
+                 Submit
+              </button>
+            </Row>      
+
+            
+
+          </form>          
         </Container>
+          
 
         <Footer />
       </FadeIn>
