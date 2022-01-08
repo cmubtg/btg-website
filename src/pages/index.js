@@ -1,11 +1,13 @@
 import React from "react";
 import Badge from "react-bootstrap/Badge";
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import FadeIn from "react-fade-in";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css'
 import Companies from "../components/Companies";
