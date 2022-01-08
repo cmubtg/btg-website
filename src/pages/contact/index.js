@@ -8,26 +8,106 @@ import Navigation from "../../components/Navigation";
 import { Helmet } from "react-helmet";
 import BTGCover from "../../images/btg-cover.png";
 
-class Alumni extends React.Component {
-  render() {
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = 
+      {
+        name: "",
+        email: "",
+        message: ""
+      };
 
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);      
+  }
+
+  handleNameChange(event) {
+    this.setState({name: event.target.value })
+  }
+
+  handleEmailChange(event) {
+    this.setState({email: event.target.value })
+  }
+
+  handleMessageChange(event) {
+    this.setState({ message: event.target.value })
+  }
+
+  handleSubmit(event) {
+    alert("Thank you for your message! \nThis doesn't actually do anything since we don't have the email linked")
+    event.preventDefault();
+  }
+
+  
+  render() {
+    
     return (
       <FadeIn>
         <Navigation />
 
         <Helmet>
           <title>Contact | CMUBTG</title>
-        < meta name="twitter:card" content="summary_large_image"></meta>
+          < meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={BTGCover}></meta>
-      </Helmet>
+        </Helmet>
 
         <Container className="mt-md-1 pt-md-4">
-        <Row className="pt-1 mt-5">
-          <Col>
-            <h1 className="display-3 text-black font-weight-boldest">Contact</h1>
-          </Col>
-        </Row>
-      </Container>
+          <Row className="pt-1 mt-5">
+            <Col>
+              <h1 className="display-3 text-black font-weight-boldest">Contact</h1>
+            </Col>
+          </Row>
+          
+          <form onSubmit={this.handleSubmit}>
+            <Row className="pt-1 mt-3 col-md-5">
+              <input 
+                class="form-control"
+                type="text" 
+                value={this.state.name} 
+                onChange={this.handleNameChange} 
+                placeholder="Name"
+              />
+            </Row>
+            
+            <Row className="pt-1 mt-3 col-md-5">
+              <input 
+                class="form-control"
+                type="email" 
+                value={this.state.email} 
+                onChange={this.handleEmailChange} 
+                placeholder="Email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+            </Row>
+
+            <Row className="pt-1 mt-3 col-md-6">
+              <textarea 
+                class="form-control"
+                rows="5"
+                value={this.state.message} 
+                onChange={this.handleMessageChange}       
+                placeholder="Write your message here"          
+              />              
+            </Row>            
+
+            <Row className="pt-4 mt-3 col-md-2">
+              <button 
+                type="submit" 
+                value="Submit" 
+                class="btn btn-danger" 
+              >
+                 Submit
+              </button>
+            </Row>      
+
+            
+
+          </form>          
+        </Container>
+          
 
         <Footer />
       </FadeIn>
@@ -36,4 +116,4 @@ class Alumni extends React.Component {
   }
 }
 
-export default Alumni
+export default Contact
