@@ -3,34 +3,33 @@ import Col from "react-bootstrap/Col";
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { FaLinkedinIn } from "react-icons/fa";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-function TeamPhoto(props) {
+function TeamMember(props) {
   return (
     <OverlayTrigger
       placement="right"
       overlay={
         <Popover id="popover-basic">
-          <Popover.Title as="h3">
-            {props.memberName}, {props.role}
-          </Popover.Title>
-          <Popover.Content>{props.description}</Popover.Content>
+          <Popover.Header as="h3">
+            {props.title}, {props.role}
+          <Popover.Body>
+          {props.degree},{props.major}
+          </Popover.Body>
+          </Popover.Header>
         </Popover>
       }
     >
       <Col md={3} sm={6} xs={6} className="p-0">
         <div className="team-photo-wrapper p-0">
           <div className="team-photo">
-            <img
-              src={props.imageUrl}
-              alt={props.memberName}
-              className="img-fluid profile-img-fluid shadow-custom"
-            />
+          <GatsbyImage image={props.photo} alt={props.title}/>
           </div>
           <div className="team-description px-3">
-            <h4 className="font-weight-bold">{props.memberName}</h4>
+            <h4 className="font-weight-bold">{props.title}</h4>
             <p>
               <small>{props.role}</small>{" "}
-              <a className="icon-link" href={props.profile}>
+              <a className="icon-link" href={props.linkedIn}>
                 <FaLinkedinIn />
               </a>
             </p>
@@ -42,4 +41,4 @@ function TeamPhoto(props) {
   );
 }
 
-export default TeamPhoto;
+export default TeamMember;

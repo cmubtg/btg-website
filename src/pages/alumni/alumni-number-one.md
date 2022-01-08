@@ -5,5 +5,6 @@ linkedIn: Alinkedin.com
 year: 2008
 degree: BS
 major: Computer Science
-btgrole: Lead Software Developer
+role: Lead Software Developer
+photo: /img/btg_logo.png
 ---
