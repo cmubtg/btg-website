@@ -62,7 +62,7 @@ function RedContainer(props) {
 
 // This function renders the all the project containers for the all project page
 function ProjectContainer(props) {
-  if (props.index % 2 == 0) {
+  if (props.index % 2 === 0) {
     return <WhiteContainer 
               title={props.title} 
               description={props.description} 
