@@ -7,6 +7,11 @@ import { Link } from "gatsby";
 //import HeaderAnnouncement from "./HeaderAnnouncement";
 
 function Navigation() {
+
+  const NavigationStyle = {
+    textDecoration: 'none',
+  }
+
   return (
     <div>
       <div className="border-bottom">
@@ -16,7 +21,7 @@ function Navigation() {
             expand="sm"
             bg="white"
             variant="light"
-            className="px-0 mx-0 py-0 my-0"
+            //className="px-0 mx-0 py-0 my-0"
           >
             <Navbar.Brand href="/" className="py-0 my-0">
               <img
@@ -36,26 +41,26 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
-                <Nav.Link href="/members">
-                  <Link className="nav-link-text" to="/members" style={{ textDecoration: 'none' }}>
+                <Link className="nav-link-text" to="/members" style={NavigationStyle}>
+                  <Nav.Link as="span" eventKey="members">
                     Members
-                  </Link>
-                </Nav.Link>
-                <Nav.Link href="/projects">
-                  <Link className="nav-link-text" to="/projects" style={{ textDecoration: 'none' }}>
+                  </Nav.Link>
+                </Link>
+                <Link className="nav-link-text" to="/projects" style={NavigationStyle}>
+                  <Nav.Link as="span" eventKey="projects">
                     Projects
-                  </Link>
-                </Nav.Link>
-                <Nav.Link href="/alumni">
-                  <Link className="nav-link-text" to="/alumni" style={{ textDecoration: 'none' }}>
+                  </Nav.Link>
+                </Link>
+                <Link className="nav-link-text" to="/alumni" style={NavigationStyle}>
+                  <Nav.Link as="span" eventKey="alumni">
                     Alumni
-                  </Link>
-                </Nav.Link>
-                <Nav.Link href="/contact">
-                  <Link className="nav-link-text" to="/contact" style={{ textDecoration: 'none' }}>
+                  </Nav.Link>
+                </Link>
+                <Link className="nav-link-text" to="/contact" style={NavigationStyle}>
+                  <Nav.Link as="span" eventKey="contact">
                     Contact
-                  </Link>
-                </Nav.Link>                
+                  </Nav.Link>
+                </Link>              
                 {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
