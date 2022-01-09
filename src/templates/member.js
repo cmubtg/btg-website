@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from "prop-types";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import ReactMarkdown from "react-markdown";
@@ -64,13 +64,30 @@ const Member = ({ data }) => {
       <Container className="mt-1">
         <Row>
           <Col className="mr-3">
-            <a href={member.frontmatter.linkedIn} target="_blank"><img src={LinkedInPhoto} alt="LinkedIn" width="75"/></a>           
+            <a href={member.frontmatter.linkedIn} 
+              target="_blank" 
+              rel="noreferrer">
+              <img src={LinkedInPhoto} 
+                alt="LinkedIn" 
+                width="75"/>
+            </a>           
           </Col>
           <Col className="mr-4">
-            <a href={member.frontmatter.resume.publicURL} target="_blank"><img src={Resume} alt="Resume" width="75"/></a>
+            <a href={member.frontmatter.resume.publicURL}
+              target="_blank" 
+              rel="noreferrer">
+              <img src={Resume} 
+                alt="Resume" 
+                width="75"/>
+            </a>
           </Col>
           <Col className="mr-4">
-            <a href={"mailto:"+member.frontmatter.andrewID+"@andrew.cmu.edu"} target="_blank"><img src={Email} alt="Email" width="75"/></a>        
+            <a href={"mailto:"+member.frontmatter.andrewID+"@andrew.cmu.edu"} 
+              target="_blank" rel="noreferrer">
+              <img src={Email} 
+                alt="Email" 
+                width="75"/>
+            </a>        
           </Col>                                
         </Row>
       </Container>
