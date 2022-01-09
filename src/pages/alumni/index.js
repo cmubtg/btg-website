@@ -12,11 +12,44 @@ import BTGCover from "../../images/btg-cover.png";
 import TeamMember from "../../components/TeamMember"
 import { getImage } from "gatsby-plugin-image";
 
+function YearContainer(props) {
+  return (
+    <Row className="pt-1 mt-5">
+      <h3>Class of {props.year}</h3>
+      {Array.from(props.alumnis).map(({ node: alumni }) => (
+            <TeamMember
+              title = {alumni.frontmatter.title}
+              role = {alumni.frontmatter.role}
+              degree = {alumni.frontmatter.degree}
+              major = {alumni.frontmatter.major}
+              photo = {getImage(alumni.frontmatter.photo)}
+              linkedIn = {alumni.frontmatter.linkedIn}
+            ></TeamMember>
+        ))}
+    </Row>
+  )
+}
+
+function get_years(alums) {
+   var years = {}
+   alums.forEach(
+     function(alum,index) {
+      var y = alum.node.frontmatter.year
+      if (!years[y]) {
+        years[y] = []
+      }
+      years[y].push(alum)
+    }
+  )
+  return Object.entries(years).sort((a, b) => b[0].localeCompare(a[0]));
+  }
+
 class AlumniListTemplate extends React.Component {
   render() {
 
     const { data } = this.props
     const { edges: alumnis } = data.allMarkdownRemark
+    const years = get_years(alumnis)
 
     return (
       <FadeIn>
@@ -37,18 +70,12 @@ class AlumniListTemplate extends React.Component {
       </Container>
 
       <Container>
-        <Row>
-          {alumnis.map(({ node: alumni }) => (
-            <TeamMember
-              title = {alumni.frontmatter.title}
-              role = {alumni.frontmatter.role}
-              degree = {alumni.frontmatter.degree}
-              major = {alumni.frontmatter.major}
-              photo = {getImage(alumni.frontmatter.photo)}
-              linkedIn = {alumni.frontmatter.linkedIn}
-            ></TeamMember>
-          ))}
-        </Row>
+      {years.map((year) => (
+        <YearContainer
+          year = {year[0]}
+          alumnis = {year[1]}
+        />
+      ))}
       </Container>
         <Footer />
       </FadeIn>
