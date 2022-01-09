@@ -12,6 +12,7 @@ import BTGCover from "../../images/btg-cover.png";
 import TeamMember from "../../components/TeamMember"
 import { getImage } from "gatsby-plugin-image";
 
+
 function YearContainer(props) {
   return (
     <Row className="pt-1 mt-5">
