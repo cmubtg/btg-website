@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from "prop-types";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
 import Navigation from "../components/Navigation";
@@ -13,20 +13,20 @@ import FadeIn from "react-fade-in";
 import { Helmet } from "react-helmet";
 import BTGCover from "../images/btg-cover.png";
 
-function getName(text) {
-  const result = text
-  return result
-}
+// function getName(text) {
+//   const result = text
+//   return result
+// }
 
-function getAndrewID(text) {
-  const result = text
-  return result
-}
+// function getAndrewID(text) {
+//   const result = text
+//   return result
+// }
 
-function getPhoto(text) {
-  const result = text
-  return result
-}
+// function getPhoto(text) {
+//   const result = text
+//   return result
+// }
 
 const Project = ({ data }) => {
   const { markdownRemark: project } = data;
@@ -52,9 +52,9 @@ const Project = ({ data }) => {
         <h3>Members</h3>
         <p>{project.frontmatter.member}</p>
         {/* <p>{project.frontmatter.photo.publicURL}</p> */}
-        <img src="http://localhost:8000/img/david_you.jpg" alt="David You" />
+        {/* <img src="http://localhost:8000/img/david_you.jpg" alt="David You" />
 
-        <img src="http://localhost:8000/img/products-full-width.jpg" alt="David You" />
+        <img src="http://localhost:8000/img/products-full-width.jpg" alt="David You" /> */}
       </Row>
     </Container>
 

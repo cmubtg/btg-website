@@ -6,6 +6,7 @@ import LogoColor from "../images/btg-logo-white-red.svg";
 import { Link } from "gatsby";
 //import HeaderAnnouncement from "./HeaderAnnouncement";
 
+
 function Navigation() {
 
   const NavigationStyle = {
@@ -41,6 +42,7 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
+<<<<<<< HEAD
                 <Link className="nav-link-text" to="/members" style={NavigationStyle}>
                   <Nav.Link as="span" eventKey="members">
                     Members
@@ -58,6 +60,25 @@ function Navigation() {
                 </Link>
                 <Link className="nav-link-text" to="/contact" style={NavigationStyle}>
                   <Nav.Link as="span" eventKey="contact">
+=======
+                <Nav.Link href="/members">
+                  <Link className="nav-link-text" to="/members" style={NavigationStyle}>
+                    Members
+                  </Link>
+                </Nav.Link>
+                <Nav.Link href="/projects">
+                  <Link className="nav-link-text" to="/projects" style={NavigationStyle}>
+                    Projects
+                  </Link>
+                </Nav.Link>
+                <Nav.Link href="/alumni">
+                  <Link className="nav-link-text" to="/alumni" style={NavigationStyle}>
+                    Alumni
+                  </Link>
+                </Nav.Link>
+                <Nav.Link href="/contact">
+                  <Link className="nav-link-text" to="/contact" style={NavigationStyle}>
+>>>>>>> 9fa03bf6063af2b524d4250acdcec1c450b725c0
                     Contact
                   </Nav.Link>
                 </Link>              

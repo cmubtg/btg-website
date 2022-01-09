@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+
 import FadeIn from "react-fade-in";
 import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import TeamSummary from "../../components/TeamSummary";
-import BTGCover from "../../images/btg-cover.png";
 
+import Navigation from "../../components/Navigation";
+import BTGCover from "../../images/btg-cover.png";
+import Footer from "../../components/Footer";
+// import TeamSummary from "../../components/TeamSummary";
 
 class MemberListTemplate extends React.Component {
   render() {
