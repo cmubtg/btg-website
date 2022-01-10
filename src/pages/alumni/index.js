@@ -11,7 +11,7 @@ import Navigation from "../../components/Navigation";
 import BTGCover from "../../images/btg-cover.png";
 import TeamMember from "../../components/TeamMember"
 import { getImage } from "gatsby-plugin-image";
-
+import Layout from "../../components/Layout"
 
 function YearContainer(props) {
   return (
@@ -53,14 +53,7 @@ class AlumniListTemplate extends React.Component {
     const years = get_years(alumnis)
 
     return (
-      <FadeIn>
-        <Navigation />
-
-        <Helmet>
-          <title>Alumni | CMUBTG</title>
-        < meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-      </Helmet>
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
         <Row className="pt-1 mt-5">
@@ -78,8 +71,7 @@ class AlumniListTemplate extends React.Component {
         />
       ))}
       </Container>
-        <Footer />
-      </FadeIn>
+    </Layout>
       
     );
   }

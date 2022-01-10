@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import BTGCover from "../../images/btg-cover.png";
-
+import Layout from "../../components/Layout"
 
 // This function renders the text description from each project
 function ProjectDescriptionText(props) {
@@ -85,14 +85,7 @@ class ProjectListTemplate extends React.Component {
 
 
     return (
-      <FadeIn>
-        <Navigation />
-
-        <Helmet>
-          <title>Projects | CMUBTG</title>
-          <meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-        </Helmet>
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
@@ -113,9 +106,7 @@ class ProjectListTemplate extends React.Component {
 
       </Container>
 
-      <Footer />
-      </FadeIn>      
- 
+      </Layout>
       
     );
   }
