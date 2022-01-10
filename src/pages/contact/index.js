@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import { Helmet } from "react-helmet";
 import BTGCover from "../../images/btg-cover.png";
+import Layout from "../../components/Layout"
 
 class Contact extends React.Component {
   constructor(props) {
@@ -45,14 +46,7 @@ class Contact extends React.Component {
   render() {
     
     return (
-      <FadeIn>
-        <Navigation />
-
-        <Helmet>
-          <title>Contact | CMUBTG</title>
-          < meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-        </Helmet>
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
@@ -109,8 +103,7 @@ class Contact extends React.Component {
         </Container>
           
 
-        <Footer />
-      </FadeIn>
+        </Layout>
       
     );
   }

@@ -45,22 +45,22 @@ function Navigation() {
               </div>
               <Nav className="ml-auto">
                 <Link className="nav-link-text" to="/members" style={NavigationStyle}>
-                  <Nav.Link href="/members"> 
+                  <Nav.Link as="span" href="/members"> 
                     Members
                   </Nav.Link>
                 </Link>                  
                 <Link className="nav-link-text" to="/projects" style={NavigationStyle}>
-                  <Nav.Link href="/projects"> 
+                  <Nav.Link as="span" href="/projects"> 
                     Projects
                   </Nav.Link>
                 </Link>                  
                 <Link className="nav-link-text" to="/alumni" style={NavigationStyle}>
-                  <Nav.Link href="/alumni"> 
+                  <Nav.Link as="span" href="/alumni"> 
                     Alumni
                   </Nav.Link>
                 </Link>                       
                 <Link className="nav-link-text" to="/contact" style={NavigationStyle}>
-                  <Nav.Link href="/contact"> 
+                  <Nav.Link as="span" href="/contact"> 
                     Contact
                   </Nav.Link>
                 </Link>              
