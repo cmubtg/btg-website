@@ -6,5 +6,5 @@ year: 2022
 degree: BS
 major: Business Administration
 role: Former President
-photo: /img/eric.jpg
+photo: /img/ericc2.jpg
 ---
