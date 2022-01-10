@@ -2,11 +2,6 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import { Helmet } from "react-helmet";
-import BTGCover from "../../images/btg-cover.png";
 import Layout from "../../components/Layout"
 
 class Contact extends React.Component {

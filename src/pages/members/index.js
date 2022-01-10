@@ -6,13 +6,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-
-import Navigation from "../../components/Navigation";
-import BTGCover from "../../images/btg-cover.png";
-import Footer from "../../components/Footer";
-// import TeamSummary from "../../components/TeamSummary";
 import Layout from "../../components/Layout"
 
 class MemberListTemplate extends React.Component {
