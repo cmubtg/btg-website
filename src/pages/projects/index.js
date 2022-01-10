@@ -6,11 +6,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import BTGCover from "../../images/btg-cover.png";
 import Layout from "../../components/Layout"
 
 // This function renders the text description from each project
