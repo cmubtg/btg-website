@@ -24,15 +24,17 @@ function Navigation() {
             variant="light"
             //className="px-0 mx-0 py-0 my-0"
           >
-            <Navbar.Brand href="/" className="py-0 my-0">
-              <img
-                src={LogoColor}
-                width="85"
-                height="85"
-                className="d-inline-block align-top"
-                alt="BTG Logo"
-              />
-            </Navbar.Brand>
+            <Link to="/">
+              <Navbar.Brand href="/" className="py-0 my-0">
+                <img
+                  src={LogoColor}
+                  width="85"
+                  height="85"
+                  className="d-inline-block align-top"
+                  alt="BTG Logo"
+                />
+              </Navbar.Brand>            
+            </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="flex-column">
               {/* <Nav className="mr-auto"></Nav> */}
