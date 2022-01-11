@@ -1,6 +1,6 @@
 ---
 templateKey: member
-title: Jason
+title: Jason Hoang
 andrewID: jvhoang
 role: Engineer
 description: Freshman at Carnegie Mellon
