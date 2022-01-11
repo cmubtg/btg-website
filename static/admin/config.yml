@@ -42,8 +42,8 @@ collections:
           name: "project", 
           widget: "relation",
           collection: "projects",
-          value_field: "name",
-          search_fields: ["name"]
+          value_field: "title",
+          search_fields: ["title"]
         }
 
   - name: "projects"
