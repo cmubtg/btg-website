@@ -14,6 +14,8 @@ import FadeIn from "react-fade-in";
 import { Helmet } from "react-helmet";
 import BTGCover from "../images/btg-cover.png";
 
+import Layout from "../components/Layout"
+
 // function getName(text) {
 //   const result = text
 //   return result
@@ -39,63 +41,57 @@ const Project = ({ data }) => {
   
 
   return (
-    <FadeIn>
-    <Helmet>
-        <title>Project | CMUBTG</title>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:image" content={BTGCover}></meta>
-    </Helmet> 
+    <Layout>
+        <Container className="mt-md-1 pt-md-4">
+          <Row className="pt-1 mt-5">
+            <Col>
+              <h1 className="display-3 text-black font-weight-boldest">{project.frontmatter.title}</h1>
+            </Col>
+          </Row>
+        </Container>
 
-    <Navigation />   
-    
-    <Container className="mt-md-5 pt-md-5">
-        <Row className="pt-5 mt-5">
+      <Container className="mt-md-1 pt-md-4">        
+        <Card className = 'mb-5 opacity-20 align-items-center' style={{backgroundColor: '#F32E43',color: '#fff',backgroundOpacity:50}}>
+          <Card.Body>           
+            <GatsbyImage image={photo} alt={project.frontmatter.title} style = {{border:20}}/>
+          </Card.Body>
+        </Card>
 
-        </Row>
-    </Container> 
-
-    <Container className="mt-md-1 pt-md-4">
-      <h1 className="display-3 text-black font-weight-boldest" style = {{marginBottom: 20}}>{project.frontmatter.title}</h1>
-      
-      <Card className = 'mb-5 opacity-20 align-items-center' style={{backgroundColor: '#F32E43',color: '#fff',backgroundOpacity:50}}>
-        <Card.Body>           
-          <GatsbyImage image={photo} alt={project.frontmatter.title} style = {{border:20}}/>
-        </Card.Body>
-      </Card>
-
-      <small class = 'padded-multipline'style = {{margin: 10, fontSize: 20}}>
-        {project.frontmatter.description}
-      </small>
-      <Row>
-        
-        <h1 style = {{marginTop:30}}>Members</h1>  
+        <small class = 'padded-multipline'style = {{margin: 10, fontSize: 20}}>
+          {project.frontmatter.description}
+        </small>
+        <Row>
           
-      </Row>
-      <Row> 
-        {memberInfo.map((member) => {
+          <h1 style = {{marginTop:30}}>Members</h1>  
+            
+        </Row>
+      </Container>        
+
+      <Container>
+        <Row> 
+          {memberInfo.map((member) => {
               member = member.substring(1,member.length - 1);
               const info = member.split(',');
               let imgSrc = info[2];
               imgSrc = imgSrc.replace(' ','')
               return (
-                <Col style = {{paddingLeft:0, paddingRight:0}}>
-                  <div style={{backgroundColor: '#F32E43', width:230, margin:0}}>
-                    <img src = {imgSrc} style = {{width:200,height:200,margin:15}}/>
-                  </div>,
-                  <div style = {{width:'230px', marginRight:0}}>
-                    <p style = {{textAlign:'center'}}>{info[0]}</p>
-                  </div>
+                <Col md={3} sm={6} xs={6} className="p-0">
+                  <img src = {imgSrc} style = {{width:200,height:200}}/>
+                  <p style = {{textAlign:'center'}}>{info[0]}</p>
                 </Col> 
               )
             })}
-      </Row>
-            
-    </Container>
+        </Row>
+              
+      </Container>
+
+    </Layout>
+
+    
+
     
 
 
-    <Footer />
-    </FadeIn>
   )
 }
 
