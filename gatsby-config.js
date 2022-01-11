@@ -32,13 +32,25 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/img`,
+        path: `${__dirname}/src/images`,
         name: "images",
       },
     },
     `gatsby-plugin-image`,
-    "gatsby-plugin-sharp",
+    `gatsby-plugin-sharp`,
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `BTG Browser Logo`,
+        short_name: `Logo`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `${__dirname}/src/images/btg-logo-white.png`,
+      },
+    },    
     {
       resolve: "gatsby-transformer-remark",
       options: {

@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+
+import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import TeamSummary from "../../components/TeamSummary";
-import BTGCover from "../../images/btg-cover.png";
 
+import Layout from "../../components/Layout"
 
 class MemberListTemplate extends React.Component {
   render() {
@@ -18,14 +14,7 @@ class MemberListTemplate extends React.Component {
     const { edges: members } = data.allMarkdownRemark
 
     return (
-      <FadeIn>
-        <Navigation />
-
-        <Helmet>
-          <title>Members | CMUBTG</title>
-          <meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-        </Helmet>
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
@@ -69,8 +58,7 @@ class MemberListTemplate extends React.Component {
         </Row>
       </Container>
 
-        <Footer />
-      </FadeIn>          
+      </Layout>       
       
     );
   }

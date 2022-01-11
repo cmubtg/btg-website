@@ -1,7 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Company from "./Company";
-import Boeing from "../images/companies/boeing.svg";
 import Bofa from "../images/companies/bofa.svg";
 import CapitalOne from "../images/companies/capitalone.svg";
 import Deutsche from "../images/companies/deutsche.svg";
@@ -15,7 +14,6 @@ import Deloitte from "../images/companies/deloitte.svg";
 import IBM from "../images/companies/ibm.svg";
 import Publicis from "../images/companies/publicis.svg";
 import PWC from "../images/companies/pwc.svg";
-import Volvo from "../images/companies/volvo.svg";
 import Amazon from "../images/companies/amazon.svg";
 import Google from "../images/companies/google.svg";
 import Meta from "../images/companies/meta.svg";
