@@ -4,15 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import FadeIn from "react-fade-in";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css'
+
 import Companies from "../components/Companies";
-import { Helmet } from "react-helmet";
-import BTGCover from "../images/btg-cover.png";
 import Layout from "../components/Layout"
 
 function Home() {
