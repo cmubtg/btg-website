@@ -8,28 +8,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from 'react-bootstrap/Card'
 
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import BTGCover from "../images/btg-cover.png";
-
 import Layout from "../components/Layout"
 
-// function getName(text) {
-//   const result = text
-//   return result
-// }
-
-// function getAndrewID(text) {
-//   const result = text
-//   return result
-// }
-
-// function getPhoto(text) {
-//   const result = text
-//   return result
-// }
 
 const Project = ({ data }) => {
   const { markdownRemark: project } = data;
@@ -76,7 +56,7 @@ const Project = ({ data }) => {
               imgSrc = imgSrc.replace(' ','')
               return (
                 <Col md={3} sm={6} xs={6} className="p-0">
-                  <img src = {imgSrc} style = {{width:200,height:200}}/>
+                  <img src = {imgSrc} style = {{width:200,height:200}} alt={info[1]}/>
                   <p style = {{textAlign:'center'}}>{info[0]}</p>
                 </Col> 
               )

@@ -4,11 +4,7 @@ import { graphql, StaticQuery } from 'gatsby'
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import BTGCover from "../../images/btg-cover.png";
+
 import TeamMember from "../../components/TeamMember"
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout"
