@@ -10,7 +10,7 @@ portfolio: |-
 name: David You
 role: President
 description: Hello! My name is David
-photo: /img/david_you.jpg
+photo: /img/dsyou.jpg
 resume: /img/david-you.pdf
 year: 2023
 degree: BS
