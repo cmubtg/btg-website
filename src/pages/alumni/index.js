@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-import TeamMember from "../../components/TeamMember"
+import Alum from "../../components/Alum"
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout"
 
@@ -14,14 +14,14 @@ function YearContainer(props) {
     <Row className="pt-1 mt-5">
       <h3>Class of {props.year}</h3>
       {Array.from(props.alumnis).map(({ node: alumni }) => (
-            <TeamMember
+            <Alum
               title = {alumni.frontmatter.title}
               role = {alumni.frontmatter.role}
               degree = {alumni.frontmatter.degree}
               major = {alumni.frontmatter.major}
               photo = {getImage(alumni.frontmatter.photo)}
               linkedIn = {alumni.frontmatter.linkedIn}
-            ></TeamMember>
+            ></Alum>
         ))}
     </Row>
   )
