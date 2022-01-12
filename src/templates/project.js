@@ -1,10 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-<<<<<<< HEAD
-import { Link, graphql, StaticQuery } from 'gatsby'
-=======
 import { Link, graphql } from "gatsby";
->>>>>>> 7392cdff4c114ec2a901e1c92600cfb1a308b4de
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Row from "react-bootstrap/Row";
@@ -55,17 +51,6 @@ const Project = ({ data }) => {
         <Row> 
           {memberInfo.map((member) => {
               member = member.substring(1,member.length - 1);
-<<<<<<< HEAD
-              const memberInfo = member.split(',');
-              return (
-                <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
-                  <Link to = {'/members/' + memberInfo[1].substring(1)}>
-                    <img src = {memberInfo[2].substring(1)} style = {{width:240,height:240,marginBottom:20}}/>
-                  </Link>
-                  <h4 style = {{textAlign:'center'}}>{memberInfo[0]}</h4>   
-                  
-                                 
-=======
               const info = member.split(',');
               const fullName = info[0]
               const andrewID = String(info[1].substring(1))
@@ -75,7 +60,6 @@ const Project = ({ data }) => {
                   <Link to={'/members/' + andrewID}>
                     <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
                   </Link>  
->>>>>>> 7392cdff4c114ec2a901e1c92600cfb1a308b4de
                 </Col> 
               )
             })}
