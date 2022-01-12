@@ -13,3 +13,7 @@ The original version of the site has now been archived [here](https://github.com
 - Programmatically generated individual project pages with a description and team members
 - An alumni page to showcase all past alumni of the club
 - A contact page for interested parties to message us
+
+## CONTRIBUTING
+
+Before contributing, please read the [code of conduct](CODE_OF_CONDUCT.md). Contributions are always welcome from propsective members. If you are interested in contributing to this project, please read through the [contribution documentation](CONTRIBUTING.md) 
