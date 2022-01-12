@@ -2,11 +2,9 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import { Helmet } from "react-helmet";
-import BTGCover from "../../images/btg-cover.png";
+import Layout from "../../components/Layout"
+
+import emailjs from '@emailjs/browser';
 
 class Contact extends React.Component {
   constructor(props) {
@@ -15,44 +13,50 @@ class Contact extends React.Component {
       {
         name: "",
         email: "",
-        message: ""
+        message: "",
+        subject: ""
       };
 
-    this.handleNameChange = this.handleNameChange.bind(this);
-    this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handleMessageChange = this.handleMessageChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);      
+    this.serviceID = "service_spe5xqb";
+    this.templateID = "template_frd8g5y";    
+    this.userID = "user_630XM9CowdEeazima9GIF";
   }
 
-  handleNameChange(event) {
-    this.setState({name: event.target.value })
-  }
 
-  handleEmailChange(event) {
-    this.setState({email: event.target.value })
-  }
-
-  handleMessageChange(event) {
-    this.setState({ message: event.target.value })
+  handleChange = (param, event) => {
+    this.setState({ [param]: event.target.value })
   }
 
   handleSubmit(event) {
-    alert("Thank you for your message! \nThis doesn't actually do anything since we don't have the email linked")
+    
     event.preventDefault();
+
+    let templateParams = {
+      subject: this.state.subject,
+      message: this.state.message,
+      name: this.state.name,
+      email: this.state.email,    
+    }
+
+    emailjs.send(
+      this.serviceID, 
+      this.templateID, 
+      templateParams,
+      this.userID
+    )
+        .then((result) => {
+          alert("Message Sent! Thank you.")
+        })
+        .catch((error) => {
+          alert(error.text)
+        })
   }
 
   
   render() {
     
     return (
-      <FadeIn>
-        <Navigation />
-
-        <Helmet>
-          <title>Contact | CMUBTG</title>
-          < meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-        </Helmet>
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
@@ -61,14 +65,15 @@ class Contact extends React.Component {
             </Col>
           </Row>
           
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit.bind(this)}>
             <Row className="pt-1 mt-3 col-md-5">
               <input 
                 class="form-control"
                 type="text" 
                 value={this.state.name} 
-                onChange={this.handleNameChange} 
+                onChange={this.handleChange.bind(this, "name")} 
                 placeholder="Name"
+                name="name"
               />
             </Row>
             
@@ -77,19 +82,32 @@ class Contact extends React.Component {
                 class="form-control"
                 type="email" 
                 value={this.state.email} 
-                onChange={this.handleEmailChange} 
+                onChange={this.handleChange.bind(this, "email")} 
                 placeholder="Email"
+                name="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
             </Row>
+
+            <Row className="pt-1 mt-3 col-md-5">
+              <input 
+                class="form-control"
+                type="text" 
+                value={this.state.subject} 
+                onChange={this.handleChange.bind(this, "subject")} 
+                placeholder="Subject"
+                name="subject"
+              />
+            </Row>            
 
             <Row className="pt-1 mt-3 col-md-6">
               <textarea 
                 class="form-control"
                 rows="5"
                 value={this.state.message} 
-                onChange={this.handleMessageChange}       
-                placeholder="Write your message here"          
+                onChange={this.handleChange.bind(this, "message")}    
+                placeholder="Write your message here"    
+                name="message"      
               />              
             </Row>            
 
@@ -109,11 +127,11 @@ class Contact extends React.Component {
         </Container>
           
 
-        <Footer />
-      </FadeIn>
+        </Layout>
       
     );
   }
 }
 
 export default Contact
+

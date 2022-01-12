@@ -28,7 +28,8 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    let posts = result.data.allMarkdownRemark.edges
+    posts = posts.filter(edge => edge.node.frontmatter.templateKey != "alumni")
 
     posts.forEach((edge) => {
       const id = edge.node.id

@@ -6,12 +6,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import BTGCover from "../../images/btg-cover.png";
-
+import Layout from "../../components/Layout"
 
 // This function renders the text description from each project
 function ProjectDescriptionText(props) {
@@ -62,7 +57,7 @@ function RedContainer(props) {
 
 // This function renders the all the project containers for the all project page
 function ProjectContainer(props) {
-  if (props.index % 2 == 0) {
+  if (props.index % 2 === 0) {
     return <WhiteContainer 
               title={props.title} 
               description={props.description} 
@@ -85,14 +80,7 @@ class ProjectListTemplate extends React.Component {
 
 
     return (
-      <FadeIn>
-        <Navigation />
-
-        <Helmet>
-          <title>Projects | CMUBTG</title>
-          <meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-        </Helmet>
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
@@ -113,9 +101,7 @@ class ProjectListTemplate extends React.Component {
 
       </Container>
 
-      <Footer />
-      </FadeIn>      
- 
+      </Layout>
       
     );
   }

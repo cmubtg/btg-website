@@ -4,27 +4,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import FadeIn from "react-fade-in";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css'
+
 import Companies from "../components/Companies";
-import { Helmet } from "react-helmet";
-import BTGCover from "../images/btg-cover.png";
+import Layout from "../components/Layout"
 
 function Home() {
   return (
-    <FadeIn>
-      <Helmet>
-        <title>Home Page | CMUBTG</title>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:image" content={BTGCover}></meta>
-      </Helmet>
-
-      <Navigation />
-
+    <Layout>
       <Container className="mt-md-1 pt-md-4">
         <Row className="pt-1 mt-5">
           <Col>
@@ -125,8 +113,7 @@ function Home() {
         <Companies />
       </Container>
 
-      <Footer />
-    </FadeIn>
+      </Layout>
   );
 }
 

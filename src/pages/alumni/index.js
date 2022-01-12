@@ -1,25 +1,55 @@
 import React from "react";
+import PropTypes from 'prop-types'
+import { graphql, StaticQuery } from 'gatsby'
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
-import BTGCover from "../../images/btg-cover.png";
 
-class Alumni extends React.Component {
+import TeamMember from "../../components/TeamMember"
+import { getImage } from "gatsby-plugin-image";
+import Layout from "../../components/Layout"
+
+function YearContainer(props) {
+  return (
+    <Row className="pt-1 mt-5">
+      <h3>Class of {props.year}</h3>
+      {Array.from(props.alumnis).map(({ node: alumni }) => (
+            <TeamMember
+              title = {alumni.frontmatter.title}
+              role = {alumni.frontmatter.role}
+              degree = {alumni.frontmatter.degree}
+              major = {alumni.frontmatter.major}
+              photo = {getImage(alumni.frontmatter.photo)}
+              linkedIn = {alumni.frontmatter.linkedIn}
+            ></TeamMember>
+        ))}
+    </Row>
+  )
+}
+
+function get_years(alums) {
+   var years = {}
+   alums.forEach(
+     function(alum,index) {
+      var y = alum.node.frontmatter.year
+      if (!years[y]) {
+        years[y] = []
+      }
+      years[y].push(alum)
+    }
+  )
+  return Object.entries(years).sort((a, b) => b[0].localeCompare(a[0]));
+  }
+
+class AlumniListTemplate extends React.Component {
   render() {
 
-    return (
-      <FadeIn>
-        <Navigation />
+    const { data } = this.props
+    const { edges: alumnis } = data.allMarkdownRemark
+    const years = get_years(alumnis)
 
-        <Helmet>
-          <title>Alumni | CMUBTG</title>
-        < meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-      </Helmet>
+    return (
+      <Layout>
 
         <Container className="mt-md-1 pt-md-4">
         <Row className="pt-1 mt-5">
@@ -29,11 +59,62 @@ class Alumni extends React.Component {
         </Row>
       </Container>
 
-        <Footer />
-      </FadeIn>
+      <Container>
+      {years.map((year) => (
+        <YearContainer
+          year = {year[0]}
+          alumnis = {year[1]}
+        />
+      ))}
+      </Container>
+    </Layout>
       
     );
   }
 }
 
-export default Alumni
+AlumniList.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
+}
+
+export default function AlumniList() {
+  return (
+    <StaticQuery
+      query={graphql`
+        query AlumniListQuery {
+          allMarkdownRemark(
+            sort: {order: DESC,fields: [frontmatter___title]}
+            filter: {frontmatter: {templateKey: {eq: "alumni"}}}
+          ){
+            edges {
+              node{
+              frontmatter {
+                title
+                linkedIn
+                year
+                degree
+                major
+                role
+                photo {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 250
+                      quality: 100
+                      layout: CONSTRAINED
+                    )
+                  }
+                }
+              }
+            }
+            }
+          }
+        }
+      `}
+      render={(data,count) => <AlumniListTemplate data={data} count={count} />}
+    />
+  )
+}

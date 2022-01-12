@@ -6,7 +6,13 @@ import LogoColor from "../images/btg-logo-white-red.svg";
 import { Link } from "gatsby";
 //import HeaderAnnouncement from "./HeaderAnnouncement";
 
+
 function Navigation() {
+
+  const NavigationStyle = {
+    textDecoration: 'none',
+  }
+
   return (
     <div>
       <div className="border-bottom">
@@ -16,17 +22,19 @@ function Navigation() {
             expand="sm"
             bg="white"
             variant="light"
-            className="px-0 mx-0 py-0 my-0"
+            //className="px-0 mx-0 py-0 my-0"
           >
-            <Navbar.Brand href="/" className="py-0 my-0">
-              <img
-                src={LogoColor}
-                width="85"
-                height="85"
-                className="d-inline-block align-top"
-                alt="BTG Logo"
-              />
-            </Navbar.Brand>
+            <Link to="/">
+              <Navbar.Brand href="/" className="py-0 my-0">
+                <img
+                  src={LogoColor}
+                  width="85"
+                  height="85"
+                  className="d-inline-block align-top"
+                  alt="BTG Logo"
+                />
+              </Navbar.Brand>            
+            </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="flex-column">
               {/* <Nav className="mr-auto"></Nav> */}
@@ -36,26 +44,26 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
-                <Nav.Link href="/members">
-                  <Link className="nav-link-text" to="/members" style={{ textDecoration: 'none' }}>
+                <Link className="nav-link-text" to="/members" style={NavigationStyle}>
+                  <Nav.Link as="span" href="/members"> 
                     Members
-                  </Link>
-                </Nav.Link>
-                <Nav.Link href="/projects">
-                  <Link className="nav-link-text" to="/projects" style={{ textDecoration: 'none' }}>
+                  </Nav.Link>
+                </Link>                  
+                <Link className="nav-link-text" to="/projects" style={NavigationStyle}>
+                  <Nav.Link as="span" href="/projects"> 
                     Projects
-                  </Link>
-                </Nav.Link>
-                <Nav.Link href="/alumni">
-                  <Link className="nav-link-text" to="/alumni" style={{ textDecoration: 'none' }}>
+                  </Nav.Link>
+                </Link>                  
+                <Link className="nav-link-text" to="/alumni" style={NavigationStyle}>
+                  <Nav.Link as="span" href="/alumni"> 
                     Alumni
-                  </Link>
-                </Nav.Link>
-                <Nav.Link href="/contact">
-                  <Link className="nav-link-text" to="/contact" style={{ textDecoration: 'none' }}>
+                  </Nav.Link>
+                </Link>                       
+                <Link className="nav-link-text" to="/contact" style={NavigationStyle}>
+                  <Nav.Link as="span" href="/contact"> 
                     Contact
-                  </Link>
-                </Nav.Link>                
+                  </Nav.Link>
+                </Link>              
                 {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>
