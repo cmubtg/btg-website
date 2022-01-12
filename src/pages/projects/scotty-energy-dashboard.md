@@ -9,5 +9,5 @@ description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."'
 photo: /img/btg_logo.png
 members:
-  - (David You, dsyou, /img/david_you.jpg)
+  - (David You, dsyou, /img/dsyou.jpg)
 ---
