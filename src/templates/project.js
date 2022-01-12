@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Row from "react-bootstrap/Row";
@@ -51,7 +51,7 @@ const Project = ({ data }) => {
         </Container>
 
       <Container className="mt-md-1 pt-md-4">        
-        <Card className = 'mb-5 opacity-20 align-items-center' style={{backgroundColor: '#F32E43',color: '#fff',backgroundOpacity:50}}>
+        <Card className = 'mb-5 align-items-center' style={{backgroundColor: '#F32E43',color: '#fff',backgroundOpacity:50}}>
           <Card.Body>           
             <GatsbyImage image={photo} alt={project.frontmatter.title} style = {{border:20}}/>
           </Card.Body>
@@ -71,13 +71,15 @@ const Project = ({ data }) => {
         <Row> 
           {memberInfo.map((member) => {
               member = member.substring(1,member.length - 1);
-              const info = member.split(',');
-              let imgSrc = info[2];
-              imgSrc = imgSrc.replace(' ','')
+              const memberInfo = member.split(',');
               return (
-                <Col md={3} sm={6} xs={6} className="p-0">
-                  <img src = {imgSrc} style = {{width:200,height:200}}/>
-                  <p style = {{textAlign:'center'}}>{info[0]}</p>
+                <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
+                  <Link to = {'/members/' + memberInfo[1].substring(1)}>
+                    <img src = {memberInfo[2].substring(1)} style = {{width:240,height:240,marginBottom:20}}/>
+                  </Link>
+                  <h4 style = {{textAlign:'center'}}>{memberInfo[0]}</h4>   
+                  
+                                 
                 </Col> 
               )
             })}
