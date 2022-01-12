@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Row from "react-bootstrap/Row";
@@ -52,12 +52,14 @@ const Project = ({ data }) => {
           {memberInfo.map((member) => {
               member = member.substring(1,member.length - 1);
               const info = member.split(',');
-              let imgSrc = info[2];
-              imgSrc = imgSrc.replace(' ','')
+              const fullName = info[0]
+              const andrewID = String(info[1].substring(1))
+              const imgSrc = info[2].substring(1)
               return (
-                <Col md={3} sm={6} xs={6} className="p-0">
-                  <img src = {imgSrc} style = {{width:200,height:200}} alt={info[1]}/>
-                  <p style = {{textAlign:'center'}}>{info[0]}</p>
+                <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
+                  <Link to={'/members/' + andrewID}>
+                    <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
+                  </Link>  
                 </Col> 
               )
             })}
