@@ -1,28 +1,19 @@
-# Gatsby + Netlify CMS Starter
+# CMU Business Technology Group Club Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+[CMUBTG's static site](https://www.cmubtg.com/) was built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org). It was taken from the [Gatsby + Netlify CMS Starter template](https://github.com/netlify-templates/gatsby-starter-netlify-cms). The site follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
-**Note:** This starter uses [Gatsby v4](https://www.gatsbyjs.com/gatsby-4/).
-
-This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
-
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+The original version of the site has now been archived [here](https://github.com/cmubtg/cmubtg-website). A huge thanks to [Eric Cheng](https://github.com/eh8) for the initial version of the site.
 
 ## Features
 
-- A simple landing page with blog functionality built with Netlify CMS
-- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
-- Basic directory organization
-- Uses Bulma for styling, but size is reduced by `gatsy-plugin-purgecss`
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Uses `gatsby-plugin-image` with Netlify-CMS preview support
-- Separate components for everything
-- Netlify deploy configuration
-- Netlify function support, see `netlify/functions` folder
-- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
-- ..and more
+- A home page to feature our organization and career outlook for members
+- A members page to showcase the current executive board and members
+- Programmatically generated individual member pages with a brief description, photo, main highlights, member's LinkedIn, member's resume, and contact info
+- A projects page to showcase all current and past projects 
+- Programmatically generated individual project pages with a description and team members
+- An alumni page to showcase all past alumni of the club
+- A contact page for interested parties to message us
+
 
 ## Prerequisites
 
