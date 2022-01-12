@@ -3,99 +3,69 @@
 Contributions are always welcome, no matter how large or small. Before contributing,
 please read the [code of conduct](CODE_OF_CONDUCT.md).
 
+## Prerequisites
+
+- Minimal Node.js version 14.15.0
+- [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/)
+
+
+
 ## Setup
 
-> Install yarn on your system: [https://yarnpkg.com/en/docs/install](https://yarnpkg.com/en/docs/install)
-
-### Install dependencies
-
-> Only required on the first run, subsequent runs can use `yarn` to both
-bootstrap and run the development server using `yarn develop`.
-Since this starter using the [netlify-dev](https://www.netlify.com/products/dev/#how-it-works), there could be further issues you, please check the [netlify-dev](https://github.com/netlify/netlify-dev) repository for further information and set up questions. 
+Get a local copy of the website repository
 
 ```sh
-$ git clone https://github.com/netlify-templates/gatsby-starter-netlify-cms
-$ yarn 
+git clone https://github.com/cmubtg/website.git
+cd website
 ```
 
-## Available scripts
+### Install Dependencies
 
-
-### `build`
-
-Build the static files into the `public` folder, turns lambda functions into a deployable form. 
-
-#### Usage
+Only required on the first run. Note: it will take a while for the package manager to install all modules.
 
 ```sh
-$ yarn build
+npm install
 ```
 
-### `clean`
+You should now have **node_modules** appear in the sidebar.
 
-Runs `gatsby clean` command.
+## Access Locally
 
-#### Usage
+### Gatsby Updates
+
+To get a local version running, input the following commands
 
 ```sh
-yarn clean
+gatsby clean
+gatsby develop
 ```
 
-### `netlify dev`
 
-Starts the netlify dev environment, including the gatsby dev environment.
-For more infor check the [Netlify Dev Docs](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md)
+[`gatsby clean`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#clean) goes through and wipes out the cache.
+[`gatsby develop`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#develop) starts the development server.
 
-```sh
-netlify dev
-```
 
-### `develop` or `start`
+In the default setting, you should now have a local version of the site running at [localhost:8000](http://localhost:8000). The admin site should also be running at [localhost:8000/admin](http://localhost:8000/admin).
 
-Runs the `clean` script and starts the gatsby develop server using the command `gatsby develop`. We recomend using this command when you don't need Netlify specific features
 
-#### Usage
+### Netlify CMS Updates
 
-```sh
-yarn develop
-```
-### `test`
+After opening the [admin site](http://localhost:8000/admin). Create an account to access the information. The top of the page should look like this.
 
-Not implmented yet
+<img width="1418" alt="Screen Shot 2022-01-12 at 3 39 04 PM" src="https://user-images.githubusercontent.com/63127003/149218026-719cb169-f3b5-4c1e-bc67-d3dbdb2e6b38.png">
 
-#### Usage
-
-```sh
-yarn test
-```
-
-### `format`
-
-Formats code and docs according to our style guidelines using `prettier`
-
-#### Usage
-
-```sh
-yarn format
-```
+To add a new member, simple click on `New Members` and input the information accordingly.
 
 
 ## Pull Requests
 
-We actively welcome your pull requests!
-
-If you need help with Git or our workflow, please ask on [Gitter.im](https://gitter.im/netlify/NetlifyCMS). We want your contributions even if you're just learning Git. Our maintainers are happy to help!
-
-Netlify CMS uses the [Forking Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) + [Feature Branches](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). Additionally, PR's should be [rebased](https://www.atlassian.com/git/tutorials/merging-vs-rebasing) on master when opened, and again before merging.
+All changes should be made in a branch before commiting to master. Please make sure to test your code locally before commiting to ensure that your change does not break the site.
 
 1. Fork the repo.
-2. Create a branch from `master`. If you're addressing a specific issue, prefix your branch name with the issue number.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Run `yarn test` and ensure the test suite passes. (Not applicable yet)
-5. Use `yarn format` to format and lint your code.
-6. PR's must be rebased before merge (feel free to ask for help).
-7. PR should be reviewed by two maintainers prior to merging.
+2. Create a branch from `master`. Branches should be named with the user's andrewID and the issue they are resolving. For example, `dsyou_update_homepage_UI`.
+3. Run [`gatsby build`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build) to compile the site and make it ready for deployment.
+4. Run [`gatsby serve`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve) to serve the production build of the site.
+5. Once you have confirmed your changes, you can make a pull request and a maintainer will review and accept it accordingly.
 
 ## License
 

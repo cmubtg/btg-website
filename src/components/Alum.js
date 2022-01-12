@@ -4,9 +4,9 @@ import Col from "react-bootstrap/Col";
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { FaLinkedinIn } from "react-icons/fa";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-function TeamMember(props) {
+function Alum(props) {
 
   const popover = (
     <Popover id="popover-basic">
@@ -40,4 +40,4 @@ function TeamMember(props) {
   );
 }
 
-export default TeamMember;
+export default Alum;

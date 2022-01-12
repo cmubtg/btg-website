@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from "prop-types";
+<<<<<<< HEAD
 import { Link, graphql, StaticQuery } from 'gatsby'
+=======
+import { Link, graphql } from "gatsby";
+>>>>>>> 7392cdff4c114ec2a901e1c92600cfb1a308b4de
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Row from "react-bootstrap/Row";
@@ -8,28 +12,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from 'react-bootstrap/Card'
 
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import FadeIn from "react-fade-in";
-import { Helmet } from "react-helmet";
-import BTGCover from "../images/btg-cover.png";
-
 import Layout from "../components/Layout"
 
-// function getName(text) {
-//   const result = text
-//   return result
-// }
-
-// function getAndrewID(text) {
-//   const result = text
-//   return result
-// }
-
-// function getPhoto(text) {
-//   const result = text
-//   return result
-// }
 
 const Project = ({ data }) => {
   const { markdownRemark: project } = data;
@@ -71,6 +55,7 @@ const Project = ({ data }) => {
         <Row> 
           {memberInfo.map((member) => {
               member = member.substring(1,member.length - 1);
+<<<<<<< HEAD
               const memberInfo = member.split(',');
               return (
                 <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
@@ -80,6 +65,17 @@ const Project = ({ data }) => {
                   <h4 style = {{textAlign:'center'}}>{memberInfo[0]}</h4>   
                   
                                  
+=======
+              const info = member.split(',');
+              const fullName = info[0]
+              const andrewID = String(info[1].substring(1))
+              const imgSrc = info[2].substring(1)
+              return (
+                <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
+                  <Link to={'/members/' + andrewID}>
+                    <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
+                  </Link>  
+>>>>>>> 7392cdff4c114ec2a901e1c92600cfb1a308b4de
                 </Col> 
               )
             })}
