@@ -3,16 +3,19 @@ import Badge from "react-bootstrap/Badge";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/styles.css'
-
 import Companies from "../components/Companies";
 import Layout from "../components/Layout"
+import Helmet from "react-helmet"
+import BTGCover from "../images/btg-cover.png";
 
 function Home() {
   return (
     <Layout>
+      <Helmet>
+        <title>Home | CMUBTG</title>
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:image" content={BTGCover}></meta>
+      </Helmet>
       <Container className="mt-md-1 pt-md-4">
         <Row className="pt-1 mt-5">
           <Col>
