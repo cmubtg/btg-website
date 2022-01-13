@@ -37,14 +37,6 @@ collections:
       - { label: "Degree", name: "degree", widget: "select", options: ["BS", "MS"] }
       - { label: "Major", name: "major", widget: "string" }
       - { label: "LinkedIn", name: "linkedIn", widget: "string" }
-      - { 
-          label: "Project", 
-          name: "project", 
-          widget: "relation",
-          collection: "projects",
-          value_field: "title",
-          search_fields: ["title"]
-        }
 
   - name: "projects"
     label: "Projects"
