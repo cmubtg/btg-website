@@ -11,11 +11,6 @@ export default function Layout({ children }) {
   return (
     <div>
       <FadeIn>
-        <Helmet>
-          <title>Home Page | CMUBTG</title>
-          <meta name="twitter:card" content="summary_large_image"></meta>
-          <meta name="twitter:image" content={BTGCover}></meta>
-        </Helmet>
         <Navigation/>
         <div>
           {children}

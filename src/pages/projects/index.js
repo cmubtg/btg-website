@@ -7,6 +7,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Layout from "../../components/Layout"
+import Helmet from "react-helmet"
+import BTGCover from "../../images/btg-cover.png";
 
 // This function renders the text description from each project
 function ProjectDescriptionText(props) {
@@ -28,7 +30,6 @@ function WhiteContainer(props) {
       </div>
 
       <div className = 'text-right border-0' style = {{width:700}}>
-        <p>{props.slug}</p>
         <Link to={props.slug}>
           <h2 style = {{margin:20, marginBottom:20,color:'#ff2f44'}}><u>{props.title}</u></h2>
         </Link>
@@ -82,7 +83,11 @@ class ProjectListTemplate extends React.Component {
 
     return (
       <Layout>
-
+        <Helmet>
+          <title>Projects | CMUBTG</title>
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:image" content={BTGCover}></meta>
+        </Helmet>
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
