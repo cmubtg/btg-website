@@ -2,7 +2,7 @@
 templateKey: member
 title: Elizabeth Lee
 andrewID: hyeinl
-role: Software Engineer
+role: Software Developer
 description: Hello! My name is Elizabeth.
 photo: /img/hyeinl.jpg
 portfolio: Tbd
