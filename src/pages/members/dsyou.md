@@ -15,6 +15,6 @@ resume: /img/david-you.pdf
 year: 2023
 degree: BS
 major: Business Administration and Computer Science
-linkedIn: https://www.linkedin.com/in/david-s-you/
 project: Website Reconstruction
+linkedIn: https://www.linkedin.com/in/david-s-you/
 ---
