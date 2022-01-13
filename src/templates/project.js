@@ -7,6 +7,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Card from 'react-bootstrap/Card'
+import Popover from "react-bootstrap/Popover";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 import Layout from "../components/Layout"
 
@@ -53,14 +55,25 @@ const Project = ({ data }) => {
               member = member.substring(1,member.length - 1);
               const info = member.split(',');
               const fullName = info[0]
+              const role = info[3]
               const andrewID = String(info[1].substring(1))
               const imgSrc = info[2].substring(1)
+              const popover = (
+                <Popover id="popover-basic">
+                  <Popover.Header>{fullName}</Popover.Header>
+                  <Popover.Body>
+                    {role}
+                  </Popover.Body>     
+                </Popover>
+              );
               return (
-                <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
-                  <Link to={'/members/' + andrewID}>
-                    <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
-                  </Link>  
-                </Col> 
+                <OverlayTrigger placement = 'right' overlay = {popover}>
+                  <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
+                    <Link to={'/members/' + andrewID}>
+                      <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
+                    </Link> 
+                  </Col> 
+                </OverlayTrigger>
               )
             })}
         </Row>
