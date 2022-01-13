@@ -67,9 +67,9 @@ collections:
           name: "members", 
           widget: "relation",
           collection: "members",
-          value_field: "({{fields.title}}, {{fields.andrewID}}, {{fields.photo}})",
+          value_field: "({{fields.title}}, {{fields.andrewID}}, {{fields.photo}}, {{fields.role}})",
           search_fields: ["title", "andrewID"],
-          display_fields: ["title"],
+          display_fields: ["title","role"],
           multiple: true
         }
                      
