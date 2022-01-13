@@ -2,7 +2,7 @@
 templateKey: member
 title: Jason Hoang
 andrewID: jvhoang
-role: Engineer
+role: Software Developer
 description: Freshman at Carnegie Mellon
 photo: /img/btg_logo.png
 portfolio: \_\_\_\_
