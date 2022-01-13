@@ -11,10 +11,9 @@ name: David You
 role: President
 description: Hello! My name is David
 photo: /img/dsyou.jpg
-resume: /img/david-you.pdf
+resume: /img/dsyou.pdf
 year: 2023
 degree: BS
 major: Business Administration and Computer Science
 linkedIn: https://www.linkedin.com/in/david-s-you/
-project: Website Reconstruction
 ---
