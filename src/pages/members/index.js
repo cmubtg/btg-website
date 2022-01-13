@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,12 +9,67 @@ import Container from "react-bootstrap/Container";
 import Layout from "../../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../../images/btg-cover.png";
+import MemberDisplay from "../../components/MemberDisplay"
+import { getImage } from 'gatsby-plugin-image';
+
+function RoleContainer(props) {
+  return (
+    <Row className="pt-1 mt-5">
+      <h3>{props.role}s</h3>
+    {Array.from(props.members).map(({ node:member }) => (
+      <MemberDisplay
+        title = {member.frontmatter.title}
+        role = {member.frontmatter.role}
+        degree = {member.frontmatter.degree}
+        major = {member.frontmatter.major}
+        year = {member.frontmatter.year}
+        photo = {getImage(member.frontmatter.photo)}
+        slug = {member.fields.slug}
+        linkedIn = {member.frontmatter.linkedIn}
+      ></MemberDisplay>
+    ))}
+    </Row>
+  )
+}
+
+function check_keys(str,dict) {
+  for(let s in dict){
+    if(str.includes(s)){
+      return s
+    }
+  }
+  return ""
+}
+
+function get_roles(members) {
+  var roles = {"Executive":[],
+              "Software Developer":[],
+              "UI/UX Designer":[],
+              "Product Manager":[],
+              "Data Scientist":[],
+              "Business Analyst":[]
+            }
+  members.forEach(
+    function(member,index) {
+      var r = member.node.frontmatter.role
+      if (r.includes("President") || r.includes("Head")) {
+        roles["Executive"].push(member)
+      }
+      var k = check_keys(r,roles)
+      if(k!=="") {
+        roles[k].push(member)
+      }
+    }
+  )
+  return Object.entries(roles)
+}
 
 class MemberListTemplate extends React.Component {
   render() {
     const { data } = this.props
     const { edges: members } = data.allMarkdownRemark
-
+    const roles = get_roles(members)
+    console.log(roles)
     return (
       <Layout>
         <Helmet>
@@ -48,20 +103,14 @@ class MemberListTemplate extends React.Component {
             </Container>
         </div>        
 
-        <Row>
-          <Col>
-          {members.map(({ node: member }) => (
-            <p>
-              <Link
-                className="title has-text-primary is-size-4"
-                to={member.fields.slug}
-              >
-                {member.frontmatter.title}
-              </Link>            
-            </p>
-          ))}   
-          </Col>
-        </Row>
+        <Container>
+          {roles.map((r) => (
+            <RoleContainer
+              role = {r[0]}
+              members = {r[1]}
+            />
+          ))}
+        </Container>
       </Container>
 
       </Layout>       
@@ -94,11 +143,15 @@ export default function MemberList() {
                 }
                 frontmatter {
                   title
+                  linkedIn
+                  year
+                  degree
+                  major
                   role
                   photo {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 100
+                        width: 250
                         quality: 100
                         layout: CONSTRAINED
                       )
