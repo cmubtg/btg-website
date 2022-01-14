@@ -10,7 +10,8 @@ import Container from "react-bootstrap/Container";
 
 import {LinkedInPhoto, Resume, Email} from "../images/static";
 import Layout from "../components/Layout";
-
+import Helmet from "react-helmet"
+import BTGCover from "../images/btg-cover.png"
 
 const Member = ({ data }) => {
   const { markdownRemark: member } = data;
@@ -18,6 +19,11 @@ const Member = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{member.frontmatter.title} | CMUBTG</title>
+        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:image" content={BTGCover}></meta>
+      </Helmet>
       <Container className="mt-md-1 pt-md-4">
         <Row>
           <h1 className="display-3 text-black font-weight-boldest">{member.frontmatter.title}</h1>

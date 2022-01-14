@@ -9,6 +9,9 @@ import Row from "react-bootstrap/Row";
 import Alum from "../../components/Alum"
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout"
+import Helmet from "react-helmet"
+import BTGCover from "../../images/btg-cover.png";
+
 
 function YearContainer(props) {
   return (
@@ -51,7 +54,11 @@ class AlumniListTemplate extends React.Component {
 
     return (
       <Layout>
-
+        <Helmet>
+          <title>Alumni | CMUBTG</title>
+          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta name="twitter:image" content={BTGCover}></meta>
+        </Helmet>
         <Container className="mt-md-1 pt-md-4">
         <Row className="pt-1 mt-5">
           <Col>
