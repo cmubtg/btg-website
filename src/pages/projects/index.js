@@ -28,7 +28,6 @@ function WhiteContainer(props) {
       </div>
 
       <div className = 'text-right border-0' style = {{width:700}}>
-        <p>{props.slug}</p>
         <Link to={props.slug}>
           <h2 style = {{margin:20, marginBottom:20,color:'#ff2f44'}}><u>{props.title}</u></h2>
         </Link>

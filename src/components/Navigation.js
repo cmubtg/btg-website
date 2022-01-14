@@ -53,7 +53,12 @@ function Navigation() {
                   <Nav.Link as="span" href="/projects"> 
                     Projects
                   </Nav.Link>
-                </Link>                  
+                </Link>
+                <Link className="nav-link-text" to="/events" style={NavigationStyle}>
+                  <Nav.Link as="span" href="/events"> 
+                    Events
+                  </Nav.Link>
+                </Link>                     
                 <Link className="nav-link-text" to="/alumni" style={NavigationStyle}>
                   <Nav.Link as="span" href="/alumni"> 
                     Alumni
