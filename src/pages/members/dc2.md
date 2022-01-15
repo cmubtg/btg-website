@@ -13,7 +13,7 @@ description: >+
 
 photo: /img/btg_logo.png
 portfolio: "* Thing 1"
-resume: /img/david-you.pdf
+resume: /img/dsyou.pdf
 year: 2025
 degree: BS
 major: Information Systems
