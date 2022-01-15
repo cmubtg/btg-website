@@ -4,6 +4,7 @@ title: Website Reconstruction
 description: We are working on building out the website's functionality and
   features. You're seeing our hard work right here!
 photo: /img/btg_logo.png
+descriptionPhoto: /img/gatsby_netlifycms.jpeg
 members:
   - (David You, dsyou, /img/dsyou.jpg, President)
   - (Daniel Chen, dc2, /img/btg_logo.png, Software Developer)
