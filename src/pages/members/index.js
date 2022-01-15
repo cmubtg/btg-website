@@ -11,6 +11,8 @@ import Helmet from "react-helmet"
 import BTGCover from "../../images/btg-cover.png";
 import MemberDisplay from "../../components/MemberDisplay"
 import { getImage } from 'gatsby-plugin-image';
+//import { MultiSelect } from "react-multi-select-component";
+import Select from "react-select"
 
 function RoleContainer(props) {
   return (
@@ -64,12 +66,33 @@ function get_roles(members) {
   return Object.entries(roles)
 }
 
+function get_options(roles) {
+  var ops = []
+  roles.forEach((r) => {
+    ops.push({ "label":r[0],"value":r })
+  })
+  return ops
+}
+
 class MemberListTemplate extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      roles:[]
+    }
+    this.setRoles = this.setRoles.bind(this)
+  }
+
+  setRoles(input) {
+    this.setState({roles:input})
+  }
+
   render() {
     const { data } = this.props
     const { edges: members } = data.allMarkdownRemark
     const roles = get_roles(members)
-    console.log(roles)
+    const options = get_options(roles)
     return (
       <Layout>
         <Helmet>
@@ -98,19 +121,29 @@ class MemberListTemplate extends React.Component {
                   </p>
                 </Col>
               </Row>
-
               {/* <TeamSummary /> */}
             </Container>
         </div>        
 
         <Container>
-          {roles.map((r) => (
+        <Select
+          options={options}
+          value={this.state.roles}
+          onChange={this.setRoles}
+          isMulti
+          closeMenuOnSelect={false}
+        />
+          {this.state.roles.map((r) => (
             <RoleContainer
-              role = {r[0]}
-              members = {r[1]}
+              role = {r["value"][0]}
+              members = {r["value"][1]}
             />
           ))}
         </Container>
+      </Container>
+
+      <Container>
+
       </Container>
 
       </Layout>       
