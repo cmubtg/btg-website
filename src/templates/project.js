@@ -16,7 +16,7 @@ import BTGCover from "../images/btg-cover.png"
 
 const Project = ({ data }) => {
   const { markdownRemark: project } = data;
-  const photo = getImage(project.frontmatter.photo)
+  const photo = getImage(project.frontmatter.descriptionPhoto)
 
   // const memberPhoto = getImage()
 
@@ -39,19 +39,14 @@ const Project = ({ data }) => {
         </Container>
 
       <Container className="mt-md-1 pt-md-4">        
-        <Card className = 'mb-5 align-items-center' style={{backgroundColor: '#F32E43',color: '#fff',backgroundOpacity:50}}>
+        <Card className = 'mb-3 align-items-center'>
           <Card.Body>           
-            <GatsbyImage image={photo} alt={project.frontmatter.title} style = {{border:20}}/>
+            <GatsbyImage image={photo} alt={project.frontmatter.title} style = {{border: "solid 3px black"}}/>
           </Card.Body>
         </Card>
 
-        <small class = 'padded-multipline'style = {{margin: 10, fontSize: 20}}>
-          {project.frontmatter.description}
-        </small>
         <Row>
-          
           <h1 style = {{marginTop:30}}>Members</h1>  
-            
         </Row>
       </Container>        
 
@@ -67,9 +62,7 @@ const Project = ({ data }) => {
               const popover = (
                 <Popover id="popover-basic">
                   <Popover.Header>{fullName}</Popover.Header>
-                  <Popover.Body>
-                    {role}
-                  </Popover.Body>     
+                  <Popover.Header style={{backgroundColor: "white"}}>{role}</Popover.Header>
                 </Popover>
               );
               return (
@@ -83,7 +76,12 @@ const Project = ({ data }) => {
               )
             })}
         </Row>
-              
+        <Container className="mt-md-1 pt-md-4">        
+          <small class = 'padded-multipline'style = {{margin: 10, fontSize: 20}}>
+            {project.frontmatter.description}
+          </small>
+        </Container>   
+
       </Container>
 
     </Layout>
@@ -118,7 +116,13 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(width: 800, height: 400, quality: 100, layout: CONSTRAINED)
           }
-        }        
+        }
+        descriptionPhoto {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: CONSTRAINED)
+          }
+        }                
       }
     }
   }
