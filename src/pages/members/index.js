@@ -54,7 +54,7 @@ function get_roles(members) {
   members.forEach(
     function(member,index) {
       var r = member.node.frontmatter.role
-      if (r.includes("President") || r.includes("Head")) {
+      if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
         roles["Executive"].push(member)
       }
       var k = check_keys(r,roles)
@@ -107,38 +107,36 @@ class MemberListTemplate extends React.Component {
             </Col>
           </Row>
 
-          <div className="bg-light">
-            <Container className="py-5 mt-5">
+          <div>
+            <Container className="py-3 mt-2">
               <Row>
                 <Col>
-                  <h4 className="font-weight-bold">Meet the team</h4>
-
-                  <p className="py-5">
+                  <h4>
                     The CMUBTG combines hands-on technical training and holistic
                     engagement with the technology industry. Our strong community
                     can be found around campus and reinforces our dedicated yet fun
                     culture.
-                  </p>
+                  </h4>
                 </Col>
               </Row>
               {/* <TeamSummary /> */}
             </Container>
         </div>        
 
-        <Container>
-        <Select
-          options={options}
-          value={this.state.roles}
-          onChange={this.setRoles}
-          isMulti
-          closeMenuOnSelect={false}
-        />
-          {this.state.roles.map((r) => (
-            <RoleContainer
-              role = {r["value"][0]}
-              members = {r["value"][1]}
-            />
-          ))}
+        <Container className="mt-2">
+          <Select
+            options={options}
+            value={this.state.roles}
+            onChange={this.setRoles}
+            isMulti
+            placeholder="See all our groups"
+          />
+            {this.state.roles.map((r) => (
+              <RoleContainer
+                role = {r["value"][0]}
+                members = {r["value"][1]}
+              />
+            ))}
         </Container>
       </Container>
 
