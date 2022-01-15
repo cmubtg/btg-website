@@ -78,8 +78,13 @@ class MemberListTemplate extends React.Component {
 
   constructor(props) {
     super(props)
+    const { data } = this.props
+    const { edges: members } = data.allMarkdownRemark
+    const roles = get_roles(members)
+    const ops = get_options(roles)
     this.state = {
-      roles:[]
+      roles:[ops[0]],
+      options:ops
     }
     this.setRoles = this.setRoles.bind(this)
   }
@@ -89,10 +94,6 @@ class MemberListTemplate extends React.Component {
   }
 
   render() {
-    const { data } = this.props
-    const { edges: members } = data.allMarkdownRemark
-    const roles = get_roles(members)
-    const options = get_options(roles)
     return (
       <Layout>
         <Helmet>
@@ -125,9 +126,11 @@ class MemberListTemplate extends React.Component {
 
         <Container className="mt-2">
           <Select
-            options={options}
+            options={this.state.options}
             value={this.state.roles}
             onChange={this.setRoles}
+            className="basic-multi-select"
+            classNamePrefix="select"
             isMulti
             placeholder="See all our groups"
           />
