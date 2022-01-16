@@ -78,37 +78,42 @@ function Home() {
 
         <Row className="mt-5">
           <Col md={3}>
-            <span className="font-weight-bold">Product Studio&nbsp;</span>
+            <span className="font-weight-bold"><b>Product Studio</b></span>
           </Col>
           <Col md={9}>
             <p>
-              Inforomation about product studio here.
+              Product Studio is a structured program consisting of teams of 
+              product managers, software engineers, data scientists, UI/UX designers, 
+              and business analysts. Every team in Product Studio will build a tech product 
+              that you will deliver at the end of the 10-week program.
             </p>
           </Col>
         </Row>
 
         <Row className="mt-5">
           <Col md={3}>
-            <span className="font-weight-bold">Product Explore&nbsp;</span>
+            <span className="font-weight-bold"><b>Product Explore</b></span>
           </Col>
           <Col md={9}>
             <p>
-            Inforomation about product explore here.
+              Product Explore is a flexible program. Members are free to organize 
+              their own teams and work on any problem they want. This is a great 
+              entryway for students interested in projects who are unsure about 
+              their level of commitment.
             </p>
           </Col>
         </Row>
       </Container>
 
-      <Container className="pt-5 mt-5">
+      <Container className="pt-3 mt-5">
         <Row>
           <Col>
             <h4 className="font-weight-bold">Historical achievement</h4>
 
-            <p className="py-5">
-              You’re in good company. Whatever your goals may be, CMUBTG can
-              support and guide you towards your highest potential. CMUBTG
-              members and alumni lead, deploy, and design exciting projects
-              across the industry. Here's where some currently work and have worked.
+            <p className="py-4">
+              You’re in good company. CMUBTG members and alumni lead, deploy, 
+              engineer, and design exciting projects across the industry. 
+              Here's where some currently work and have worked.
             </p>
           </Col>
         </Row>
