@@ -71,6 +71,19 @@ const LeftFooter = () => {
           <small>Code of Conduct</small>          
         </a>
       </Row>
+      <Row className="mt-2">
+        <small>Deployed on {" "}
+          <a href="https://www.netlify.com/"
+            target="_blank" 
+            rel="noreferrer"
+            class="link-secondary"
+          >
+            <b>Netlify</b>
+          </a>
+          
+          </small>          
+        
+      </Row>      
       <Row className="mt-3">
         <SocialMedia />
       </Row>   
