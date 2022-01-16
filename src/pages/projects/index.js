@@ -95,15 +95,18 @@ class ProjectListTemplate extends React.Component {
             </Col>
           </Row>
         
-          {projects.map(({ node: project }, index) => (
-            <ProjectContainer 
-              index={index} 
-              title={project.frontmatter.title}
-              description={project.frontmatter.description}
-              photo={getImage(project.frontmatter.photo)}
-              slug={project.fields.slug}
-            />
-          ))}          
+          <div className="pt-1 mt-3">
+            {projects.map(({ node: project }, index) => (
+              <ProjectContainer 
+                index={index} 
+                title={project.frontmatter.title}
+                description={project.frontmatter.description}
+                photo={getImage(project.frontmatter.photo)}
+                slug={project.fields.slug}
+              />
+            ))}    
+          </div>
+      
 
       </Container>
 
