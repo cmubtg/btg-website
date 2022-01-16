@@ -7,7 +7,7 @@ import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
 
 function Events(){
-    const calendar = "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ff2f44&ctz=America%2FNew_York&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043"
+    const calendar = "https://calendar.google.com/calendar/embed?src=cmubtg%40gmail.com&ctz=America%2FNew_York"
     return(  
       <div>
         <Layout>
@@ -24,8 +24,8 @@ function Events(){
             </Row>
             <iframe src={calendar} 
               style={{border:"solid 1px #777", marginTop:"20px"}} 
-              width="800" 
-              height="600" 
+              width="900" 
+              height="700" 
               frameborder="0" 
               scrolling="no" 
               title="BTG Calendar"
