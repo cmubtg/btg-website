@@ -28,7 +28,7 @@ function Alum(props) {
           </div>
           <div className="team-description px-3">
             <h5 className="font-weight-bold mt-md-3">{props.title}</h5>
-            <a className="icon-link" href={props.linkedIn}>
+            <a className="icon-link" href={props.linkedIn} target="_blank" rel="noreferrer">
               <FaLinkedinIn />
             </a>                  
           </div>
