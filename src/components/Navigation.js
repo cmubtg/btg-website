@@ -3,8 +3,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import LogoColor from "../images/btg-logo-white-red.svg";
+
+import GithubCorner from 'react-github-corner';
 import { Link } from "gatsby";
-//import HeaderAnnouncement from "./HeaderAnnouncement";
+
+
 
 
 function Navigation() {
@@ -72,6 +75,15 @@ function Navigation() {
             </Navbar.Collapse>
           </Navbar>
         </Container>
+
+        <GithubCorner
+          href="https://github.com/cmubtg/btg-website"
+          bannerColor="#ff2f44"
+          octoColor="#fff"
+          size={60}
+          direction="right" 
+          target="_blank"
+        />
       </div>
     </div>
   );
