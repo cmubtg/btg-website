@@ -26,7 +26,7 @@ const MailchimpForm = () => {
                   type="email"
                   placeholder="> Subscribe to our Mailing List"
                   name="email"
-                  className="required email shadow-custom form-control border-0"
+                  className="required email shadow-lg form-control border-0"
                   id="mce-EMAIL"
                 ></input>
               </div>
