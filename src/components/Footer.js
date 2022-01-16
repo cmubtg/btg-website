@@ -71,7 +71,7 @@ const LeftFooter = () => {
           <small>Code of Conduct</small>          
         </a>
       </Row>
-      <Row className="mt-2">
+      <Row className="text-secondary mt-2">
         <small>Deployed on {" "}
           <a href="https://www.netlify.com/"
             target="_blank" 
