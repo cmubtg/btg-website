@@ -12,6 +12,8 @@ import {
 import LogoGray from "../images/btg-logo-gray.svg";
 import MailchimpForm from "../components/MailchimpForm";
 
+
+
 const SocialMedia = () => {
   return (
     <Col>
@@ -54,15 +56,22 @@ const SocialMedia = () => {
 const LeftFooter = () => {
   return (
     <Container>
-      <Row>
-        <p className="text-secondary py-3">
-          <small>
-            Want to reach out? Send us a line at{" "}
-            <a href="mailto:info@cmubtg.com" target="_blank" rel="noopener noreferrer">info@cmubtg.com</a>
-          </small>
-        </p>           
-      </Row>      
-      <Row>     
+      <Row className="text-secondary mt-2">
+        <small>
+          Want to reach out? Send us a line at{" "}
+          <a href="mailto:info@cmubtg.com" target="_blank" rel="noopener noreferrer">info@cmubtg.com</a>
+        </small>        
+      </Row>   
+      <Row className="mt-2">
+        <a href="https://github.com/cmubtg/btg-website/blob/master/CODE_OF_CONDUCT.md"
+          target="_blank" 
+          rel="noreferrer"
+          class="link-secondary"
+        >
+          <small>Code of Conduct</small>          
+        </a>
+      </Row>
+      <Row className="mt-3">
         <SocialMedia />
       </Row>   
     </Container>
