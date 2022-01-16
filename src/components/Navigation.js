@@ -15,13 +15,11 @@ function Navigation() {
 
   return (
     <div>
-      <div className="border-bottom">
+      <div className="border-bottom bg-white">
         <Container>
           <Navbar
             collapseOnSelect
             expand="sm"
-            bg="white"
-            variant="light"
             //className="px-0 mx-0 py-0 my-0"
           >
             <Link to="/">
