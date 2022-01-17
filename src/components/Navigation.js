@@ -81,7 +81,7 @@ function Navigation() {
           bannerColor="#ff2f44"
           octoColor="#fff"
           size={60}
-          direction="right" 
+          direction="left" 
           target="_blank"
         />
       </div>
