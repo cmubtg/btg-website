@@ -2,21 +2,18 @@
 templateKey: member
 title: Daniel Chen
 andrewID: dc2
+portfolio: |-
+  - I worked as a software engineer on the CMU BTG Website Reconstruction (The site you're on right now!)
+  - I won second place at a hackathon for my 112 class by developing a turn based strategy map game
+  - I've worked as a teaching assistant for an introductory computer science course
+  - I designed "Your Home at Information Systems" - a prototype app that helped users understand the more complicated nature of IS
+name: Daniel Chen
 role: Software Developer
-description: >+
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-photo: /img/btg_logo.png
-portfolio: "* Thing 1"
-resume: /img/dsyou.pdf
+description: HI, I'm Daniel! I'm a freshman at CMU studying Information Systems with minors in Computer Science and Business Administration. I've always been interested in technology, specifically ways that it can be used to interact with people and fulfill their daily objectives. This is why I want to learn more about the intersection between business and computer science. In my free time, I like to play chess, cook, and do logic puzzles.
+photo: /img/dc2.jpg
+resume: /img/dc2.pdf
 year: 2025
 degree: BS
 major: Information Systems
 linkedIn: https://www.linkedin.com/in/dchen72/
-project: Website Reconstruction
 ---
