@@ -3,13 +3,13 @@ templateKey: member
 title: David You
 andrewID: dsyou
 portfolio: |-
-  * Thing 1
-  * Thing 2
-  * Thing 3
-  * Thing 4
+  - This is
+  - another
+  - test
+  - for bullet lists
 name: David You
 role: President
-description: Hello! My name is David
+description: I am a junior in Tepper majoring in Business Administration with an additional major in  Computer Science. I am very interested in the intersection of business and technology, and I hope to combine these interests as a product manager. I am particularly interested in medical technologies and educational technologies. I enjoy teaching technical material and I've worked as a teaching assistant for two different computer science classes. In my free time, I enjoy going to the gym, reading about new technical innovations, and cooking.
 photo: /img/dsyou.jpg
 resume: /img/dsyou.pdf
 year: 2023
