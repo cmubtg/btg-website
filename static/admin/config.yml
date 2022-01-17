@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: cmubtg/btg-website
   branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
