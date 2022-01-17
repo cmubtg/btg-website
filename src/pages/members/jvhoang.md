@@ -10,7 +10,7 @@ portfolio: |-
 name: Jason Hoang
 role: Software Developer
 description: I am a freshman studying Electrical and Computer Engineering at CMU. I grew up in the Bay Area and have lived there my entire life. Uh......... in my free time I like to explore Pittsburgh, play video games, and build stuff. 
-photo: /img/jvhoang.jpg
+photo: /img/btg_logo.png
 resume: /img/jvhoang.pdf
 year: 2025
 degree: BS
