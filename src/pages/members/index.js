@@ -59,10 +59,15 @@ function get_roles(members) {
       }
       var k = check_keys(r,roles)
       if(k!=="") {
-        roles[k].push(member)
+        if(r.includes("Lead")){
+          roles[k].unshift(member)
+        } else{
+          roles[k].push(member)
+        }
       }
     }
   )
+  console.log(roles)
   return Object.entries(roles)
 }
 
