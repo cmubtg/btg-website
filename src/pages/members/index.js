@@ -117,12 +117,12 @@ class MemberListTemplate extends React.Component {
             <Container className="py-3 mt-2">
               <Row>
                 <Col>
-                  <h4>
+                  <p>
                     The CMUBTG combines hands-on technical training and holistic
                     engagement with the technology industry. Our strong community
                     can be found around campus and reinforces our dedicated yet fun
                     culture.
-                  </h4>
+                  </p>
                 </Col>
               </Row>
               {/* <TeamSummary /> */}
