@@ -24,5 +24,5 @@ resume: /img/yuyangl3.pdf
 year: 2022
 degree: BS
 major: Business Administration
-linkedIn: www.linkedin.com/in/yuyangl3
+linkedIn: https://www.linkedin.com/in/yuyangl3/
 ---
