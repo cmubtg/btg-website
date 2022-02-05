@@ -11,8 +11,7 @@ import Helmet from "react-helmet"
 import BTGCover from "../../images/btg-cover.png";
 import MemberDisplay from "../../components/MemberDisplay"
 import { getImage } from 'gatsby-plugin-image';
-//import { MultiSelect } from "react-multi-select-component";
-import Select from "react-select"
+import MySelect from "../../components/MySelect"
 
 function RoleContainer(props) {
   return (
@@ -67,7 +66,6 @@ function get_roles(members) {
       }
     }
   )
-  console.log(roles)
   return Object.entries(roles)
 }
 
@@ -130,13 +128,12 @@ class MemberListTemplate extends React.Component {
         </div>        
 
         <Container className="mt-2">
-          <Select
+          <MySelect
             options={this.state.options}
-            value={this.state.roles}
-            onChange={this.setRoles}
-            className="basic-multi-select"
-            classNamePrefix="select"
             isMulti
+            onChange={this.setRoles}
+            allowSelectAll = {true}
+            value={this.state.roles}
             placeholder="See all our groups"
           />
             {this.state.roles.map((r) => (
