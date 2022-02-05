@@ -1,3 +1,7 @@
+//This is the events page. It displays a calendar of all upcoming BTG events through a Google Calendar Format. 
+
+//Created by Daniel Chen and David You
+
 import Layout from "../components/Layout";
 import React from "react";
 import Row from "react-bootstrap/Row";

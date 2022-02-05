@@ -1,3 +1,8 @@
+//This is the individual project page template. For each project, the page displays the name of the project, a paragraph 
+//describing the work that the team did, as well as the profiles of each member that worked on that specific project.
+
+//Created by Daniel Chen, Designed by James Kramer
+
 import React from 'react';
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
