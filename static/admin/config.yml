@@ -52,6 +52,7 @@ collections:
           default: "project",
         }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Overview", name: "overview", widget: "text"}
       - { label: "Description", name: "description", widget: "text"}
       - { label: "Photo", name: "photo", widget: image }
       - { label: "DescriptionPhoto", name: "descriptionPhoto", widget: image }

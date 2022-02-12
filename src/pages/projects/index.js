@@ -100,7 +100,7 @@ class ProjectListTemplate extends React.Component {
               <ProjectContainer 
                 index={index} 
                 title={project.frontmatter.title}
-                description={project.frontmatter.description}
+                description={project.frontmatter.overview}
                 photo={getImage(project.frontmatter.photo)}
                 slug={project.fields.slug}
               />
@@ -140,6 +140,7 @@ export default function ProjectList() {
                 }
                 frontmatter {
                   title
+                  overview
                   description
                   photo {
                     childImageSharp {
