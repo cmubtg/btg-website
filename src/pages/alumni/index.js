@@ -1,3 +1,8 @@
+//This is the page showing past alumni from CMU BTG. Alumni are sorted by their year and displays name, major, role, as well as
+//a link to their linkedin profile.
+
+//Created by Harrison Chui <hchui@andrew.cmu.edu>
+
 import React from "react";
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'

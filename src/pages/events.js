@@ -1,3 +1,7 @@
+//This is the events page. It displays a calendar of all upcoming BTG events through a Google Calendar Format. 
+
+//Created by Daniel Chen <dc2@andrew.cmu.edu> and David You <dsyou@andrew.cmu.edu>
+
 import Layout from "../components/Layout";
 import React from "react";
 import Row from "react-bootstrap/Row";
