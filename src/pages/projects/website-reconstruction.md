@@ -1,8 +1,11 @@
 ---
 templateKey: project
 title: Website Reconstruction
-description: We are working on building out the website's functionality and
+overview: We are working on building out the website's functionality and
   features. You're seeing our hard work right here!
+description: We are working on building out the website's functionality and
+  features. You're seeing our hard work right here! This is the description
+  here.
 photo: /img/btg_logo.png
 descriptionPhoto: /img/gatsby_netlifycms.jpeg
 members:
