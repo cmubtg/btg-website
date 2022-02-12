@@ -1,3 +1,8 @@
+//This is the all-projects page. Each active project in BTG is displayed with a picture and a short description of what that project
+//is doing and their goals. Clicking the title of the project will take the user to its respective project page.
+
+//Created by Daniel Chen <dc2@andrew.cmu.edu> and David You <dsyou@andrew.cmu.edu>, Designed by Teresa Yang <tyang218@gmail.com>
+
 import React from 'react';
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'

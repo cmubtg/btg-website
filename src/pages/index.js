@@ -1,3 +1,8 @@
+//This is the home page of the CMU BTG website. It gives a short introduction to the club, our mission, and some of our 
+//achievements as well as our sponsors.
+
+//Created by David You <dsyou@andrew.cmu.edu>
+
 import React from "react";
 import Badge from "react-bootstrap/Badge";
 import Row from "react-bootstrap/Row";

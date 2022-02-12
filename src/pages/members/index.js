@@ -1,3 +1,9 @@
+//This is the all-members page. Members can be viewed through their roles via a drop-down menu that only displays
+//executives when opened. Each member profile has a link to their individual page.
+
+//Created by Harrison Chui <hchui@andrew.cmu.edu> and David You <dsyou@andrew.cmu.edu>, Designed by Teresa Yang <tyang218@gmail.com>
+
+
 import React from 'react';
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'

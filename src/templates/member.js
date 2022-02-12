@@ -1,3 +1,8 @@
+//This is the template for the individual member page. Every member in BTG is linked with their andrewid and their page
+//displays their name, a short "about me" statement, their experiences, as well as a linkedin link, resume, and email.
+
+//Created by David You <dsyou@andrew.cmu.edu>, Designed by Sahaja Danthurthy <sahajad03@gmail.com>
+
 import React from 'react';
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
