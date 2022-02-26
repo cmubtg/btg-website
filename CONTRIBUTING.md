@@ -61,11 +61,10 @@ To add a new member, simple click on `New Members` and input the information acc
 
 All changes should be made in a branch before commiting to master. Please make sure to test your code locally before commiting to ensure that your change does not break the site.
 
-1. Fork the repo.
-2. Create a branch from `master`. Branches should be named with the user's andrewID and the issue they are resolving. For example, `dsyou_update_homepage_UI`.
-3. Run [`gatsby build`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build) to compile the site and make it ready for deployment.
-4. Run [`gatsby serve`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve) to serve the production build of the site.
-5. Once you have confirmed your changes, you can make a pull request and a maintainer will review and accept it accordingly.
+1. Create a branch from `master`. Branches should be named with the user's andrewID. For example, `dsyou`.
+2. Run [`gatsby build`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#build) to compile the site and make it ready for deployment.
+3. Run [`gatsby serve`](https://www.gatsbyjs.com/docs/reference/gatsby-cli/#serve) to serve the production build of the site.
+4. Once you have confirmed your changes, you can make a pull request and a maintainer will review and accept it accordingly.
 
 ## License
 
