@@ -21,6 +21,6 @@ portfolio: >-
 resume: /img/lujiay.pdf
 year: 2023
 degree: BS
-major: HCI + StatML
+major: HCI + StatsML
 linkedIn: https://www.linkedin.com/in/lesley-yan-413b82208
 ---
