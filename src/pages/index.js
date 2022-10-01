@@ -48,28 +48,28 @@ function Home() {
             </p>
 
             <Row className="mt-5 py-3">
-              <Col xs={12} md={4}>
+              <Col xs={12} md={3}>
                 <h4 className="font-weight-bold">
                   <Badge bg="danger" className="align-bottom">
-                    2
+                    1
                   </Badge>{" "}
-                  Divisions
+                  Mission
                 </h4>
               </Col>
               <Col xs={12} md={4}>
                 <h4 className="font-weight-bold">
                   <Badge bg="success" className="align-bottom">
-                    10
+                    2
                   </Badge>{" "}
-                  Workshops
+                  Career Events
                 </h4>
               </Col>
               <Col xs={12} md={4}>
                 <h4 className="font-weight-bold">
                   <Badge bg="primary" className="align-bottom">
-                    2
+                    3
                   </Badge>{" "}
-                  Career Events
+                  Programs
                 </h4>
               </Col>
             </Row>
@@ -83,9 +83,24 @@ function Home() {
           <Col md={9}>
             <p>
               Product Studio is a structured program consisting of teams of 
-              product managers, software engineers, data scientists, UI/UX designers, 
-              and business analysts. Every team in Product Studio will build a tech product 
-              that you will deliver at the end of the 10-week program.
+              software engineers, UI/UX designers, and business analysts. 
+              Every team in Product Studio will solve a problem faced by students
+              on-campus. The team delivers the final product at the end of the 
+              20-week program.
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="mt-5">
+          <Col md={3}>
+            <span className="font-weight-bold"><b>Product Management Academy</b></span>
+          </Col>
+          <Col md={9}>
+            <p>
+              Product Management Academy is a program dedicated to product management 
+              career prep. This program helps juniors and seniors break into product management 
+              at the associate level. We help students by guiding them on the interview process,
+              prepping with mock interviews, and networking with product managers.
             </p>
           </Col>
         </Row>
