@@ -1,3 +1,5 @@
+//This is the "Page Not Found" page that users are redirected to if they are linked to a page that does not exist.
+
 import * as React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

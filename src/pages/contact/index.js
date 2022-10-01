@@ -1,3 +1,7 @@
+//This page contains a method of users to contact the CMU BTG club. Users can write their name, email, and subject and submit a message to the club.
+
+//Created by David You <dsyou@andrew.cmu.edu>, Designed by Teresa Yang <tyang218@gmail.com>
+
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
