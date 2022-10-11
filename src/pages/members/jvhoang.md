@@ -22,7 +22,7 @@ description: I am a sophomore studying Electrical and Computer Engineering with
   working with databases. My hobbies include skateboarding, designing clothing,
   and meeting new people.
 photo: /img/jvhoang.png
-resume: /img/jason-hoang-official-resume.pdf
+resume: /img/jvhoang.pdf
 year: 2024
 degree: BS
 major: ECE
