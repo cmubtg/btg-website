@@ -21,7 +21,7 @@ description: I am a sophomore studying Electrical and Computer Engineering with
   breadth of options. I have experience in front and back end web dev as well as
   working with databases. My hobbies include skateboarding, designing clothing,
   and meeting new people.
-photo: /img/jvhoang.jpg
+photo: /img/jvhoang.png
 resume: /img/jason-hoang-official-resume.pdf
 year: 2024
 degree: BS
