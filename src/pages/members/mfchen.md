@@ -15,5 +15,5 @@ resume: /img/mfchen.pdf
 year: 2026
 degree: BS
 major: Business Administration 
-linkedIn: www.linkedin.com/in/michelle-chen-4b72b31aa
+linkedIn: https://www.linkedin.com/in/michelle-chen-4b72b31aa
 ---

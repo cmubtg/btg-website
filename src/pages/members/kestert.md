@@ -9,8 +9,7 @@ portfolio: |-
   * - I worked in the Marketing team for a Blockchain startup, LIQNFT, and dabbled in blockchain, solidity and crypto. 
 name: Kester Tan
 role: Software Developer
-description: I'm a freshman studying Information Systems. Since young, I've loved solving problems. From championing a cause to dispel misconceptions about Parkinson’s disease to piecing together puzzles at home, I constantly look for new challenges and problems to solve. This insatiable thirst for problem-solving led me to the world of tech, startups, and computer science. 
-In my spare time, I read books about tech and controversial issues and continue to pick up new skills in programming. I'm also a firm believer in the power of tech in improving and transforming the lives of others around the world.
+description: I'm a freshman studying Information Systems. Since young, I've loved solving problems. From championing a cause to dispel misconceptions about Parkinson’s disease to piecing together puzzles at home, I constantly look for new challenges and problems to solve. This insatiable thirst for problem-solving led me to the world of tech, startups, and computer science. In my spare time, I read books about tech and controversial issues and continue to pick up new skills in programming. I'm also a firm believer in the power of tech in improving and transforming the lives of others around the world.
 photo: /img/kestert.jpg
 resume: /img/kestert.pdf
 year: 2026
