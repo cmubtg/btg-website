@@ -52,8 +52,8 @@ function get_roles(members) {
   var roles = {"Executive":[],
               "Software Developer":[],
               "UI/UX Designer":[],
-              "Product Manager":[],
-              "Data Scientist":[],
+              // "Product Manager":[],
+              // "Data Scientist":[],
               "Business Analyst":[]
             }
   members.forEach(
