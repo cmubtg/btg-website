@@ -33,5 +33,5 @@ resume: /img/hchui.pdf
 year: 2025
 degree: BS
 major: Computer Science
-linkedIn: www.linkedin.com/in/harrison-chui
+linkedIn: https://www.linkedin.com/in/harrison-chui
 ---
