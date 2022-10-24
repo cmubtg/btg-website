@@ -1,13 +1,11 @@
 ---
 templateKey: project
 title: Plaid Pickup
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-  esse cillum dolore eu fugiat nulla pariatur. Excepteur sintoccaecat cupidatat
-  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+overview: We are working with CMU packaging services to build out a better queue
+  system for package pickups.
+description: Add Description Here
 photo: /img/btg_logo.png
+descriptionPhoto: /img/package-pickup.jpg
 members:
-  - (David You, dsyou, /img/dsyou.jpg)
+  - (David You, dsyou, /img/dsyou.jpg, Head of Product)
 ---
