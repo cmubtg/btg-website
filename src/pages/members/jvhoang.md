@@ -14,9 +14,9 @@ portfolio: >-
 
   * I have done various individual hardware projects.
 name: Jason Hoang
-role: Software Developer
-description: I am a sophomore studying Electrical and Computer Engineering with
-  a minor in Computer Science. I am not sure exactly what field of software
+role: Head of Product Studio
+description: I am a sophmore studying Electrical and Computer Engineering with a
+  minor in Computer Science. I am not sure exactly what field of software
   engineering I intend to pursue and am very interested in exploring a wide
   breadth of options. I have experience in front and back end web dev as well as
   working with databases. My hobbies include skateboarding, designing clothing,
