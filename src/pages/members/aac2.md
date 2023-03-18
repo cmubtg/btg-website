@@ -3,7 +3,12 @@ templateKey: member
 title: Anqi Chen
 andrewID: aac2
 role: UI/UX Designer
-description: "Junior in Information Systems + Human Computer-Interaction minor. "
+description: Hello, I am Anqi, and I am currently a junior at Carnegie Mellon
+  University. I am interested in and enjoy making digital projects and designs
+  come to life.  My contribution to the project included building frontend pages
+  for the app while collaborating with backend developers to retrieve user data
+  and discussing UI design changes with the designers. The experience gravitates
+  my passion towards UI and front-end.
 photo: /img/icon.jpg
 portfolio: >-
   Y﻿ou can check my current website here: <!--StartFragment-->
