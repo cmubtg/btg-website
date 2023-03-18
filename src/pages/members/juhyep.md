@@ -9,7 +9,8 @@ description: I am a sophomore studying Information Systems with minors in
   led me to join the Business Technology Group at CMU. So, I seek to work in the
   consulting, project management, or software development field in the future
   and hope to use my skills and experiences to continue making a positive impact
-  in my community.
+  in my community. In my free time, I love to travel and explore new places and
+  meet people from various cultures. I also enjoy playing piano and working out.
 photo: /img/juhyep.jpg
 portfolio: >-
   \-﻿ I am a project manager at re:Bloom, working with a team of developers a﻿nd
@@ -17,13 +18,13 @@ portfolio: >-
   websites for local small businesses and non-profit organization.
 
 
-  \-﻿ I am a research assistant under the Simon Initiative and 2 CMU HCII professors, laying groundwork about impact of pedagogical interventions leveraging VR and other XR tools for instructional use. 
-
-
   \-﻿ I built engaging app for high school students to easily find and research colleges, filtering by preferences, and connect with current students at colleges. I implemented Beautiful Soup and Python to gather data from databases to create college profiles and used Swift on XCode to construct prototype of app. 
 
 
-  \-﻿ I wrote 650 lines of Python code to program game similar to Pac-Man using Python, TKinter GUI framework, and pathfinding algorithms, Breadth First Search, and A* for 15112 term Project.
+  \-﻿ I programmed a game similar to Pac-Man using Python, TKinter GUI framework, and pathfinding algorithms, Breadth First Search, and A* for 15112 Term Project.
+
+
+  \-﻿ I am a research assistant under the Simon Initiative and 2 CMU HCII professors, laying groundwork about impact of pedagogical interventions leveraging VR and other XR tools for instructional use. I contribute by establishing survey instrument, collecting interviews and focus group responses, and manage data about student engagement and learning.
 resume: /img/sally-pak-resume-3.4.pdf
 year: 2025
 degree: BS
