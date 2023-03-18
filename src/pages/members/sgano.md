@@ -22,7 +22,7 @@ description: I am currently a freshman majoring in Business Administration at
   time, I enjoy singing in an a cappella group, playing soccer and hiking, and
   exploring the city with friends.
 photo: /img/sgano.jpg
-resume: /img/sarah-gano-resume.pdf
+resume: /img/sarah-gano-btg-resume.pdf
 year: 2026
 degree: BS
 major: Business Administration
