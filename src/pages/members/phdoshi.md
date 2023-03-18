@@ -2,7 +2,7 @@
 templateKey: member
 title: Prina Doshi
 andrewID: phdoshi
-role: Software Engineer
+role: Software Developer
 description: Hi! I am a sophomore majoring in Information Systems with an
   additional major in Statistics and Machine Learning. I am interested in the
   intersection of business and technology, and in particular, the role of data
