@@ -17,9 +17,7 @@ portfolio: >-
 
   * I built and coded a color-to-movement-to-position double transducer composed of a color sensor, linear actuator, ultrasonic sensor, servo motor, I2C LCD display, and Arduino Uno where input signals are converted throughout different domains to output an angular position. 
 
-  * I developed and designed a box using Fusion 360 intended to store corrective lenses while programming a system with Arduino Uno to track the number of days a pair of contact lens has been opened for using a real time clock and an IR sensor 
-
-  * I worked in a group of three to brainstorm a mechanism for a client with a disability to which we designed and constructed a personal assistive musical instrument that sends MIDI signals using a Arduino Micro to create music digitally based on different inputs dependent on foot movements such as a roller and foot pedals. 
+  * I worked in a group of three to develop a mechanism for a client with a disability to which we designed and constructed a personal assistive musical instrument that sends MIDI signals using a Arduino Micro and Fusion 360 to create music digitally based on different inputs dependent on foot movements such as a roller and foot pedals. 
 
   * I programmed an Android pedometer app using Processing by applying signal processing to accelerometer data read from an Android device and check if it passed through a threshold using peak-to-peak detection in the waveform in order to count steps accurately independent of phone orientation
 
