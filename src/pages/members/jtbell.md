@@ -2,7 +2,7 @@
 templateKey: member
 title: Justin Bell
 andrewID: jtbell
-role: Software Engineer
+role: Software Developer
 description: >-
   My name is Justin Bell an ECE major at Carnegie Mellon University class of
   2026,
