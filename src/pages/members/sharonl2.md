@@ -7,7 +7,7 @@ description: "I am a sophomore studying Electrical and Computer Engineering with
   an intended minor in either Game Design or Human-Computer Interaction. Some of
   my hobbies include photography, cooking, and exploring new cities (especially
   the restaurants). "
-photo: /img/img_0057.jpg
+photo: /img/img_0057-1-.jpg
 portfolio: >-
   * I am currently one of the Publicity co-chairs for Society of Women Engineers
   where I design content for Carnegie Mellon’s SWE Chapter’s Instagram,
