@@ -8,7 +8,7 @@ description: >-
   2026,
 
   I'm currently a software developer at BTG.
-photo: /img/netiflyimage.jpg
+photo: /img/jb_btg.jpg
 portfolio: >-
   Some Experiences I've had include:
 
