@@ -2,7 +2,7 @@
 templateKey: member
 title: Sarah Gano
 andrewID: sgano
-role: Product Manager
+role: Head of Finance
 description: I am currently a freshman majoring in Business Administration at
   Carnegie Mellon University. I’m hoping to build upon my background in social
   entrepreneurship and data science as a proactive, positive, and collaborative
