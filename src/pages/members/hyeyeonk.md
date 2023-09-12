@@ -2,7 +2,7 @@
 templateKey: member
 title: Chloe Kim
 andrewID: hyeyeonk
-role: Head of Outreach
+role: Head of Events
 description: I am a senior in Tepper majoring in Business Administration and
   International Relations and Politics. I am passionate about value creation
   that comes from business and technology. Of all, my particular interest lies
