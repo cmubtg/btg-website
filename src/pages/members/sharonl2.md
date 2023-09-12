@@ -2,7 +2,7 @@
 templateKey: member
 title: Sharon Li
 andrewID: sharonl2
-role: Software Developer
+role: Head of Design
 description: "I am a sophomore studying Electrical and Computer Engineering with
   an intended minor in either Game Design or Human-Computer Interaction. Some of
   my hobbies include photography, cooking, and exploring new cities (especially
