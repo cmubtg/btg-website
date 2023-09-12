@@ -2,7 +2,7 @@
 templateKey: member
 title: Elizabeth Wang
 andrewID: esw2
-role: UI/UX Designer
+role: Head of Product Studio
 description: "I am currently a sophomore majoring in Decision Science and HCI.
   I'm passionate about the intersection between human behavior, design, and
   tech, and strongly believe in creating empathetic, intuitive, and delightful
