@@ -8,7 +8,7 @@ description: "I am currently a sophomore majoring in Decision Science and HCI.
   tech, and strongly believe in creating empathetic, intuitive, and delightful
   designs. Some of my hobbies include sketching, sleeping, and watching tv
   shows. "
-photo: /img/img_2119_original-2.jpg
+photo: /img/liz.jpg
 portfolio: >-
   \-﻿ I was a UI/UX Intern at Biomotivate in which I focused on redesigning
   their data filtering dashboard and prototyped a grant competition resiliency
