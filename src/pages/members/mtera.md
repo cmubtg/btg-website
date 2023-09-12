@@ -2,7 +2,7 @@
 templateKey: member
 title: Meghana Tera
 andrewID: mtera
-role: President
+role: Senior Advisor / Recruitment Chair
 description: I am currently a junior majoring in Information Systems and
   pursuing a minor in Software Engineering and Machine Learning. I picked this
   course of study because I strongly believe that the integration of computer
