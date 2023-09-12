@@ -2,7 +2,7 @@
 templateKey: member
 title: Elizabeth Lee
 andrewID: hyeinl
-role: Software Developer
+role: Head of PMA
 description: I am a sophomore majoring in Information Systems with an additional
   major in Human-Computer Interaction and a Minor in Computer Science. I am
   interested in the intersection of technology and art design, hoping to combine
