@@ -2,7 +2,7 @@
 templateKey: member
 title: Meghna Sudhakar
 andrewID: msudhaka
-role: Head of Marketing
+role: Head of Events
 description: I am currently a freshman majoring in Business and
   Statistics/Machine Learning at Carnegie Mellon University. I came to CMU with
   the intent of pursuing projects and courses at the intersection of advanced
