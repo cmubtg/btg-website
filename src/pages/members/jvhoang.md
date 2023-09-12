@@ -2,7 +2,7 @@
 templateKey: member
 title: Jason Hoang
 andrewID: jvhoang
-role: Head of Product Studio
+role: President
 description: I am a sophmore studying Electrical and Computer Engineering with a
   minor in Computer Science. I am not sure exactly what field of software
   engineering I intend to pursue and am very interested in exploring a wide
