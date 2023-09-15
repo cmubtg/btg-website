@@ -2,6 +2,14 @@
 templateKey: member
 title: Jason Hoang
 andrewID: jvhoang
+role: President
+description: I am a sophmore studying Electrical and Computer Engineering with a
+  minor in Computer Science. I am not sure exactly what field of software
+  engineering I intend to pursue and am very interested in exploring a wide
+  breadth of options. I have experience in front and back end web dev as well as
+  working with databases. My hobbies include skateboarding, designing clothing,
+  and meeting new people.
+photo: /img/jason.jpg
 portfolio: >-
   * I worked with a team of 9 Engineers and Designers to build out a BTG website
   as well as a Women in Business Website with Gatsby and Netlify CMS. In
@@ -14,14 +22,6 @@ portfolio: >-
 
   * I have done various individual hardware projects.
 name: Jason Hoang
-role: Head of Product Studio
-description: I am a sophmore studying Electrical and Computer Engineering with a
-  minor in Computer Science. I am not sure exactly what field of software
-  engineering I intend to pursue and am very interested in exploring a wide
-  breadth of options. I have experience in front and back end web dev as well as
-  working with databases. My hobbies include skateboarding, designing clothing,
-  and meeting new people.
-photo: /img/jvhoang.png
 resume: /img/jvhoang.pdf
 year: 2024
 degree: BS

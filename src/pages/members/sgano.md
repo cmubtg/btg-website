@@ -2,6 +2,14 @@
 templateKey: member
 title: Sarah Gano
 andrewID: sgano
+role: Head of Finance
+description: I am currently a freshman majoring in Business Administration at
+  Carnegie Mellon University. I’m hoping to build upon my background in social
+  entrepreneurship and data science as a proactive, positive, and collaborative
+  business analyst and product manager in Business Technology Group. In my free
+  time, I enjoy singing in an a cappella group, playing soccer and hiking, and
+  exploring the city with friends.
+photo: /img/sarah.jpg
 portfolio: >-
   * I founded a student-alumni matching service called Help A Hiller which
   matched high school students with recent alumni based on their shared
@@ -14,14 +22,6 @@ portfolio: >-
 
   * I ran the bookkeeping and ticket distribution and oversaw a group of twenty student volunteers as Finance Team Lead at the Delaware CACC Chinese Festival.
 name: Sarah Gano
-role: Product Manager
-description: I am currently a freshman majoring in Business Administration at
-  Carnegie Mellon University. I’m hoping to build upon my background in social
-  entrepreneurship and data science as a proactive, positive, and collaborative
-  business analyst and product manager in Business Technology Group. In my free
-  time, I enjoy singing in an a cappella group, playing soccer and hiking, and
-  exploring the city with friends.
-photo: /img/sgano.jpg
 resume: /img/sarah-gano-btg-resume.pdf
 year: 2026
 degree: BS

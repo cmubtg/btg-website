@@ -2,6 +2,13 @@
 templateKey: member
 title: Chloe Kim
 andrewID: hyeyeonk
+role: Head of Events
+description: I am a senior in Tepper majoring in Business Administration and
+  International Relations and Politics. I am passionate about value creation
+  that comes from business and technology. Of all, my particular interest lies
+  in sustainable technologies and digital currencies. In my free time, I enjoy
+  yoga and read books/articles about sustainable investing and renewable energy.
+photo: /img/chloe.jpg
 portfolio: >-
   * I worked as a ESG project finance intern at SK Securities.
 
@@ -9,13 +16,6 @@ portfolio: >-
 
   * I worked as Deloitte Strategy & Ops business analyst intern.
 name: Chloe Kim
-role: Head of Outreach
-description: I am a senior in Tepper majoring in Business Administration and
-  International Relations and Politics. I am passionate about value creation
-  that comes from business and technology. Of all, my particular interest lies
-  in sustainable technologies and digital currencies. In my free time, I enjoy
-  yoga and read books/articles about sustainable investing and renewable energy.
-photo: /img/hyeyeonk.jpg
 resume: /img/hyeyeonk.pdf
 year: 2023
 degree: BS

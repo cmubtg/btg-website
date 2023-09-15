@@ -2,12 +2,12 @@
 templateKey: member
 title: Sharon Li
 andrewID: sharonl2
-role: Software Developer
+role: Head of Design
 description: "I am a sophomore studying Electrical and Computer Engineering with
   an intended minor in either Game Design or Human-Computer Interaction. Some of
   my hobbies include photography, cooking, and exploring new cities (especially
   the restaurants). "
-photo: /img/img_0057-1-.jpg
+photo: /img/sharon.jpg
 portfolio: >-
   * I am currently one of the Publicity co-chairs for Society of Women Engineers
   where I design content for Carnegie Mellon’s SWE Chapter’s Instagram,
