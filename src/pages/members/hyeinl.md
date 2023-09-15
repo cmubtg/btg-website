@@ -10,15 +10,18 @@ description: I am a sophomore majoring in Information Systems with an additional
   classical piano and visiting furniture stores.
 photo: /img/elizabeth.jpg
 portfolio: >-
-  - As the UX Design Team Lead at CMU CS Academy, I identified feature
-  priorities, wrote features documentation for smooth handoff to developers, and
-  presented progress on Figma to 30+ people weekly.
+  * I was an Associate Product Manager intern at Atlassian on the Cloud
+  Administration team, addressing shadow IT administrator controls.
 
-  - As the Head Teaching Assistant for Information Systems Milieux (67-250), I held office hours for web development (HTML/CSS/JavaScript), database (SQL), and business analysis projects, as well as leading grading sessions and coordinating grading plans.
+  * I was a Product Manager intern at HP Inc. on the Cloud Clients team, focusing on the admin onboarding experience for HP’s Cloud Endpoint Manager. 
 
-  - I created an interactive AI program with Python Tkinter to randomly generate mazes of varying difficulty and their corresponding solutions using Dijkstra's, Prim's, BFS, and Binary Tree algorithms.
+  * As the UX Design Team Lead at CMU CS Academy, I identified feature priorities, wrote features documentation for smooth handoff to developers, and presented progress on Figma to 30+ people weekly.
 
-  - I worked as a software developer on CMU BTG Website Construction team. 
+  * As the Head Teaching Assistant for Information Systems Milieux (67-250), I held office hours for web development (HTML/CSS/JavaScript), database (SQL), and business analysis projects, as well as leading grading sessions and coordinating grading plans.
+
+  * I created an interactive AI program with Python Tkinter to randomly generate mazes of varying difficulty and their corresponding solutions using Dijkstra's, Prim's, BFS, and Binary Tree algorithms.
+
+  * I worked as a software developer on CMU BTG Website Construction team.
 name: Elizabeth Lee
 resume: /img/hyeinl.pdf
 year: 2024
