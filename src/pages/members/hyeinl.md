@@ -8,7 +8,7 @@ description: I am a sophomore majoring in Information Systems with an additional
   interested in the intersection of technology and art design, hoping to combine
   those in a creative role in the tech field. In my free time, I enjoy playing
   classical piano and visiting furniture stores.
-photo: /img/elizabeth.jpg
+photo: /img/cropped_headshot.jpg
 portfolio: >-
   * I was an Associate Product Manager intern at Atlassian on the Cloud
   Administration team, addressing shadow IT administrator controls.
@@ -23,7 +23,7 @@ portfolio: >-
 
   * I worked as a software developer on CMU BTG Website Construction team.
 name: Elizabeth Lee
-resume: /img/hyeinl.pdf
+resume: /img/cropped_headshot.jpg
 year: 2024
 degree: BS
 major: Information Systems
