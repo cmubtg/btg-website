@@ -6,5 +6,5 @@ year: 2019
 degree: BS
 major: Information Systems
 role: Former President
-photo: /img/karan.jpg
+photo: /img/alumni/karan.jpg
 ---

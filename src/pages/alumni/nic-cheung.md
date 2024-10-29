@@ -6,5 +6,5 @@ year: 2018
 degree: BS
 major: Business Administration
 role: Former Vice President
-photo: /img/nic.jpg
+photo: /img/alumni/nic.jpg
 ---

@@ -6,5 +6,5 @@ year: 2023
 degree: BS
 major: Business Administration and Computer Science
 role: Head of Product Studio + President
-photo: /img/dsyou.jpg
+photo: /img/alumni/dsyou.jpg
 ---

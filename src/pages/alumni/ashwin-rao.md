@@ -6,5 +6,5 @@ year: 2020
 degree: MS
 major: Product Management
 role: Former Product Manager
-photo: /img/ashwin.jpg
+photo: /img/alumni/ashwin.jpg
 ---

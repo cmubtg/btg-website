@@ -6,5 +6,5 @@ year: 2017
 degree: BS
 major: Business Administration
 role: Former President
-photo: /img/michelle.jpg
+photo: /img/alumni/michelle.jpg
 ---

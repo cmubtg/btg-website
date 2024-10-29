@@ -6,5 +6,5 @@ year: 2019
 degree: BS
 major: Statistics and Machine Learning
 role: Former Head of Tech
-photo: /img/spencer.jpg
+photo: /img/alumni/spencer.jpg
 ---

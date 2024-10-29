@@ -6,5 +6,5 @@ year: 2020
 degree: BS
 major: Information Systems
 role: Former President
-photo: /img/calvin.jpg
+photo: /img/alumni/calvin.jpg
 ---

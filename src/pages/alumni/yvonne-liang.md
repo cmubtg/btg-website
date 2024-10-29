@@ -6,5 +6,5 @@ year: 2022
 degree: BS
 major: Business Administration
 role: Former Head of Product
-photo: /img/yuyangl3.jpg
+photo: /img/alumni/yuyangl3.jpg
 ---

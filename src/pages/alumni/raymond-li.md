@@ -6,5 +6,5 @@ year: 2022
 degree: BS
 major: Information Systems and Statistics
 role: Former Head of Operations
-photo: /img/rli3.jpg
+photo: /img/alumni/rli3.jpg
 ---

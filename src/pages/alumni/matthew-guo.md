@@ -6,5 +6,5 @@ year: 2022
 degree: BS
 major: Information Systems and Human-Computer Interaction
 role: Former Head of Design
-photo: /img/matt.jpg
+photo: /img/alumni/matt.jpg
 ---

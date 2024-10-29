@@ -6,5 +6,5 @@ year: 2018
 degree: BS
 major: Business Administration
 role: Former President
-photo: /img/emily.jpg
+photo: /img/alumni/emily.jpg
 ---

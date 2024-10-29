@@ -51,10 +51,11 @@ function check_keys(str,dict) {
 function get_roles(members) {
   var roles = {"Executive":[],
               "Software Developer":[],
-              "UI/UX Designer":[],
+              "Product Designer":[],
               // "Product Manager":[],
-              // "Data Scientist":[],
-              "Business Analyst":[]
+              "Data Scientist":[],
+              "Business Analyst":[],
+              "Product Management Associate": [],
             }
   members.forEach(
     function(member,index) {

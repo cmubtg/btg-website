@@ -6,5 +6,5 @@ year: 2023
 degree: BS
 major: Business Administration
 role: Head of Operations
-photo: /img/srganesh.jpg
+photo: /img/alumni/srganesh.jpg
 ---

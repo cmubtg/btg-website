@@ -6,5 +6,5 @@ year: 2020
 degree: BS
 major: Information Systems
 role: Former Head of Curation
-photo: /img/jenny.jpeg
+photo: /img/alumni/jenny.jpeg
 ---

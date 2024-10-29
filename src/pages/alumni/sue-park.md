@@ -6,5 +6,5 @@ year: 2015
 degree: BS
 major: Business Administration and Human-Computer Interaction
 role: Former President
-photo: /img/sue.jpg
+photo: /img/alumni/sue.jpg
 ---

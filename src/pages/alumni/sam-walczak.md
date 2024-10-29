@@ -6,5 +6,5 @@ year: 2016
 degree: BS
 major: Information Systems and Chinese Studies
 role: Former President
-photo: /img/sam_walczak.jpg
+photo: /img/alumni/sam_walczak.jpg
 ---

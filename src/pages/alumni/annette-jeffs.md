@@ -6,5 +6,5 @@ year: 2018
 degree: BS
 major: Business Administration
 role: Former Vice President
-photo: /img/annette.jpg
+photo: /img/alumni/annette.jpg
 ---

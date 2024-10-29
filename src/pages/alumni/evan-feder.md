@@ -6,5 +6,5 @@ year: 2021
 degree: MS
 major: Machine Learning
 role: Former Head of Research
-photo: /img/efeder.jpeg
+photo: /img/alumni/evan.jpeg
 ---
