@@ -59,7 +59,7 @@ const LeftFooter = () => {
       <Row className="text-secondary mt-2">
         <small>
           Want to reach out? Send us a line at{" "}
-          <a href="mailto:info@cmubtg.com" target="_blank" rel="noopener noreferrer">info@cmubtg.com</a>
+          <a href="mailto:cmubtg@gmail.com" target="_blank" rel="noopener noreferrer">cmubtg@gmail.com</a>
         </small>        
       </Row>   
       <Row className="mt-2">
