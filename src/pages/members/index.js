@@ -49,19 +49,32 @@ function check_keys(str,dict) {
 }
 
 function get_roles(members) {
-  var roles = {"Executive":[],
-              "Software Developer":[],
-              "UI/UX Designer":[],
+  var roles = {"President":[],
+              "Core Executive":[],
+              "Events Committee Member":[],
+              "Marketing Committee Member":[],
+              // "Software Developer":[],
+              // "UI/UX Designer":[],
               // "Product Manager":[],
               // "Data Scientist":[],
-              "Business Analyst":[]
+              // "Business Analyst":[]
             }
   members.forEach(
     function(member,index) {
       var r = member.node.frontmatter.role
-      if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
-        roles["Executive"].push(member)
+      if (r.includes("Head")) {
+        roles["Core Executive"].push(member)
       }
+      else if (r.includes("Events")) {
+        roles["Events Committe Member"].push(member)
+      }
+      else if (r.includes("Marketing")) {
+        roles["Marketing Committee Member"].push(member)
+      }
+
+      // if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
+      //   roles["Executive"].push(member)
+      // }
       var k = check_keys(r,roles)
       if(k!=="") {
         if(r.includes("Lead")){
