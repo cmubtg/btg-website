@@ -2,7 +2,7 @@
 templateKey: member
 title: Vrinda Gupta
 andrewID: vrinda
-role: Marketing Design Chair
+role: Events Social Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Vrinda Gupta

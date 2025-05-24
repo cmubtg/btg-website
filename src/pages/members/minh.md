@@ -2,7 +2,7 @@
 templateKey: member
 title: Minh Do
 andrewID: minh
-role: Marketing Design Chair
+role: ProdHacks Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Minh Do

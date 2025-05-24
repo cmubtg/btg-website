@@ -2,7 +2,7 @@
 templateKey: member
 title: Niccolo Bitetto
 andrewID: nic
-role: Marketing Design Chair
+role: BTG Events Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Niccolo Bitetto

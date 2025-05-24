@@ -65,11 +65,11 @@ function get_roles(members) {
       if (r.includes("Head") || r.includes("Senior Advisor")) {
         roles["Core Executive"].push(member)
       }
-      else if (r.includes("Events") || r.includes("ProdHacks")) {
-        roles["Events Committe Member"].push(member)
-      }
       else if (r.includes("Marketing")) {
         roles["Marketing Committee Member"].push(member)
+      }
+      else if (r.includes("Events") || r.includes("ProdHacks")) {
+        roles["Events Committee Member"].push(member)
       }
 
       // if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
