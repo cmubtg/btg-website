@@ -62,10 +62,10 @@ function get_roles(members) {
   members.forEach(
     function(member,index) {
       var r = member.node.frontmatter.role
-      if (r.includes("Head")) {
+      if (r.includes("Head") || r.includes("Senior Advisor")) {
         roles["Core Executive"].push(member)
       }
-      else if (r.includes("Events")) {
+      else if (r.includes("Events") || r.includes("ProdHacks")) {
         roles["Events Committe Member"].push(member)
       }
       else if (r.includes("Marketing")) {
