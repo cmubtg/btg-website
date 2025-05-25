@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Elizabeth Wang
 andrewID: esw2
 role: Head of Product Studio

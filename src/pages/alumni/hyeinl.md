@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Elizabeth Lee
 andrewID: hyeinl
 role: Head of PMA

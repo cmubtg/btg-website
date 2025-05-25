@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Meghna Sudhakar
 andrewID: msudhaka
 role: Head of Events

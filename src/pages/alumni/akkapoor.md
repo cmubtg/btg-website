@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Ari Kapoor
 andrewID: akkapoor
 portfolio: |-

@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Chloe Kim
 andrewID: hyeyeonk
 role: Head of Events

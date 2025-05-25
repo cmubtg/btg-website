@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: William Chen
 andrewID: wchen4
 role: Software Developer
@@ -12,7 +12,7 @@ portfolio: "* I﻿ used python to create a mashup from scratch of Head Soccer an
   functional opponent AI, multiplayer mode, player movement, ball movement, and
   gravity."
 resume: /img/williamchen_resume.pdf
-year: 2
+year: 2025
 degree: BS
 major: Electrical and Computer Engineering
 linkedIn: https://www.linkedin.com/in/williamchentw/

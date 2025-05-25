@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Sally Pak
 andrewID: juhyep
 role: Software Developer

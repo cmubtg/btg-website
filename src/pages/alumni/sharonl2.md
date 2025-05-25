@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Sharon Li
 andrewID: sharonl2
 role: Head of Design

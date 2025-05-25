@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Meghana Tera
 andrewID: mtera
 role: Senior Advisor / Recruitment Chair

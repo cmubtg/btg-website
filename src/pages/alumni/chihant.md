@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Joanne Tsai
 andrewID: chihant 
 portfolio: |-

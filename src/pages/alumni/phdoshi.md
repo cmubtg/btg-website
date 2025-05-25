@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Prina Doshi
 andrewID: phdoshi
 role: Software Developer

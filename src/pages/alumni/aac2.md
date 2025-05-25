@@ -22,7 +22,7 @@ portfolio: >-
 
   I﻿t is still underconstruction, but the overall website design and interactive features are done. I am still working on publishing my work documentations on there.
 resume: /img/anqi_resume2023.pdf
-year: 3
+year: 2025
 degree: BS
 major: Information Systems
 linkedIn: https://www.linkedin.com/in/anqi-chen-136b7b1b2/

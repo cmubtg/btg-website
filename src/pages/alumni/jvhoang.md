@@ -1,5 +1,5 @@
 ---
-templateKey: member
+templateKey: alumni
 title: Jason Hoang
 andrewID: jvhoang
 role: President
