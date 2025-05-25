@@ -46,10 +46,8 @@ function Home() {
 
           <Col md={9}>
             <p>
-              Our mission is to provide undergraduates interested in business and
-              technology with real-world projects, a strong understanding of potential
-              career paths, and offer them opportunities to gain hands-on experience
-              in their areas of interest.
+            Our mission is to provide underclassmen interested in technology with a strong understanding of potential 
+            career paths and offer them opportunities to gain hands-on experience in their areas of interest.
             </p>
 
             <Row className="mt-5 py-3">
