@@ -22,7 +22,7 @@ import MySelect from "../../components/MySelect"
 function RoleContainer(props) {
   return (
     <Row className="pt-1 mt-5">
-      <h3>{props.role}s</h3>
+      <h3>{props.role}</h3>
     {Array.from(props.members).map(({ node:member }) => (
       <MemberDisplay
         title = {member.frontmatter.title}
@@ -50,9 +50,9 @@ function check_keys(str,dict) {
 
 function get_roles(members) {
   var roles = {"President":[],
-              "Core Executive":[],
-              "Events Committee Member":[],
-              "Marketing Committee Member":[],
+              "Executives":[],
+              "Events Committee":[],
+              "Marketing Committee":[],
               // "Software Developer":[],
               // "UI/UX Designer":[],
               // "Product Manager":[],
@@ -63,13 +63,13 @@ function get_roles(members) {
     function(member,index) {
       var r = member.node.frontmatter.role
       if (r.includes("Head") || r.includes("Senior Advisor")) {
-        roles["Core Executive"].push(member)
+        roles["Executives"].push(member)
       }
       else if (r.includes("Marketing")) {
-        roles["Marketing Committee Member"].push(member)
+        roles["Marketing Committee"].push(member)
       }
       else if (r.includes("Events") || r.includes("ProdHacks")) {
-        roles["Events Committee Member"].push(member)
+        roles["Events Committee"].push(member)
       }
 
       // if (r.includes("President") || r.includes("Head") || r.includes("Director")) {

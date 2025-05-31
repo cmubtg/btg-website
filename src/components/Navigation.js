@@ -47,7 +47,7 @@ function Navigation() {
               <Nav className="ml-auto">
                 <Link className="nav-link-text" to="/members" style={NavigationStyle}>
                   <Nav.Link as="span" href="/members"> 
-                    Members
+                    Executives
                   </Nav.Link>
                 </Link>                  
                 <Link className="nav-link-text" to="/projects" style={NavigationStyle}>
