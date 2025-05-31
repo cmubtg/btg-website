@@ -107,20 +107,6 @@ function Home() {
             </p>
           </Col>
         </Row>
-
-        <Row className="mt-5">
-          <Col md={3}>
-            <span className="font-weight-bold"><b>Product Explore</b></span>
-          </Col>
-          <Col md={9}>
-            <p>
-              Product Explore is a flexible program. Members are free to organize 
-              their own teams and work on any problem they want. This is a great 
-              entryway for students interested in projects who are unsure about 
-              their level of commitment.
-            </p>
-          </Col>
-        </Row>
       </Container>
 
       <Container className="pt-3 mt-5">

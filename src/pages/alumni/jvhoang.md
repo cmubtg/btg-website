@@ -23,7 +23,7 @@ portfolio: >-
   * I have done various individual hardware projects.
 name: Jason Hoang
 resume: /img/jvhoang.pdf
-year: 2024
+year: 2025
 degree: BS
 major: ECE
 linkedIn: https://www.linkedin.com/in/jason-hoang-382276227/
