@@ -45,6 +45,11 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
+                <Link className="nav-link-text" to="/product_studio" style={NavigationStyle}>
+                  <Nav.Link as="span" href="/product_studio"> 
+                    PS
+                  </Nav.Link>
+                </Link>  
                 <Link className="nav-link-text" to="/members" style={NavigationStyle}>
                   <Nav.Link as="span" href="/members"> 
                     Executives
