@@ -38,6 +38,9 @@ function Navigation() {
                 <Nav.Link as={Link} to="/ps" className="nav-link-text">
                   PS
                 </Nav.Link>
+                <Nav.Link as={Link} to="/pma" className="nav-link-text">
+                  PMA
+                </Nav.Link>
                 <Nav.Link as={Link} to="/members" className="nav-link-text">
                   Executives
                 </Nav.Link>
