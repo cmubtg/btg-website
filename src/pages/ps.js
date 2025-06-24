@@ -6,13 +6,13 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Layout from "../../components/Layout"
+import Layout from "../components/Layout"
 
 import emailjs from '@emailjs/browser';
 import Helmet from "react-helmet"
-import BTGCover from "../../images/btg-cover.png";
+import BTGCover from "../images/btg-cover.png";
 
-class Product_Studio extends React.Component {
+class PS extends React.Component {
   constructor(props) {
     super(props);
     this.state = 
@@ -64,7 +64,7 @@ class Product_Studio extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>PS | CMUBTG</title>
+          <title>Contact | CMUBTG</title>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={BTGCover}></meta>
         </Helmet>
@@ -73,15 +73,13 @@ class Product_Studio extends React.Component {
             <Col>
               <h1 className="display-3 text-black font-weight-boldest">PS</h1>
             </Col>
-          </Row>       
+          </Row>         
         </Container>
-          
-
-        </Layout>
+      </Layout>
       
     );
   }
 }
 
-export default Product_Studio
+export default PS
 
