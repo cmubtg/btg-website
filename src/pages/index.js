@@ -100,10 +100,11 @@ function Home() {
           </Col>
           <Col md={9}>
             <p>
-              Product Management Academy is a program dedicated to product management 
-              career prep. This program helps juniors and seniors break into product management 
-              at the associate level. We help students by guiding them on the interview process,
-              prepping with mock interviews, and networking with product managers.
+              Product Management Academy is dedicated to guiding students through the intricacies of product management, 
+              from foundational understanding to successful career entry. We offer comprehensive interview preparation, 
+              including mock interviews and hands-on assignments that mirror real challenges product managers face. 
+              We position ourselves as proactive question-askers, bringing in industry professionals to offer direct 
+              answers and share their intuition as we start developing our own.
             </p>
           </Col>
         </Row>

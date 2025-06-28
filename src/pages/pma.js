@@ -71,9 +71,24 @@ class PMA extends React.Component {
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
-              <h1 className="display-3 text-black font-weight-boldest">PMA</h1>
+              <h1 class="display-3 text-black font-weight-boldest">
+                Product Management Academy
+              </h1>
+
+              <h2 class="text-muted font-weight-bold">
+                Our Mission
+              </h2>
             </Col>
-          </Row>         
+            <Col md={9}>
+              <p>
+              Product Management Academy is dedicated to guiding students through the intricacies of product management, 
+              from foundational understanding to successful career entry. We offer comprehensive interview preparation, 
+              including mock interviews and hands-on assignments that mirror real challenges product managers face. 
+              We position ourselves as proactive question-askers, bringing in industry professionals to offer direct 
+              answers and share their intuition as we start developing our own.
+              </p>
+            </Col>
+          </Row>
         </Container>
       </Layout>
       
