@@ -110,7 +110,11 @@ class ProjectListTemplate extends React.Component {
           </Row>
           
           <div className="pt-1 mt-3">
-          <h2 class="text-muted font-weight-bold">Our Projects</h2>
+            <Row className="pt-1 mt-5">
+              <Col>
+              <h2 class="display-6 text-black font-weight-boldest">Our Projects</h2>
+              </Col>
+            </Row>
 
             {projects.map(({ node: project }, index) => (
               <ProjectContainer 
@@ -122,18 +126,35 @@ class ProjectListTemplate extends React.Component {
               />
             ))}    
           </div>
+      </Container>
+
+      <Container className="mt-md-1 pt-md-4">
+          <Row className="pt-1 mt-5">
+            <Col>
+            <h2 class="display-6 text-black font-weight-boldest">Our Events</h2>
+            </Col>
+          </Row>
 
           <Row className="mt-5">
-            <h2 class="text-muted font-weight-bold">Meet the Team</h2>
+            <h2 class="text-muted font-weight-bold">Final Presentations</h2>
             <p>
-              We have some amazing team leads working on our projects. Discuss plans and ideas at weekly meetings.
-              Get to know them at Product Studio team events. 
+              present projects at end of semester. food and drinks and chill 
             </p>
           </Row>
 
-          
-      
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Social Events</h2>
+            <p>
+              getting boba, functions, and more 
+            </p>
+          </Row>
 
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Google Trip</h2>
+            <p>
+              similar desc as google trip for PMA. present prospective projects like open gym and prodhacks 
+            </p>
+          </Row>
       </Container>
 
       </Layout>

@@ -74,20 +74,71 @@ class PMA extends React.Component {
               <h1 class="display-3 text-black font-weight-boldest">
                 Product Management Academy
               </h1>
-
-              <h2 class="text-muted font-weight-bold">
-                Our Mission
-              </h2>
             </Col>
-            <Col md={9}>
-              <p>
+          </Row>
+          <Row className="mt-5">
+            <h2 class="display-5 text-black font-weight-boldest">Image 1 here</h2>
+            <p>
               Product Management Academy is dedicated to guiding students through the intricacies of product management, 
               from foundational understanding to successful career entry. We offer comprehensive interview preparation, 
               including mock interviews and hands-on assignments that mirror real challenges product managers face. 
               We position ourselves as proactive question-askers, bringing in industry professionals to offer direct 
               answers and share their intuition as we start developing our own.
-              </p>
+            </p>
+          </Row>
+        </Container>
+        <Container className="mt-md-1 pt-md-4">
+          <Row className="pt-1 mt-5">
+            <Col>
+              <h2 class="display-5 text-black font-weight-boldest">Our Events</h2>
             </Col>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">ProdHacks</h2>
+            <p>
+              prodhacks descriptions
+            </p>
+            <h4 style = {{color:'#ff2f44'}}>past winners link here</h4>
+            <h3>Prodhacks pic</h3>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Google Trip</h2>
+            <p>
+              google trip desc
+            </p>
+            <h3>Google trip pic</h3>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Duolingo Trip</h2>
+            <p>
+              Duolingo trip desc
+            </p>
+            <h3>Duolingo trip pic</h3>
+          </Row>
+        </Container>
+
+        <Container className="mt-md-1 pt-md-4">
+          <Row className="pt-1 mt-5">
+            <Col>
+              <h2 class="display-5 text-black font-weight-boldest">Our Members</h2>
+            </Col>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Current Members</h2>
+            <p>
+              grid of current members like on exec page
+            </p>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Historic Achievements</h2>
+            <p>
+              grid of alumni members and achievements like on home page with description of PS and PMA
+            </p>
           </Row>
         </Container>
       </Layout>
