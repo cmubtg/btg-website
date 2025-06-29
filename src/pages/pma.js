@@ -11,6 +11,10 @@ import Layout from "../components/Layout"
 import emailjs from '@emailjs/browser';
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
+import PMACohort from "../../static/img/temp_cohort_pma.png";
+import ProdHacks from "../../static/img/prodhacks.png";
+import GoogleTrip from "../../static/img/google_trip.png";
+import DuolingoTrip from "../../static/img/duolingo_trip.png";
 
 class PMA extends React.Component {
   constructor(props) {
@@ -77,7 +81,7 @@ class PMA extends React.Component {
             </Col>
           </Row>
           <Row className="mt-5">
-            <h2 class="display-5 text-black font-weight-boldest">Image 1 here</h2>
+            <img src={PMACohort} alt="pma cohort"></img>
             <p>
               Product Management Academy is dedicated to guiding students through the intricacies of product management, 
               from foundational understanding to successful career entry. We offer comprehensive interview preparation, 
@@ -100,15 +104,15 @@ class PMA extends React.Component {
               prodhacks descriptions
             </p>
             <h4 style = {{color:'#ff2f44'}}>past winners link here</h4>
-            <h3>Prodhacks pic</h3>
+            <img src={ProdHacks} alt="prodhacks 2025"></img>
           </Row>
 
           <Row className="mt-5">
             <h2 class="text-muted font-weight-bold">Google Trip</h2>
             <p>
-              google trip desc
+              Get a guided tour of Google's Pittsburgh office and the opportunity to present your very own projects!
             </p>
-            <h3>Google trip pic</h3>
+            <img src={GoogleTrip} alt="google trip 2025"></img>
           </Row>
 
           <Row className="mt-5">
@@ -116,7 +120,7 @@ class PMA extends React.Component {
             <p>
               Duolingo trip desc
             </p>
-            <h3>Duolingo trip pic</h3>
+            <img src={DuolingoTrip} alt="duolingo trip 2025"></img>
           </Row>
         </Container>
 

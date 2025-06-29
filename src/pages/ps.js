@@ -138,21 +138,21 @@ class ProjectListTemplate extends React.Component {
           <Row className="mt-5">
             <h2 class="text-muted font-weight-bold">Final Presentations</h2>
             <p>
-              present projects at end of semester. food and drinks and chill 
+              Watch and present the various projects the teams have been working on in the semester with foods and drinks.
             </p>
           </Row>
 
           <Row className="mt-5">
             <h2 class="text-muted font-weight-bold">Social Events</h2>
             <p>
-              getting boba, functions, and more 
+              Get to know the team through some casual events like a boba trip.
             </p>
           </Row>
 
           <Row className="mt-5">
             <h2 class="text-muted font-weight-bold">Google Trip</h2>
             <p>
-              similar desc as google trip for PMA. present prospective projects like open gym and prodhacks 
+              Get a guided tour of Google's Pittsburgh office and the opportunity to present your own or our team projects!
             </p>
           </Row>
       </Container>
