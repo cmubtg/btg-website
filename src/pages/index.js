@@ -29,7 +29,7 @@ function Home() {
             </h1>
 
             <h2 class="text-muted font-weight-bold">
-              We are the CMU Business Technology Group
+              We are CMU Business Technology Group
             </h2>
           </Col>
         </Row>
@@ -38,16 +38,13 @@ function Home() {
       <Container>
         <Row className="mt-5">
           <Col md={3}>
-            <p>
-              We specialize in applied technology that improves work, play, and
-              education.
-            </p>
+          <span className="font-weight-bold"><b>Our Mission</b></span>
           </Col>
 
           <Col md={9}>
             <p>
-            Our mission is to provide underclassmen interested in technology with a strong understanding of potential 
-            career paths and offer them opportunities to gain hands-on experience in their areas of interest.
+            To help students explore careers in product and tech by providing hands-on project experience, 
+            skill development, and direct access to industry professionals.
             </p>
 
             <Row className="mt-5 py-3">

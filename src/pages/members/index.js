@@ -128,23 +128,7 @@ class MemberListTemplate extends React.Component {
             <Col>
               <h1 className="display-3 text-black font-weight-boldest">Members</h1>
             </Col>
-          </Row>
-
-          <div>
-            <Container className="py-3 mt-2">
-              <Row>
-                <Col>
-                  <p>
-                    The CMUBTG combines hands-on technical training and holistic
-                    engagement with the technology industry. Our strong community
-                    can be found around campus and reinforces our dedicated yet fun
-                    culture.
-                  </p>
-                </Col>
-              </Row>
-              {/* <TeamSummary /> */}
-            </Container>
-        </div>        
+          </Row>    
 
         <Container className="mt-2">
           <MySelect

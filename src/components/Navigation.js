@@ -42,19 +42,13 @@ function Navigation() {
                   PMA
                 </Nav.Link>
                 <Nav.Link as={Link} to="/members" className="nav-link-text">
-                  Executives
-                </Nav.Link>
-                <Nav.Link as={Link} to="/projects" className="nav-link-text">
-                  Projects
+                  Exec
                 </Nav.Link>
                 <Nav.Link as={Link} to="/events" className="nav-link-text">
                   Events
                 </Nav.Link>
                 <Nav.Link as={Link} to="/alumni" className="nav-link-text">
                   Alumni
-                </Nav.Link>
-                <Nav.Link as={Link} to="/contact" className="nav-link-text">
-                  Contact
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>

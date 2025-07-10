@@ -15,6 +15,7 @@ import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
 
+
 // This function renders the text description from each project
 function ProjectDescriptionText(props) {
   return (
@@ -80,7 +81,7 @@ function ProjectContainer(props) {
 }
 
 // This main function renders the entire all project page
-class ProjectListTemplate extends React.Component {
+class ProductStudio extends React.Component {
   render() {
     const { data } = this.props
     const { edges: projects } = data.allMarkdownRemark    
@@ -131,6 +132,28 @@ class ProjectListTemplate extends React.Component {
       <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
+              <h2 class="display-5 text-black font-weight-boldest">Our Members</h2>
+            </Col>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Team Leads</h2>
+            <p>
+              grid of current team leads like on exec page (with projects and role)
+            </p>
+          </Row>
+
+          <Row className="mt-5">
+            <h2 class="text-muted font-weight-bold">Members</h2>
+            <p>
+              grid of current members like on exec page
+            </p>
+          </Row>
+        </Container>
+
+      <Container className="mt-md-1 pt-md-4">
+          <Row className="pt-1 mt-5">
+            <Col>
             <h2 class="display-6 text-black font-weight-boldest">Our Events</h2>
             </Col>
           </Row>
@@ -140,6 +163,7 @@ class ProjectListTemplate extends React.Component {
             <p>
               Watch and present the various projects the teams have been working on in the semester with foods and drinks.
             </p>
+            <img src={BTGCover} alt="temp"></img>
           </Row>
 
           <Row className="mt-5">
@@ -147,6 +171,7 @@ class ProjectListTemplate extends React.Component {
             <p>
               Get to know the team through some casual events like a boba trip.
             </p>
+            <img src={BTGCover} alt="temp"></img>
           </Row>
 
           <Row className="mt-5">
@@ -154,6 +179,7 @@ class ProjectListTemplate extends React.Component {
             <p>
               Get a guided tour of Google's Pittsburgh office and the opportunity to present your own or our team projects!
             </p>
+            <img src={BTGCover} alt="temp"></img>
           </Row>
       </Container>
 
@@ -200,7 +226,7 @@ export default function ProjectList() {
           }
         }              
       `}
-      render={(data, count) => <ProjectListTemplate data={data} count={count} />}
+      render={(data, count) => <ProductStudio data={data} count={count} />}
     />
   )
 }
