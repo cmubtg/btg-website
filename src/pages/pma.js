@@ -132,9 +132,9 @@ class PMA extends React.Component {
           </Row>
 
           <Row className="mt-5">
-            <h2 class="text-muted font-weight-bold">Current Members</h2>
+            <h2 class="text-muted font-weight-bold">Current Execs</h2>
             <p>
-              grid of current members like on exec page
+              grid of current execs like on exec page
             </p>
           </Row>
 
