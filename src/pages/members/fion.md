@@ -6,7 +6,7 @@ role: Marketing Design Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Fion Hanaoka
-photo: /img/fion.jpg
+photo: /img/fion.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

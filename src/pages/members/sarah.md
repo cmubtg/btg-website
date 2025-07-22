@@ -6,7 +6,7 @@ role: President
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Sarah Gano
-photo: /img/sarah.jpeg
+photo: /img/sarah.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

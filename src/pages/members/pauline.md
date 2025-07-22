@@ -6,7 +6,7 @@ role: Head of Product Studio
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Pauline Zhuang
-photo: /img/pauline.jpg
+photo: /img/pauline.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

@@ -20,7 +20,7 @@ portfolio: >-
 
   * I won first place in EcoHack MetaVRSE at Unity College for developing an accessible educational tool to inform California residents about wildfire safety.
 name: Aditya Mittal
-photo: /img/aditya.jpg
+photo: /img/aditya.png
 resume: /img/resume.pdf
 year: 2026
 degree: BS

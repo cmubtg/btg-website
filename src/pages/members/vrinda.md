@@ -6,7 +6,7 @@ role: Events Social Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Vrinda Gupta
-photo: /img/vrinda.jpg
+photo: /img/vrinda.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

@@ -6,7 +6,7 @@ role: Head of PMA
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Katherine Li
-photo: /img/katherine.jpg
+photo: /img/katherine.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

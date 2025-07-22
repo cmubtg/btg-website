@@ -6,7 +6,7 @@ role: Head of Events
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Amy Qin
-photo: /exec_img/amy.jpg
+photo: /exec_img/amy.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

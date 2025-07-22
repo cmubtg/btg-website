@@ -6,7 +6,7 @@ role: Head of Tech
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Jonas Soh
-photo: /img/jonas.jpg
+photo: /img/jonas.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

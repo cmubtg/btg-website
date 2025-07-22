@@ -3,7 +3,6 @@ templateKey: project
 title: Food App
 overview: A recent project by BTG's Product Studio to create a centralized platform for the CMU community to share and discover food around Pittsburgh.
 description: Add Description Here
-active: F
 photo: /img/btg_logo.png
 descriptionPhoto: /img/buddy-pickup.png
 members:

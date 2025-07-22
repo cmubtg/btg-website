@@ -6,7 +6,7 @@ role: Senior Advisor
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Saanika Chauk
-photo: /img/saanika.jpg
+photo: /img/saanika.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

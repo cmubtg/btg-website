@@ -6,7 +6,7 @@ role: Head of PMA
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Ariel Chiu
-photo: /img/ariel.jpg
+photo: /img/ariel.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

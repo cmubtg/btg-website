@@ -6,7 +6,7 @@ role: Head of Finance
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Thomas Zhao
-photo: /img/thomas.jpg
+photo: /img/thomas.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate

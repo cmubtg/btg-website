@@ -6,7 +6,7 @@ role: Marketing Design Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Sunny Guo
-photo: /img/sunny.jpg
+photo: /img/sunny.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
