@@ -65,7 +65,7 @@ function RedContainer(props) {
 
 // This function renders the all the project containers for the all project page
 function ProjectContainer(props) {
-  if (props.index % 2 === 0) {
+  if (props.active === 'T') {
     return <WhiteContainer 
               title={props.title} 
               description={props.description} 
@@ -118,13 +118,43 @@ class ProductStudio extends React.Component {
             </Row>
 
             {projects.map(({ node: project }, index) => {
+              if (project.frontmatter.active === 'T') {
+                return (
                   <ProjectContainer
+                    active={project.frontmatter.active}
                     index={index}
                     title={project.frontmatter.title}
                     description={project.frontmatter.overview}
                     photo={getImage(project.frontmatter.photo)}
                     slug={project.fields.slug}
                   />
+                );
+              }
+              return null; // Important: return null for inactive projects
+            })}
+          </div>
+
+          <div className="pt-1 mt-3">
+            <Row className="pt-1 mt-5">
+              <Col>
+              <h2 class="display-6 text-black font-weight-boldest">Past Projects</h2>
+              </Col>
+            </Row>
+
+            {projects.map(({ node: project }, index) => {
+              if (project.frontmatter.active === 'F') {
+                return (
+                  <ProjectContainer
+                    active={project.frontmatter.active}
+                    index={index}
+                    title={project.frontmatter.title}
+                    description={project.frontmatter.overview}
+                    photo={getImage(project.frontmatter.photo)}
+                    slug={project.fields.slug}
+                  />
+                );
+              }
+              return null; // Important: return null for inactive projects
             })}
           </div>
 
@@ -211,6 +241,7 @@ export default function ProjectList() {
                   title
                   overview
                   description
+                  active
                   photo {
                     childImageSharp {
                       gatsbyImageData(width: 200, quality: 100, layout: CONSTRAINED)
