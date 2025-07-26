@@ -32,6 +32,7 @@ function Home() {
               We are CMU Business Technology Group
             </h2>
           </Col>
+          <img src={BTGCover} alt="temp picture (maybe slideshow down the line)"></img>
         </Row>
       </Container>
 

@@ -22,7 +22,7 @@ function MemberDisplay(props) {
       placement="right"
       overlay={popover}
     >
-      <Col md={3} sm={6} xs={6} className="p-0" onClick={()=>navigate(props.slug)}>
+      <Col md={3} sm={6} xs={6} className="p-0"> {/* onClick={()=>navigate(props.slug)} */}
       <div className="team-photo-wrapper-point p-0">
         <div className="team-photo">
         <GatsbyImage image={props.photo} alt={props.title}/>
