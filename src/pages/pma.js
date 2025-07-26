@@ -79,9 +79,9 @@ class PMA extends React.Component {
                 Product Management Academy
               </h1>
             </Col>
+            <img src={PMACohort} alt="pma cohort"></img>
           </Row>
           <Row className="mt-5">
-            <img src={PMACohort} alt="pma cohort"></img>
             <p>
               Product Management Academy is dedicated to guiding students through the intricacies of product management, 
               from foundational understanding to successful career entry. We offer comprehensive interview preparation, 
@@ -124,7 +124,7 @@ class PMA extends React.Component {
           </Row>
         </Container>
 
-        <Container className="mt-md-1 pt-md-4">
+        {/* <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
               <h2 class="display-5 text-black font-weight-boldest">Our Members</h2>
@@ -137,14 +137,8 @@ class PMA extends React.Component {
               grid of current execs like on exec page
             </p>
           </Row>
-
-          <Row className="mt-5">
-            <h2 class="text-muted font-weight-bold">Historic Achievements</h2>
-            <p>
-              grid of alumni members and achievements like on home page with description of PS and PMA
-            </p>
-          </Row>
-        </Container>
+          
+        </Container> */}
       </Layout>
       
     );

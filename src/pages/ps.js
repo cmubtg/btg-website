@@ -99,6 +99,7 @@ class ProductStudio extends React.Component {
             <Col>
               <h1 className="display-3 text-black font-weight-boldest">Product Studio</h1>
             </Col>
+            <img src={BTGCover} alt="temp cohort"></img>
           </Row>
           <Row className="mt-5">
             <p>
@@ -161,7 +162,7 @@ class ProductStudio extends React.Component {
           
       </Container>
 
-      <Container className="mt-md-1 pt-md-4">
+      {/* <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
               <h2 class="display-5 text-black font-weight-boldest">Our Members</h2>
@@ -175,7 +176,7 @@ class ProductStudio extends React.Component {
             </p>
           </Row>
 
-        </Container>
+        </Container> */}
 
       <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">

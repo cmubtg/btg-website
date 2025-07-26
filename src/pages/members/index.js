@@ -126,7 +126,7 @@ class MemberListTemplate extends React.Component {
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
-              <h1 className="display-3 text-black font-weight-boldest">Members</h1>
+              <h1 className="display-3 text-black font-weight-boldest">Executives</h1>
             </Col>
           </Row>    
 
