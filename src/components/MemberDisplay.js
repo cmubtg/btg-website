@@ -4,7 +4,7 @@ import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GatsbyImage } from "gatsby-plugin-image"
-import { navigate } from "gatsby"
+// import { navigate } from "gatsby"
 
 function MemberDisplay(props) {
 

@@ -12,6 +12,7 @@ import Companies from "../components/Companies";
 import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
+import FrontImg from "../../static/img/big_tech_gathering.jpg";
 
 function Home() {
   return (
@@ -32,7 +33,7 @@ function Home() {
               We are CMU Business Technology Group
             </h2>
           </Col>
-          <img src={BTGCover} alt="temp picture (maybe slideshow down the line)"></img>
+          <img src={FrontImg} alt="temp picture (maybe slideshow down the line)"></img>
         </Row>
       </Container>
 

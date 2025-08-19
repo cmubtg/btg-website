@@ -8,5 +8,6 @@ active: F
 photo: /img/btg_logo.png
 descriptionPhoto: /img/package-pickup.jpg
 members:
-  - (David You, dsyou, /img/dsyou.jpg, Head of Product)
+  - (Pauline Zhuang, pauline, /img/pauline.png, Head of Product Studio)
+  - (Wesley, wesley, /img/wesley.png, Head of Product Studio)
 ---

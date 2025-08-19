@@ -7,9 +7,9 @@ import GithubCorner from 'react-github-corner';
 import { Link } from "gatsby";
 
 function Navigation() {
-  const NavigationStyle = {
-    textDecoration: 'none',
-  }
+  // const NavigationStyle = {
+  //   textDecoration: 'none',
+  // }
 
   return (
     <div>

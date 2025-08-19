@@ -14,6 +14,9 @@ import Row from "react-bootstrap/Row";
 import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
+import CohortPic from "../../static/img/ps_fall_24_cohort.jpg";
+import GoogleTrip from "../../static/img/ps_google_presentation.jpg"
+import PresentationPic from "../../static/img/presentation_tmp.jpg"
 
 
 // This function renders the text description from each project
@@ -99,7 +102,7 @@ class ProductStudio extends React.Component {
             <Col>
               <h1 className="display-3 text-black font-weight-boldest">Product Studio</h1>
             </Col>
-            <img src={BTGCover} alt="temp cohort"></img>
+            <img src={CohortPic} alt="temp cohort"></img>
           </Row>
           <Row className="mt-5">
             <p>
@@ -190,7 +193,7 @@ class ProductStudio extends React.Component {
             <p>
               Watch and present the various projects the teams have been working on in the semester with foods and drinks.
             </p>
-            <img src={BTGCover} alt="temp"></img>
+            <img src={PresentationPic} alt="temp"></img>
           </Row>
 
           <Row className="mt-5">
@@ -206,7 +209,7 @@ class ProductStudio extends React.Component {
             <p>
               Get a guided tour of Google's Pittsburgh office and the opportunity to present your own or our team projects!
             </p>
-            <img src={BTGCover} alt="temp"></img>
+            <img src={GoogleTrip} alt="S24 google presentation"></img>
           </Row>
       </Container>
 

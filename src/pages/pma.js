@@ -101,9 +101,9 @@ class PMA extends React.Component {
           <Row className="mt-5">
             <h2 class="text-muted font-weight-bold">ProdHacks</h2>
             <p>
-              prodhacks descriptions
+              Looking to get project experience, meet fellow students and sleepless nights? Sign up and create in our annual product hackathon! 
             </p>
-            <h4 style = {{color:'#ff2f44'}}>past winners link here</h4>
+            {/* <h4 style = {{color:'#ff2f44'}}>past winners link here</h4> */}
             <img src={ProdHacks} alt="prodhacks 2025"></img>
           </Row>
 
@@ -118,7 +118,7 @@ class PMA extends React.Component {
           <Row className="mt-5">
             <h2 class="text-muted font-weight-bold">Duolingo Trip</h2>
             <p>
-              Duolingo trip desc
+              Possibly go on a tour of the duolingo office in Pittsburgh!
             </p>
             <img src={DuolingoTrip} alt="duolingo trip 2025"></img>
           </Row>

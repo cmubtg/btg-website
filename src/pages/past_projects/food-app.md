@@ -7,5 +7,5 @@ active: F
 photo: /img/btg_logo.png
 descriptionPhoto: /img/buddy-pickup.png
 members:
-  - (David You, dsyou, /img/dsyou.jpg, Head of Product)
+  - (Pauline Zhuang, pauline, /img/pauline.png, Head of Product Studio)
 ---
