@@ -12,6 +12,7 @@ import Companies from "../components/Companies";
 import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
+import FrontImg from "../../static/img/big_tech_gathering.jpg";
 
 function Home() {
   return (
@@ -29,27 +30,23 @@ function Home() {
             </h1>
 
             <h2 class="text-muted font-weight-bold">
-              We are the CMU Business Technology Group
+              We are CMU Business Technology Group
             </h2>
           </Col>
+          <img src={FrontImg} alt="temp picture (maybe slideshow down the line)"></img>
         </Row>
       </Container>
 
       <Container>
         <Row className="mt-5">
           <Col md={3}>
-            <p>
-              We specialize in applied technology that improves work, play, and
-              education.
-            </p>
+          <span className="font-weight-bold"><b>Our Mission</b></span>
           </Col>
 
           <Col md={9}>
             <p>
-              Our mission is to provide undergraduates interested in business and
-              technology with real-world projects, a strong understanding of potential
-              career paths, and offer them opportunities to gain hands-on experience
-              in their areas of interest.
+            To help students explore careers in product and tech by providing hands-on project experience, 
+            skill development, and direct access to industry professionals.
             </p>
 
             <Row className="mt-5 py-3">
@@ -102,24 +99,11 @@ function Home() {
           </Col>
           <Col md={9}>
             <p>
-              Product Management Academy is a program dedicated to product management 
-              career prep. This program helps juniors and seniors break into product management 
-              at the associate level. We help students by guiding them on the interview process,
-              prepping with mock interviews, and networking with product managers.
-            </p>
-          </Col>
-        </Row>
-
-        <Row className="mt-5">
-          <Col md={3}>
-            <span className="font-weight-bold"><b>Product Explore</b></span>
-          </Col>
-          <Col md={9}>
-            <p>
-              Product Explore is a flexible program. Members are free to organize 
-              their own teams and work on any problem they want. This is a great 
-              entryway for students interested in projects who are unsure about 
-              their level of commitment.
+              Product Management Academy is dedicated to guiding students through the intricacies of product management, 
+              from foundational understanding to successful career entry. We offer comprehensive interview preparation, 
+              including mock interviews and hands-on assignments that mirror real challenges product managers face. 
+              We position ourselves as proactive question-askers, bringing in industry professionals to offer direct 
+              answers and share their intuition as we start developing our own.
             </p>
           </Col>
         </Row>

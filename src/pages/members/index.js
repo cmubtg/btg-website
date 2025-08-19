@@ -22,7 +22,7 @@ import MySelect from "../../components/MySelect"
 function RoleContainer(props) {
   return (
     <Row className="pt-1 mt-5">
-      <h3>{props.role}s</h3>
+      <h3>{props.role}</h3>
     {Array.from(props.members).map(({ node:member }) => (
       <MemberDisplay
         title = {member.frontmatter.title}
@@ -49,19 +49,32 @@ function check_keys(str,dict) {
 }
 
 function get_roles(members) {
-  var roles = {"Executive":[],
-              "Software Developer":[],
-              "UI/UX Designer":[],
+  var roles = {"President":[],
+              "Executives":[],
+              "Events Committee":[],
+              "Marketing Committee":[],
+              // "Software Developer":[],
+              // "UI/UX Designer":[],
               // "Product Manager":[],
               // "Data Scientist":[],
-              "Business Analyst":[]
+              // "Business Analyst":[]
             }
   members.forEach(
     function(member,index) {
       var r = member.node.frontmatter.role
-      if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
-        roles["Executive"].push(member)
+      if (r.includes("Head") || r.includes("Senior Advisor")) {
+        roles["Executives"].push(member)
       }
+      else if (r.includes("Marketing")) {
+        roles["Marketing Committee"].push(member)
+      }
+      else if (r.includes("Events") || r.includes("ProdHacks")) {
+        roles["Events Committee"].push(member)
+      }
+
+      // if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
+      //   roles["Executive"].push(member)
+      // }
       var k = check_keys(r,roles)
       if(k!=="") {
         if(r.includes("Lead")){
@@ -113,25 +126,9 @@ class MemberListTemplate extends React.Component {
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
-              <h1 className="display-3 text-black font-weight-boldest">Members</h1>
+              <h1 className="display-3 text-black font-weight-boldest">Executives</h1>
             </Col>
-          </Row>
-
-          <div>
-            <Container className="py-3 mt-2">
-              <Row>
-                <Col>
-                  <p>
-                    The CMUBTG combines hands-on technical training and holistic
-                    engagement with the technology industry. Our strong community
-                    can be found around campus and reinforces our dedicated yet fun
-                    culture.
-                  </p>
-                </Col>
-              </Row>
-              {/* <TeamSummary /> */}
-            </Container>
-        </div>        
+          </Row>    
 
         <Container className="mt-2">
           <MySelect
