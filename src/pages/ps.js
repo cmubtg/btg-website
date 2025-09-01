@@ -17,6 +17,7 @@ import BTGCover from "../images/btg-cover.png";
 import CohortPic from "../../static/img/ps_fall_24_cohort.jpg";
 import GoogleTrip from "../../static/img/ps_google_presentation.jpg"
 import PresentationPic from "../../static/img/presentation_tmp.jpg"
+import RecruitmentLinks from "../components/Recruitment"
 
 
 // This function renders the text description from each project
@@ -113,7 +114,10 @@ class ProductStudio extends React.Component {
               20-week program.
             </p>
           </Row>
-          
+        </Container>
+
+          <RecruitmentLinks/>
+        <Container className="mt-md-1 pt-md-4">
           <div className="pt-1 mt-3">
             <Row className="pt-1 mt-5">
               <Col>

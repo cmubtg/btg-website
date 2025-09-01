@@ -15,6 +15,7 @@ import PMACohort from "../../static/img/temp_cohort_pma.png";
 import ProdHacks from "../../static/img/prodhacks.png";
 import GoogleTrip from "../../static/img/google_trip.png";
 import DuolingoTrip from "../../static/img/duolingo_trip.png";
+import RecruitmentLinks from "../components/Recruitment"
 
 class PMA extends React.Component {
   constructor(props) {
@@ -91,6 +92,9 @@ class PMA extends React.Component {
             </p>
           </Row>
         </Container>
+
+        <RecruitmentLinks/>
+        
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
             <Col>
