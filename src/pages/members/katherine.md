@@ -10,6 +10,6 @@ photo: /img/katherine.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
-major: Brainrot
+major: 
 linkedIn: https://www.linkedin.com/in/adityamittal-/
 ---
