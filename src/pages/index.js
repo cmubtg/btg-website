@@ -13,6 +13,7 @@ import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
 import FrontImg from "../../static/img/big_tech_gathering.jpg";
+import RecruitmentLinks from "../components/Recruitment"
 
 function Home() {
   return (
@@ -33,9 +34,11 @@ function Home() {
               We are CMU Business Technology Group
             </h2>
           </Col>
-          <img src={FrontImg} alt="temp picture (maybe slideshow down the line)"></img>
+          <img src={FrontImg} alt="Cohort"></img>
         </Row>
       </Container>
+
+      <RecruitmentLinks/>
 
       <Container>
         <Row className="mt-5">
