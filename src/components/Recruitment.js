@@ -9,6 +9,7 @@ const RecruitmentLinks = () => {
           <Row className="pt-1 mt-5">
             <Col>
             <h2 class="display-6 text-black font-weight-boldest">Recruitment Open!</h2>
+            <h4> Get involved in the BTG community through one of our programs </h4>
             </Col>
           </Row>
 
