@@ -10,6 +10,6 @@ photo: /img/sniya.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Business Administration & Statistics
+linkedIn: https://www.linkedin.com/in/sniya-gorthi/
 ---

@@ -10,6 +10,6 @@ photo: /img/pauline.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Finance, Statistics & Machine Learning
+linkedIn: https://www.linkedin.com/in/paulinezhuang/
 ---

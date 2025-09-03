@@ -10,6 +10,6 @@ photo: /img/jonas.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Information Systems
+linkedIn: https://www.linkedin.com/in/jonas-soh-b899132b1/
 ---
