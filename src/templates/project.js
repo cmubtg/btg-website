@@ -73,9 +73,7 @@ const Project = ({ data }) => {
               return (
                 <OverlayTrigger placement = 'right' overlay = {popover}>
                   <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
-                    <Link to={'/members/' + andrewID}>
-                      <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
-                    </Link> 
+                    <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
                   </Col> 
                 </OverlayTrigger>
               )
