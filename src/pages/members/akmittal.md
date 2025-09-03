@@ -23,7 +23,7 @@ name: Aditya Mittal
 photo: /img/aditya.png
 resume: /img/resume.pdf
 year: 2026
-degree: BS
-major: Computer Science
+degree: Undergraduate/Masters
+major: Computer Science/ Machine Learning
 linkedIn: https://www.linkedin.com/in/adityamittal-/
 ---

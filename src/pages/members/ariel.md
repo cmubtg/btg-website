@@ -10,6 +10,6 @@ photo: /img/ariel.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Information Systems
+linkedIn: http://www.linkedin.com/in/arielc0206
 ---

@@ -8,8 +8,8 @@ portfolio: Lorem Ipsum
 name: Wesley
 photo: /img/wesley.png
 resume: /img/resume.pdf
-year: 2026
+year: 2027
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Information Systems
+linkedIn: https://www.linkedin.com/in/wesley-kane-6b8443292/
 ---

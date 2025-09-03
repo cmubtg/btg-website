@@ -10,6 +10,6 @@ photo: /img/vrinda.png
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Economics & Statistics & Business Administration minor
+linkedIn: https://www.linkedin.com/in/vrinda-gupta-758935266/
 ---
