@@ -8,8 +8,8 @@ portfolio: Lorem Ipsum
 name: Thomas Zhao
 photo: /img/thomas.png
 resume: /img/resume.pdf
-year: 2026
+year: 2028
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Business
+linkedIn: https://www.linkedin.com/in/thomas-zhao-243429246/
 ---

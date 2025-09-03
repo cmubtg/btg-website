@@ -8,8 +8,8 @@ portfolio: Lorem Ipsum
 name: Sunny Guo
 photo: /img/sunny.png
 resume: /img/resume.pdf
-year: 2026
+year: 2027
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Information Systems & Art & HCI
+linkedIn: https://www.linkedin.com/in/sunny-guo-a8a9132b2/
 ---

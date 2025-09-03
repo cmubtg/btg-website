@@ -8,8 +8,8 @@ portfolio: Lorem Ipsum
 name: Fion Hanaoka
 photo: /img/fion.png
 resume: /img/resume.pdf
-year: 2026
+year: 2028
 degree: Undergraduate
 major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+linkedIn: https://www.linkedin.com/in/fion-hanaoka-070687341/
 ---

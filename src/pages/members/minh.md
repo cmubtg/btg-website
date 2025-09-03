@@ -8,8 +8,8 @@ portfolio: Lorem Ipsum
 name: Minh Do
 photo: /img/minh.png
 resume: /img/resume.pdf
-year: 2026
+year: 2028
 degree: Undergraduate
-major: 
-linkedIn: https://www.linkedin.com/in/adityamittal-/
+major: Information Systems
+linkedIn: https://www.linkedin.com/in/minhnguyendo/
 ---

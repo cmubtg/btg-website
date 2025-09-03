@@ -8,7 +8,7 @@ portfolio: Lorem Ipsum
 name: Anna Liu
 photo: /img/anna.png
 resume: /img/resume.pdf
-year: 2026
+year: 2028
 degree: Undergraduate
 major: Economics
 linkedIn: http://www.linkedin.com/in/anna-liu-a20435242
