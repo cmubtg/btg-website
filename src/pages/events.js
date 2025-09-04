@@ -16,7 +16,7 @@ function Events(){
       <div>
         <Layout>
         <Helmet>
-          <title>Home | CMUBTG</title>
+          <title>Events | CMUBTG</title>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:image" content={BTGCover}></meta>
         </Helmet>            

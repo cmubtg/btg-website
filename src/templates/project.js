@@ -51,7 +51,7 @@ const Project = ({ data }) => {
         </Card>
 
         <Row>
-          <h1 style = {{marginTop:30}}>Members</h1>  
+          <h1 style = {{marginTop:30}}>Team Leads</h1>  
         </Row>
       </Container>        
 
