@@ -11,7 +11,7 @@ import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
 
 function Events(){
-    const calendar = "https://calendar.google.com/calendar/embed?src=cmubtg%40gmail.com&ctz=America%2FNew_York"
+    const calendar = "https://calendar.google.com/calendar/embed?src=c_484688068b353066cae993edb0bf39fc4d8209f7e0f9dac2a6c6bd8bda6b521d%40group.calendar.google.com&ctz=America%2FNew_York"
     return(  
       <div>
         <Layout>
