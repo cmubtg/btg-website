@@ -54,14 +54,14 @@ function Navigation() {
             </Navbar.Collapse>
           </Navbar>
         </Container>
-        <GithubCorner
+        {/* <GithubCorner
           href="https://github.com/cmubtg/btg-website"
           bannerColor="#ff2f44"
           octoColor="#fff"
           size={60}
           direction="left"
           target="_blank"
-        />
+        /> */}
       </div>
     </div>
   );
