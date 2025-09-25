@@ -11,7 +11,7 @@ import Layout from "../components/Layout"
 import emailjs from '@emailjs/browser';
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
-import PMACohort from "../../static/img/temp_cohort_pma.png";
+import PMACohort from "../../static/img/PMA_F25_cohort.png";
 import ProdHacks from "../../static/img/prodhacks.png";
 import GoogleTrip from "../../static/img/google_trip.png";
 import DuolingoTrip from "../../static/img/duolingo_trip.png";

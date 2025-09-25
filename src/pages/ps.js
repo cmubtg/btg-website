@@ -14,7 +14,7 @@ import Row from "react-bootstrap/Row";
 import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
-import CohortPic from "../../static/img/ps_fall_24_cohort.jpg";
+import CohortPic from "../../static/img/PS_F25_cohort.png";
 import GoogleTrip from "../../static/img/ps_google_presentation.jpg"
 import PresentationPic from "../../static/img/presentation_tmp.jpg"
 import RecruitmentLinks from "../components/Recruitment"
