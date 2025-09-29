@@ -6,7 +6,7 @@ role: Marketing Design Chair
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Kirsten Park
-photo: /img/blank_pfp.jpg
+photo: /img/kirsten.jpg
 resume: /img/resume.pdf
 year: 2026
 degree: Undergraduate
