@@ -220,6 +220,14 @@ html {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* remove after 2025 */
+.nav-link-text:link,
+.nav-link-text:visited,
+.nav-link-text:active {
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-decoration: none;
+}
+
 .nav-link-text:hover {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;

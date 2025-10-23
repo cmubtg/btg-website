@@ -35,6 +35,14 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
+                {/* <Nav.Link as={Link} to="www.google.com" className="nav-link-text">
+                  BTech
+                </Nav.Link> */}
+                {/* remove below BTech after 2025 */}
+                <Nav.Link href="https://www.google.com/" target="_blank" className="nav-link-text">
+                    BTech
+                </Nav.Link>
+                
                 <Nav.Link as={Link} to="/ps" className="nav-link-text">
                   PS
                 </Nav.Link>
@@ -44,9 +52,9 @@ function Navigation() {
                 <Nav.Link as={Link} to="/members" className="nav-link-text">
                   Exec
                 </Nav.Link>
-                <Nav.Link as={Link} to="/events" className="nav-link-text">
+                {/* <Nav.Link as={Link} to="/events" className="nav-link-text">
                   Events
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link as={Link} to="/alumni" className="nav-link-text">
                   Alumni
                 </Nav.Link>
