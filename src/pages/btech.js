@@ -130,7 +130,7 @@ class BTech extends React.Component {
             })}
           </div>
 
-          <div className="pt-1 mt-3">
+          {/* <div className="pt-1 mt-3">
             <Row className="pt-1 mt-5">
               <Col>
               <h2 class="display-6 text-black font-weight-boldest">Past Themes</h2>
@@ -152,7 +152,7 @@ class BTech extends React.Component {
               }
               return null; // Important: return null for inactive projects
             })}
-          </div>
+          </div> */}
 
           
       </Container>
