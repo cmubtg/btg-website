@@ -16,7 +16,7 @@ const BTechBanner = () => {
 
           <Row>
           <Col className="text-end">
-                <form action="https://www.google.com/" target="_blank">
+                <form action="https://btech2025.framer.website/" target="_blank">
                     <button 
                         type="submit"
                         class="btn btn-white shadow-custom btn-large"
