@@ -28,7 +28,7 @@ const BTechBanner = () => {
             </Col>
             
             <Col xs={12} md={6}>
-                <form action="https://www.google.com/" target="_blank">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeEyOaXYPB9vdhhZUi5JWDriAj7LGixSyc6KV5_W4k2wFxdOg/viewform?usp=dialog" target="_blank">
                     <button 
                         type="submit"
                         class="btn btn-white shadow-custom btn-large"
