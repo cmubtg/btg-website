@@ -220,6 +220,14 @@ html {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* remove after 2025 */
+.nav-link-text:link,
+.nav-link-text:visited,
+.nav-link-text:active {
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-decoration: none;
+}
+
 .nav-link-text:hover {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
@@ -228,4 +236,40 @@ html {
 .icon-link,
 .icon-link:hover {
   color: inherit;
+}
+
+.banner-frame {
+  padding: 20px;
+  background-color: #ff2f44;
+  border-radius: 50px;
+}
+
+.banner-title {
+  color: white;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1em;
+  text-align: center;
+}
+
+.banner-text {
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.btn-white:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.shadow-banner {
+  box-shadow: 0 5px 10px rgb(0, 51, 255),
+    0 15px 40px rgba(0, 51, 255, 0.744);
 }
