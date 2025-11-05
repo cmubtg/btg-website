@@ -20,7 +20,7 @@ const Theme = ({ data }) => {
 
   // const memberPhoto = getImage()
 
-  let memberInfo = theme.frontmatter.members;
+  let themeInfo = theme.frontmatter.members;
   
 
   return (
@@ -49,38 +49,6 @@ const Theme = ({ data }) => {
           <h1 style = {{marginTop:30}}>Team Leads</h1>  
         </Row>
       </Container>        
-
-      <Container>
-        <Row> 
-          {memberInfo.map((member) => {
-              member = member.substring(1,member.length - 1);
-              const info = member.split(',');
-              const fullName = info[0]
-              const role = info[3]
-              const andrewID = String(info[1].substring(1))
-              const imgSrc = info[2].substring(1)
-              const popover = (
-                <Popover id="popover-basic">
-                  <Popover.Header>{fullName}</Popover.Header>
-                  <Popover.Header style={{backgroundColor: "white"}}>{role}</Popover.Header>
-                </Popover>
-              );
-              return (
-                <OverlayTrigger placement = 'right' overlay = {popover}>
-                  <Col md={3} sm={6} xs={6} lg = {3} className="p-0 m-0 g-0">
-                    <img src={imgSrc} alt={fullName} style={{width:240,height:240,marginBottom:20}}/>
-                  </Col> 
-                </OverlayTrigger>
-              )
-            })}
-        </Row>
-        <Container className="mt-md-1 pt-md-4">        
-          <small class = 'padded-multipline'style = {{margin: 10, fontSize: 20}}>
-            {theme.frontmatter.description}
-          </small>
-        </Container>   
-
-      </Container>
 
     </Layout>
   )
