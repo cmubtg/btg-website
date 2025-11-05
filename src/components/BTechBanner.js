@@ -9,7 +9,7 @@ const BTechBanner = () => {
           <Row>
             <b><h2 class="banner-title">Big Tech Gathering 2025: AI in Action!</h2></b>
             <Col>
-                <h4 class="banner-text"> Come meet experts in the field, present your skills in an ideathon, blah blah</h4>
+                <h4 class="banner-text"> Come network and learn from experts in the field about all things AI! </h4>
                 <h4 class="banner-text"> @ TEP Simmons B on Saturday Nov 22 (12 - 5pm)</h4>
             </Col>
           </Row>
