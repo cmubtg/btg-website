@@ -39,7 +39,7 @@ const RecruitmentLinks = () => {
             <h3 class="text-muted font-weight-bold">Product Studio</h3>
                 <p>
                 Product Studio offers opportunities for software/hardware engineers, data analysts, product analysts and designers 
-                in semester-long projects that are perfect for your resume. <b>APPLICATIONS CLOSE SEPTEMBER 12TH</b>
+                in semester-long projects that are perfect for your resume. <b>APPLICATIONS CLOSE JANUARY 26TH</b>
                 </p>
                 
             </Col>
@@ -47,7 +47,7 @@ const RecruitmentLinks = () => {
             <h3 class="text-muted font-weight-bold">Product Management Academy</h3>
                 <p>
                 Interested in product management and want to learn the ins and outs? Product Management Academy offers students
-                interview preparation and hands-on projects that mirror real challenges in the industry. <b>APPLICATIONS CLOSE SEPTEMBER 14TH</b>
+                interview preparation and hands-on projects that mirror real challenges in the industry. <b>APPLICATIONS CLOSE FEBRUARY 1ST</b>
                 </p>
             </Col>
           </Row>

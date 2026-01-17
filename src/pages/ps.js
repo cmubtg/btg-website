@@ -116,7 +116,7 @@ class ProductStudio extends React.Component {
           </Row>
         </Container>
 
-          {/* <RecruitmentLinks/> */}
+          <RecruitmentLinks/>
         <Container className="mt-md-1 pt-md-4">
           <div className="pt-1 mt-3">
             <Row className="pt-1 mt-5">

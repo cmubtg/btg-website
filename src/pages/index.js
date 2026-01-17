@@ -25,7 +25,7 @@ function Home() {
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
       <Container className="mt-md-1 pt-md-4">
-        <BTechBanner/>
+        {/* <BTechBanner/> */}
         <Row className="pt-1 mt-5">
           <Col>
             <h1 class="display-3 text-black font-weight-boldest">
@@ -40,7 +40,7 @@ function Home() {
         </Row>
       </Container>
 
-      {/* <RecruitmentLinks/> */}
+      <RecruitmentLinks/>
 
       <Container>
         <Row className="mt-5">
