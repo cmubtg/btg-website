@@ -2,9 +2,10 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Calendar from '../images/recruitment_calendar_S26.png';
 
 const RecruitmentLinks = () => {
-    const calendar = "https://calendar.google.com/calendar/embed?src=c_484688068b353066cae993edb0bf39fc4d8209f7e0f9dac2a6c6bd8bda6b521d%40group.calendar.google.com&ctz=America%2FNew_York"
+    // const calendar = "https://calendar.google.com/calendar/embed?src=c_484688068b353066cae993edb0bf39fc4d8209f7e0f9dac2a6c6bd8bda6b521d%40group.calendar.google.com&ctz=America%2FNew_York"
     return (
         <Container className="mt-md-1 pt-md-4">
           <Row className="pt-1 mt-5">
@@ -12,7 +13,7 @@ const RecruitmentLinks = () => {
             <Col>
                 <h4> Get involved in the BTG community through one of our programs </h4>
             </Col>
-            <Col>
+            {/* <Col>
                 <form action="https://docs.google.com/forms/d/1CJpzhvEA2CuCHqO4AtmbTqdnhoDD0a7RYyx4SqQkjPg/viewform?edit_requested=true" target="_blank">
                     <button 
                         type="submit"
@@ -22,17 +23,19 @@ const RecruitmentLinks = () => {
                         Interest Form
                     </button>
                 </form>
-            </Col>
+            </Col> */}
           </Row>
-          <iframe src={calendar} 
+          {/* <iframe src={calendar} 
               style={{border:"0", marginTop:"20px"}} 
               width="800" 
               height="600" 
               frameborder="0" 
               scrolling="no" 
               title="BTG Calendar"
-            />
-
+            /> */}
+          <img src={Calendar} 
+               alt="BTG Calendar" style={{marginTop: "20px", width: "80%", marginLeft: "10%", marginRight: "10%"}}> 
+          </img>
           <Row className="mt-5">
            
             <Col xs={12} md={6}>
@@ -54,7 +57,7 @@ const RecruitmentLinks = () => {
 
           <Row>
             <Col xs={12} md={6}>
-                <form action="https://forms.gle/78TzTvmsdTgvgyRS6" target="_blank">
+                <form action="https://forms.gle/qnMhoFun6TsieSSt6" target="_blank">
                     <button 
                         type="submit"
                         class="btn btn-danger shadow-custom-danger btn-large"
@@ -65,7 +68,7 @@ const RecruitmentLinks = () => {
                 </form>
             </Col>
             <Col xs={12} md={6}>
-                <form action="https://forms.gle/QEpWKf2GzaQm98yS8" target="_blank">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScG6H99Cbei_9_APwhf7G2SZqche06I3iqKr-e73wPg7bko5w/viewform" target="_blank">
                     <button 
                         type="submit"
                         class="btn btn-danger shadow-custom-danger btn-large"
