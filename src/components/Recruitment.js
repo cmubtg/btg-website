@@ -41,7 +41,7 @@ const RecruitmentLinks = () => {
             <Col xs={12} md={6}>
             <h3 class="text-muted font-weight-bold">Product Studio</h3>
                 <p>
-                Product Studio offers opportunities for software/hardware engineers, data analysts, product analysts and designers 
+                Product Studio offers opportunities this semester for software/hardware engineers, and data analysts 
                 in semester-long projects that are perfect for your resume. <b>APPLICATIONS CLOSE JANUARY 26TH</b>
                 </p>
                 
