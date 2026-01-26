@@ -39,6 +39,10 @@ function Navigation() {
                   BTech
                 </Nav.Link> */}
                 {/* remove below BTech after 2025 */}
+                <Nav.Link href="https://prodhacks.com/" target="_blank" className="nav-link-text">
+                    ProdHacks
+                </Nav.Link>
+                
                 <Nav.Link href="https://btech2025.framer.website/" target="_blank" className="nav-link-text">
                     BTech
                 </Nav.Link>
