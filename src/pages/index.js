@@ -40,7 +40,7 @@ function Home() {
         </Row>
       </Container>
 
-      <RecruitmentLinks/>
+      {/* <RecruitmentLinks/> */}
 
       <Container>
         <Row className="mt-5">
