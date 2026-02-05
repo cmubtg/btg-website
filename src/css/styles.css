@@ -255,7 +255,7 @@ html {
 .banner-text {
   letter-spacing: -1.5px;
   text-align: center;
-  color: white;
+  color: rgb(239,239,239,1);
 }
 
 .btn-white {

@@ -15,6 +15,7 @@ import BTGCover from "../images/btg-cover.png";
 import FrontImg from "../../static/img/big_tech_gathering.jpg";
 import RecruitmentLinks from "../components/Recruitment"
 import BTechBanner from "../components/BTechBanner"
+import ProdHacksBanner from "../components/ProdHacksBanner";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
       <Container className="mt-md-1 pt-md-4">
+        <ProdHacksBanner/>
         {/* <BTechBanner/> */}
         <Row className="pt-1 mt-5">
           <Col>
