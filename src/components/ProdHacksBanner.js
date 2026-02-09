@@ -11,7 +11,7 @@ const ProdHacksBanner = () => {
             <Col>
                 <h4 class="banner-text"> Come create <b>Products</b> and <b>Machine Learning</b> solutions as you attend <b>Workshops</b> and <b>Speaker</b> events
                 from <b>Industry Sponsors</b> during our week long Product Hackathon!</h4>
-                <h4 class="banner-text"> Feb 15th - Feb 22nd (or week calendar here)</h4>
+                <h4 class="banner-text"> Feb 15th - Feb 22nd</h4>
             </Col>
           </Row>
 
