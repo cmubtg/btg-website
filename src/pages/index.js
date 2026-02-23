@@ -26,7 +26,7 @@ function Home() {
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
       <Container className="mt-md-1 pt-md-4">
-        <ProdHacksBanner/>
+        {/* <ProdHacksBanner/> */}
         {/* <BTechBanner/> */}
         <Row className="pt-1 mt-5">
           <Col>
