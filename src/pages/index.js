@@ -12,7 +12,7 @@ import Companies from "../components/Companies";
 import Layout from "../components/Layout"
 import Helmet from "react-helmet"
 import BTGCover from "../images/btg-cover.png";
-import FrontImg from "../../static/img/big_tech_gathering.jpg";
+import FrontImg from "../../static/img/home-hero-eboard2526.jpg";
 import RecruitmentLinks from "../components/Recruitment"
 import BTechBanner from "../components/BTechBanner"
 import ProdHacksBanner from "../components/ProdHacksBanner";
