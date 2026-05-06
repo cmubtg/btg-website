@@ -1,13 +1,13 @@
 [build]
-  publish = "public"
-  command = "npm run build"
-[build.environment]
-  NODE_OPTIONS = "--max_old_space_size=4096"
-  NODE_VERSION = "20"
-  YARN_VERSION = "1.22.4"
-  YARN_FLAGS = "--no-ignore-optional"
+command = "npm run build"
+publish = "public"
 
-# Pin above Netlify UI default (1.x) — old releases throw EISDIR when copying
-# `.cache/adapters/node_modules/.bin/*` if entries are directories (e.g. msgpackr).
+[build.environment]
+NODE_OPTIONS = "--max_old_space_size=4096"
+NODE_VERSION = "20"
+YARN_VERSION = "1.22.4"
+YARN_FLAGS = "--no-ignore-optional"
+
+# Pin Gatsby plugin above Netlify UI default (1.x); old releases hit EISDIR on adapter cache copy.
 [[plugins]]
-  package = "@netlify/plugin-gatsby@3.8.4"
+package = "@netlify/plugin-gatsby@3.8.4"
