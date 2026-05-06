@@ -1,13 +1,11 @@
 [build]
-command = "npm run build"
-publish = "public"
+  command = "npm run build"
+  publish = "public"
 
 [build.environment]
-NODE_OPTIONS = "--max_old_space_size=4096"
-NODE_VERSION = "20"
-YARN_VERSION = "1.22.4"
-YARN_FLAGS = "--no-ignore-optional"
+  NODE_OPTIONS = "--max_old_space_size=4096"
+  NODE_VERSION = "20"
 
-# Pin Gatsby plugin above Netlify UI default (1.x); old releases hit EISDIR on adapter cache copy.
 [[plugins]]
-package = "@netlify/plugin-gatsby@3.8.4"
+  package = "@netlify/plugin-gatsby"
+  version = "4.40.2"
