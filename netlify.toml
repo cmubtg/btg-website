@@ -7,4 +7,7 @@
   YARN_VERSION = "1.22.4"
   YARN_FLAGS = "--no-ignore-optional"
 
-
+# Pin above Netlify UI default (1.x) — old releases throw EISDIR when copying
+# `.cache/adapters/node_modules/.bin/*` if entries are directories (e.g. msgpackr).
+[[plugins]]
+  package = "@netlify/plugin-gatsby@3.8.4"
