@@ -8,4 +8,8 @@
 
 [[plugins]]
   package = "@netlify/plugin-gatsby"
-  version = "4.40.2"
+  pinned_version = "4.40.2"
+
+[context.production.environment]
+  # Use Netlify’s preinstalled Sharp binary
+  SHARP_IGNORE_GLOBAL_LIBVIPS = "true"
