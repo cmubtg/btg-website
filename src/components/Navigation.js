@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import LogoColor from "../images/btg-logo-white-red.svg";
@@ -35,30 +36,36 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
-                {/* <Nav.Link as={Link} to="www.google.com" className="nav-link-text">
-                  BTech
-                </Nav.Link> */}
-                {/* remove below BTech after 2025 */}
-                <Nav.Link href="https://prodhacks.com/" target="_blank" className="nav-link-text">
+                <NavDropdown title="Events" id="events-nav-dropdown" className="nav-link-text">
+                  <NavDropdown.Item
+                    href="https://prodhacks.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     ProdHacks
-                </Nav.Link>
-                
-                <Nav.Link href="https://btech2025.framer.website/" target="_blank" className="nav-link-text">
-                    BTech
-                </Nav.Link>
-                
-                <Nav.Link as={Link} to="/ps" className="nav-link-text">
-                  PS
-                </Nav.Link>
-                <Nav.Link as={Link} to="/pma" className="nav-link-text">
-                  PMA
-                </Nav.Link>
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    href="https://btech2025.framer.website/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Big Tech Gathering
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/office-trips">
+                    Office Trips
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Programs" id="programs-nav-dropdown" className="nav-link-text">
+                  <NavDropdown.Item as={Link} to="/ps">
+                    Product Studio
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/pma">
+                    Product Management Academy
+                  </NavDropdown.Item>
+                </NavDropdown>
                 <Nav.Link as={Link} to="/members" className="nav-link-text">
-                  Exec
+                  Executive Board
                 </Nav.Link>
-                {/* <Nav.Link as={Link} to="/events" className="nav-link-text">
-                  Events
-                </Nav.Link> */}
                 <Nav.Link as={Link} to="/alumni" className="nav-link-text">
                   Alumni
                 </Nav.Link>
