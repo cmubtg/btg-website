@@ -117,6 +117,19 @@ html {
   .navbar-light .navbar-nav .nav-link:hover {
     border-top: 1px solid black;
   }
+
+  .navbar-light .navbar-nav .dropdown-toggle.nav-link-text {
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar-light .navbar-nav .dropdown-toggle.nav-link-text:hover,
+  .navbar-light .navbar-nav .dropdown-toggle.nav-link-text:focus,
+  .navbar-light .navbar-nav .show > .dropdown-toggle.nav-link-text {
+    color: rgba(0, 0, 0, 1);
+    border-top: 1px solid black;
+  }
 }
 
 .profile-img-fluid {
@@ -126,7 +139,7 @@ html {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1100px;
 }
 
 .team-photo-wrapper {
