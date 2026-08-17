@@ -6,7 +6,7 @@ role: President
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Tanisha Khabe
-photo: /Users/tanishakhabe/Projects/BTG/btg-website/static/img/tanisha.png
+photo: ../../../static/img/tanisha.png
 resume: /img/resume.pdf
 year: 2027
 degree: Undergraduate, Accelerated Masters
