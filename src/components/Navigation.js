@@ -36,6 +36,9 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
+                <Nav.Link as={Link} to="/" className="nav-link-text">
+                  About
+                </Nav.Link>
                 <NavDropdown title="Events" id="events-nav-dropdown" className="nav-link-text">
                   <NavDropdown.Item
                     href="https://prodhacks.com/"
