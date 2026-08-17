@@ -246,6 +246,123 @@ html {
   text-decoration: none;
 }
 
+.exec-popover-body {
+  min-width: 220px;
+  max-width: 280px;
+  padding: 0.75rem 0.9rem;
+}
+
+.exec-popover-list {
+  margin: 0;
+}
+
+.exec-popover-row {
+  display: grid;
+  grid-template-columns: 4.75rem minmax(0, 1fr);
+  gap: 0.5rem 0.75rem;
+  align-items: start;
+}
+
+.exec-popover-row + .exec-popover-row {
+  margin-top: 0.5rem;
+}
+
+.exec-popover-row dt {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.exec-popover-row dd {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.exec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.exec-grid-center {
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(0, calc((100% - 3.75rem) / 4)));
+}
+
+.exec-section-center h3 {
+  text-align: center;
+}
+
+.exec-grid + .exec-grid {
+  margin-top: 1.25rem;
+}
+
+.exec-programs-headings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.exec-card {
+  min-width: 0;
+}
+
+.exec-card .team-photo-wrapper,
+.exec-card .team-photo-wrapper-point {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.exec-card .team-photo,
+.exec-card .team-photo .gatsby-image-wrapper,
+.exec-card .team-photo .gatsby-image-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.exec-card .team-description {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  z-index: 1;
+  color: white;
+}
+
+.exec-placeholder-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: #e9ecef;
+  color: #6c757d;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .exec-grid,
+  .exec-programs-headings {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exec-grid-center {
+    grid-template-columns: repeat(auto-fit, minmax(0, calc((100% - 1.25rem) / 2)));
+  }
+
+  .exec-card .team-gradient {
+    display: block;
+  }
+}
+
 .icon-link,
 .icon-link:hover {
   color: inherit;

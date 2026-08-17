@@ -2,11 +2,11 @@
 templateKey: member
 title: Minh Do
 andrewID: minh
-role: ProdHacks Chair
+role: Head of ProdHacks
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
 name: Minh Do
-photo: /img/minh.png
+photo: ../../../static/img/minh.png
 resume: /img/resume.pdf
 year: 2028
 degree: Undergraduate

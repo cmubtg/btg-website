@@ -1,4 +1,4 @@
-//This is the home page of the CMU BTG website. It gives a short introduction to the club, our mission, and some of our 
+//This is the About page of the CMU BTG website. It gives a short introduction to the club, our mission, and some of our 
 //achievements as well as our sponsors.
 
 //Created by David You <dsyou@andrew.cmu.edu>
@@ -17,11 +17,11 @@ import RecruitmentLinks from "../components/Recruitment"
 import BTechBanner from "../components/BTechBanner"
 import ProdHacksBanner from "../components/ProdHacksBanner";
 
-function Home() {
+function About() {
   return (
     <Layout>
       <Helmet>
-        <title>Home | CMUBTG</title>
+        <title>About | CMUBTG</title>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:image" content={BTGCover}></meta>
       </Helmet>
@@ -136,4 +136,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;

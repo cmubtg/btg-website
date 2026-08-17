@@ -1,15 +1,15 @@
 ---
 templateKey: member
-title: Wesley Kane
-andrewID: wesley
+title: Skylar Wang
+andrewID: skylar
 role: Co-Head of Product Studio
 description: Lorem Ipsum
 portfolio: Lorem Ipsum
-name: Wesley Kane
-photo: /img/wesley.png
+name: Skylar Wang
+photo: /img/skylar.png
 resume: /img/resume.pdf
 year: 2027
 degree: Undergraduate
-major: Information Systems
-linkedIn: https://www.linkedin.com/in/wesley-kane-6b8443292/
+major: Business Administration
+linkedIn: https://www.linkedin.com/in/wangskylar/
 ---
