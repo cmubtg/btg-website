@@ -161,6 +161,23 @@ html {
   grid-row-start: 1;
   grid-row-end: 6;
   z-index: -3;
+
+  aspect-ratio: 4 / 5;        /* every card the same shape */
+  overflow: hidden;
+}
+
+/* make the Gatsby wrapper and its img fill that box */
+.team-photo .gatsby-image-wrapper,
+.team-photo [data-gatsby-image-wrapper] {
+  width: 100%;
+  height: 100%;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;   /* bias upward so heads aren't cut off */
 }
 
 .team-gradient {
@@ -179,6 +196,76 @@ html {
     #00000050
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: -2;
+}
+
+.team-description {
+  /* keep whatever grid-column/grid-row values it already has */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;      /* flush left */
+  justify-content: flex-end;    /* flush bottom */
+  padding-bottom: 0.75rem;
+  z-index: 0;                   /* above photo (-3) and gradient (-2) */
+}
+
+.team-description h5 {
+  margin: 0 0 0.25rem;          /* kills Bootstrap's default bottom margin */
+}
+
+.team-description .icon-link {
+  margin: 0;
+  line-height: 1;
+}
+
+/* overlay occupies the same 5x5 cells as the photo */
+.alum-card .alum-overlay {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  z-index: 1;                       /* above photo (-3), gradient (-2), description (auto) */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+
+  background: rgba(17, 17, 17, 0.85);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.alum-card:hover .alum-overlay,
+.alum-card:focus-within .alum-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* fade out the resting name + gradient underneath */
+.alum-card .team-description,
+.alum-card .team-gradient { transition: opacity 0.25s ease; }
+
+.alum-card:hover .team-description,
+.alum-card:focus-within .team-description,
+.alum-card:hover .team-gradient,
+.alum-card:focus-within .team-gradient { opacity: 0; }
+
+.alum-overlay h5 { margin-bottom: 0.5rem; }
+.alum-overlay .alum-degree,
+.alum-overlay .alum-role { font-size: 0.9rem; line-height: 1.4; margin-bottom: 0.25rem; }
+.alum-overlay .alum-role { font-weight: 600; }
+.alum-overlay .icon-link { color: #fff; margin-top: 0.5rem; align-self: flex-start; }
+
+.alum-card { cursor: default; }
+.alum-card:focus { outline: none; }
+.alum-card:focus-visible { outline: 2px solid #e01b24; outline-offset: 2px; }
+
+@media (hover: none) {
+  .alum-overlay { opacity: 1; pointer-events: auto;
+    background: linear-gradient(180deg, #43434300, #000000cc); }
+  .alum-card .team-description, .alum-card .team-gradient { opacity: 0; }
 }
 
 ::-moz-selection {

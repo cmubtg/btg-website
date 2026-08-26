@@ -1,5 +1,6 @@
 import React, {useEffect} from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../css/navigation.css";
 import '../css/styles.css'
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
