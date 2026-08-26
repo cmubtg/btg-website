@@ -1,8 +1,7 @@
-//This is the all-members page. Members can be viewed through their roles via a drop-down menu that only displays
-//executives when opened. Each member profile has a link to their individual page.
+// Executives page. Layout follows the board roster: Presidents, Product Studio
+// and PMA side by side, ProdHacks, then the rest of the board in rows.
 
 //Created by Harrison Chui <hchui@andrew.cmu.edu> and David You <dsyou@andrew.cmu.edu>, Designed by Teresa Yang <tyang218@gmail.com>
-
 
 import React from 'react';
 import PropTypes from 'prop-types'
@@ -17,105 +16,108 @@ import Helmet from "react-helmet"
 import BTGCover from "../../images/btg-cover.png";
 import MemberDisplay from "../../components/MemberDisplay"
 import { getImage } from 'gatsby-plugin-image';
-import MySelect from "../../components/MySelect"
 
-function RoleContainer(props) {
+const PRESIDENTS = [
+  { name: "Sanika Jain", role: "President" },
+  { name: "Tanisha Khabe", role: "President" },
+];
+
+const PRODUCT_STUDIO = [
+  { name: "Skylar Wang", role: "Co-Head of Product Studio" },
+  { name: "Wesley Kane", role: "Co-Head of Product Studio", aliases: ["Wesley"] },
+];
+
+const PMA = [
+  { name: "Sanjitha Govindan", role: "Co-Head of PMA" },
+  { name: "Sai Bhandar", role: "Co-Head of PMA" },
+];
+
+const PRODHACKS = [
+  { name: "Minh Do", role: "Head of ProdHacks" },
+  { name: "Amy Cha", role: "ProdHacks Design Chair" },
+  { name: "Sadhil Mehta", role: "ProdHacks Events Chair" },
+  { name: "Zhiyuan Guo Liau", role: "ProdHacks Sponsorship Chair" },
+];
+
+const OUTREACH_ROW = [
+  { name: "Benjy McHale", role: "Head of Big Tech Gathering" },
+  { name: "Elizabeth Hsu", role: "Head of Outreach" },
+  { name: "Trish Harsono", role: "Head of Outreach", photoPosition: "center top" },
+];
+
+const FINANCE_SOCIAL_MARKETING = [
+  { name: "Jamie Jane Figueroa Weston", role: "Social Chair" },
+  { name: "Kashish Sindhwani", role: "Head of Finance" },
+  { name: "Riya Shenvi", role: "Head of Marketing" },
+];
+
+const DESIGN = [
+  { name: "Andrea Guo", role: "Design Chair", photoPosition: "center 35%" },
+  { name: "Annabelle Chow", role: "Design Chair" },
+  { name: "Lily Kim", role: "Design Chair" },
+  { name: "Lydia Synn", role: "Design Chair" },
+];
+
+function findMember(members, person) {
+  const names = [person.name, ...(person.aliases || [])].map((name) =>
+    name.toLowerCase()
+  );
+  return members.find(({ node }) => {
+    const title = (node.frontmatter.title || "").toLowerCase();
+    const fullName = (node.frontmatter.name || "").toLowerCase();
+    return names.includes(title) || names.includes(fullName);
+  });
+}
+
+function ExecCard({ person, members }) {
+  const match = findMember(members, person);
+  const member = match && match.node;
+  const photo = member ? getImage(member.frontmatter.photo) : null;
+
   return (
-    <Row className="pt-1 mt-5">
-      <h3>{props.role}</h3>
-    {Array.from(props.members).map(({ node:member }) => (
-      <MemberDisplay
-        title = {member.frontmatter.title}
-        role = {member.frontmatter.role}
-        degree = {member.frontmatter.degree}
-        major = {member.frontmatter.major}
-        year = {member.frontmatter.year}
-        photo = {getImage(member.frontmatter.photo)}
-        slug = {member.fields.slug}
-        linkedIn = {member.frontmatter.linkedIn}
-      ></MemberDisplay>
-    ))}
-    </Row>
-  )
+    <MemberDisplay
+      title={person.name}
+      role={person.role}
+      degree={member && member.frontmatter.degree}
+      major={member && member.frontmatter.major}
+      year={member && member.frontmatter.year}
+      photo={photo}
+      slug={member && member.fields.slug}
+      linkedIn={member && member.frontmatter.linkedIn}
+      placeholder={!photo}
+      photoPosition={person.photoPosition}
+    />
+  );
 }
 
-function check_keys(str,dict) {
-  for(let s in dict){
-    if(str.includes(s)){
-      return s
-    }
-  }
-  return ""
+function PersonRow({ people, members, centered }) {
+  return (
+    <div className={centered ? "exec-grid exec-grid-center" : "exec-grid"}>
+      {people.map((person) => (
+        <ExecCard
+          key={`${person.name}-${person.role}`}
+          person={person}
+          members={members}
+        />
+      ))}
+    </div>
+  );
 }
 
-function get_roles(members) {
-  var roles = {"President":[],
-              "Executives":[],
-              "Events Committee":[],
-              "Marketing Committee":[],
-              // "Software Developer":[],
-              // "UI/UX Designer":[],
-              // "Product Manager":[],
-              // "Data Scientist":[],
-              // "Business Analyst":[]
-            }
-  members.forEach(
-    function(member,index) {
-      var r = member.node.frontmatter.role
-      if (r.includes("Head") || r.includes("Senior Advisor")) {
-        roles["Executives"].push(member)
-      }
-      else if (r.includes("Marketing")) {
-        roles["Marketing Committee"].push(member)
-      }
-      else if (r.includes("Events") || r.includes("ProdHacks")) {
-        roles["Events Committee"].push(member)
-      }
-
-      // if (r.includes("President") || r.includes("Head") || r.includes("Director")) {
-      //   roles["Executive"].push(member)
-      // }
-      var k = check_keys(r,roles)
-      if(k!=="") {
-        if(r.includes("Lead")){
-          roles[k].unshift(member)
-        } else{
-          roles[k].push(member)
-        }
-      }
-    }
-  )
-  return Object.entries(roles)
-}
-
-function get_options(roles) {
-  var ops = []
-  roles.forEach((r) => {
-    ops.push({ "label":r[0],"value":r })
-  })
-  return ops
+function ShoutOutSection({ title, people, members, centered }) {
+  return (
+    <div className={centered ? "pt-1 mt-5 exec-section-center" : "pt-1 mt-5"}>
+      <h3>{title}</h3>
+      <PersonRow people={people} members={members} centered={centered} />
+    </div>
+  );
 }
 
 class MemberListTemplate extends React.Component {
-
-  constructor(props) {
-    super(props)
+  render() {
     const { data } = this.props
     const { edges: members } = data.allMarkdownRemark
-    const roles = get_roles(members)
-    const ops = get_options(roles)
-    this.state = {
-      roles:[ops[0]],
-      options:ops
-    }
-    this.setRoles = this.setRoles.bind(this)
-  }
 
-  setRoles(input) {
-    this.setState({roles:input})
-  }
-
-  render() {
     return (
       <Layout>
         <Helmet>
@@ -128,32 +130,51 @@ class MemberListTemplate extends React.Component {
             <Col>
               <h1 className="display-3 text-black font-weight-boldest">Executives</h1>
             </Col>
-          </Row>    
+          </Row>
 
-        <Container className="mt-2">
-          <MySelect
-            options={this.state.options}
-            isMulti
-            onChange={this.setRoles}
-            allowSelectAll = {true}
-            value={this.state.roles}
-            placeholder="See all our groups"
+          <ShoutOutSection
+            title="Presidents"
+            people={PRESIDENTS}
+            members={members}
+            centered
           />
-            {this.state.roles.map((r) => (
-              <RoleContainer
-                role = {r["value"][0]}
-                members = {r["value"][1]}
-              />
-            ))}
+
+          <div className="pt-1 mt-5">
+            <div className="exec-programs-headings">
+              <h3>Product Studio</h3>
+              <h3>Product Management Academy</h3>
+            </div>
+            <div className="exec-grid">
+              {PRODUCT_STUDIO.map((person) => (
+                <ExecCard
+                  key={`${person.name}-${person.role}`}
+                  person={person}
+                  members={members}
+                />
+              ))}
+              {PMA.map((person) => (
+                <ExecCard
+                  key={`${person.name}-${person.role}`}
+                  person={person}
+                  members={members}
+                />
+              ))}
+            </div>
+          </div>
+
+          <ShoutOutSection
+            title="ProdHacks Committee"
+            people={PRODHACKS}
+            members={members}
+          />
+
+          <div className="pt-1 mt-5">
+            <PersonRow people={OUTREACH_ROW} members={members} centered />
+            <PersonRow people={FINANCE_SOCIAL_MARKETING} members={members} centered />
+            <PersonRow people={DESIGN} members={members} />
+          </div>
         </Container>
-      </Container>
-
-      <Container>
-
-      </Container>
-
-      </Layout>       
-      
+      </Layout>
     );
   }
 }
@@ -182,6 +203,7 @@ export default function MemberList() {
                 }
                 frontmatter {
                   title
+                  name
                   linkedIn
                   year
                   degree
@@ -200,7 +222,7 @@ export default function MemberList() {
               }
             }
           }
-        }              
+        }
       `}
       render={(data, count) => <MemberListTemplate data={data} count={count} />}
     />
