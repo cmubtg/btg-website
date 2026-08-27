@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import LogoColor from "../images/btg-logo-white-red.svg";
 import GithubCorner from 'react-github-corner';
 import { Link } from "gatsby";
+import "../css/navigation.css";
 
 function Navigation() {
   // const NavigationStyle = {
@@ -16,7 +17,7 @@ function Navigation() {
     <div>
       <div className="border-bottom bg-white">
         <Container>
-          <Navbar collapseOnSelect expand="sm">
+          <Navbar collapseOnSelect expand="sm" className="btg-nav">
             <Link to="/">
               <Navbar.Brand className="py-0 my-0">
                 <img
@@ -36,10 +37,7 @@ function Navigation() {
                 </small>
               </div>
               <Nav className="ml-auto">
-                <Nav.Link as={Link} to="/" className="nav-link-text">
-                  About
-                </Nav.Link>
-                <NavDropdown title="Events" id="events-nav-dropdown" className="nav-link-text">
+                <NavDropdown title="Events" id="events-nav-dropdown" className="nav-link-text" renderMenuOnMount>
                   <NavDropdown.Item
                     href="https://prodhacks.com/"
                     target="_blank"
@@ -58,7 +56,7 @@ function Navigation() {
                     Office Trips
                   </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown title="Programs" id="programs-nav-dropdown" className="nav-link-text">
+                <NavDropdown title="Programs" id="programs-nav-dropdown" className="nav-link-text" renderMenuOnMount>
                   <NavDropdown.Item as={Link} to="/ps">
                     Product Studio
                   </NavDropdown.Item>
@@ -88,5 +86,7 @@ function Navigation() {
     </div>
   );
 }
+
+
 
 export default Navigation;

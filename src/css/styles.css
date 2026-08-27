@@ -161,6 +161,23 @@ html {
   grid-row-start: 1;
   grid-row-end: 6;
   z-index: -3;
+
+  aspect-ratio: 4 / 5; /* every card the same shape */
+  overflow: hidden;
+}
+
+/* make the Gatsby wrapper and its img fill that box */
+.team-photo .gatsby-image-wrapper,
+.team-photo [data-gatsby-image-wrapper] {
+  width: 100%;
+  height: 100%;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%; /* bias upward so heads aren't cut off */
 }
 
 .team-gradient {
@@ -179,6 +196,180 @@ html {
     #00000050
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: -2;
+}
+
+/* resting state: name / role / linkedin flush to the bottom-left */
+.team-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 0.75rem;
+}
+
+.team-description h5 {
+  margin: 0 0 0.15rem;
+}
+
+.team-role {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* LinkedIn pinned to the top-right of every card */
+.team-linkedin {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  z-index: 3; /* above the hover overlay (2) */
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.6rem;
+}
+
+.team-linkedin .icon-link {
+  color: #fff;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55); /* legible on pale photos */
+}
+
+.team-linkedin .icon-link:hover {
+  color: #fff;
+  opacity: 0.75;
+}
+
+/* ==========================================================================
+   HOVER DETAIL OVERLAY  (shared by Alumni + Executives)
+   Add className="hover-card" to the .team-photo-wrapper / -point element,
+   and render a <div className="hover-overlay px-3"> inside it.
+   ========================================================================== */
+
+.hover-card .hover-overlay {
+  /* same 5x5 cells as the photo */
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  z-index: 2; /* above .exec-card .team-description, which is z-index: 1 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 0.75rem;
+
+  background: rgba(17, 17, 17, 0.85);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.hover-card:hover .hover-overlay,
+.hover-card:focus-within .hover-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.team-description,
+.team-gradient {
+  transition: opacity 0.25s ease;
+}
+
+/* fade the resting label + gradient out while the panel is up (desktop only —
+   on mobile .team-description sits below the photo, so it must stay visible) */
+@media (min-width: 769px) {
+  .hover-card:hover .team-description,
+  .hover-card:focus-within .team-description,
+  .hover-card:hover .team-gradient,
+  .hover-card:focus-within .team-gradient {
+    opacity: 0;
+  }
+}
+
+.hover-overlay h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.hover-overlay .hover-role {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-bottom: 0.6rem;
+}
+
+.hover-list {
+  width: 100%;
+  margin: 0;
+}
+
+.hover-row {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.hover-row + .hover-row {
+  margin-top: 0.4rem;
+}
+
+.hover-row dt {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.65;
+  line-height: 1.5;
+}
+
+.hover-row dd {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.hover-card:focus {
+  outline: none;
+}
+
+.hover-card:focus-visible {
+  outline: 2px solid #ff2f44;
+  outline-offset: 2px;
+}
+
+/* mobile: no hover, and the name already sits below the photo — so drop the
+   panel into normal flow underneath it instead of darkening the picture */
+@media (max-width: 768px) {
+  .hover-card .hover-overlay {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    z-index: 3;
+
+    align-items: center;
+    text-align: left;
+    opacity: 1;
+    pointer-events: auto;
+    background: none;
+    color: inherit;
+    padding-bottom: 15px;
+  }
+
+  .hover-card .hover-overlay h5,
+  .hover-card .hover-overlay .hover-role {
+    display: none; /* already shown in .team-description above */
+  }
+
+  .hover-list {
+    max-width: 20rem;
+  }
 }
 
 ::-moz-selection {
@@ -246,41 +437,6 @@ html {
   text-decoration: none;
 }
 
-.exec-popover-body {
-  min-width: 220px;
-  max-width: 280px;
-  padding: 0.75rem 0.9rem;
-}
-
-.exec-popover-list {
-  margin: 0;
-}
-
-.exec-popover-row {
-  display: grid;
-  grid-template-columns: 4.75rem minmax(0, 1fr);
-  gap: 0.5rem 0.75rem;
-  align-items: start;
-}
-
-.exec-popover-row + .exec-popover-row {
-  margin-top: 0.5rem;
-}
-
-.exec-popover-row dt {
-  margin: 0;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #6c757d;
-}
-
-.exec-popover-row dd {
-  margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.35;
-  overflow-wrap: anywhere;
-}
-
 .exec-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -311,20 +467,13 @@ html {
   min-width: 0;
 }
 
+/* exec photos use the same 4:5 crop as the alumni cards — the shared
+   .team-photo rules above do the fitting, so nothing is overridden here */
 .exec-card .team-photo-wrapper,
 .exec-card .team-photo-wrapper-point {
-  aspect-ratio: 1 / 1;
   width: 100%;
   height: auto;
   overflow: hidden;
-}
-
-.exec-card .team-photo,
-.exec-card .team-photo .gatsby-image-wrapper,
-.exec-card .team-photo .gatsby-image-wrapper img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
 }
 
 .exec-card .team-description {
@@ -334,6 +483,30 @@ html {
   grid-row-end: 6;
   z-index: 1;
   color: white;
+}
+
+/* exec cards are smaller than alumni cards, so tighten the detail rows */
+.exec-card .hover-row {
+  grid-template-columns: 3.6rem minmax(0, 1fr);
+  gap: 0.4rem;
+}
+
+.exec-card .hover-row dt {
+  font-size: 0.62rem;
+}
+
+.exec-card .hover-row dd {
+  font-size: 0.74rem;
+  line-height: 1.3;
+}
+
+.exec-card .hover-overlay h5 {
+  font-size: 0.92rem;
+}
+
+.exec-card .hover-overlay .hover-role {
+  font-size: 0.78rem;
+  margin-bottom: 0.45rem;
 }
 
 .exec-placeholder-photo {
@@ -385,13 +558,13 @@ html {
 .banner-text {
   letter-spacing: -1.5px;
   text-align: center;
-  color: rgb(239,239,239,1);
+  color: rgb(239, 239, 239, 1);
 }
 
 .btn-white {
   background-color: white;
   border-color: white;
-  color: rgba(0, 0, 0, 0.5)
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .btn-white:hover {
@@ -400,6 +573,5 @@ html {
 }
 
 .shadow-banner {
-  box-shadow: 0 5px 10px rgb(0, 51, 255),
-    0 15px 40px rgba(0, 51, 255, 0.744);
+  box-shadow: 0 5px 10px rgb(0, 51, 255), 0 15px 40px rgba(0, 51, 255, 0.744);
 }

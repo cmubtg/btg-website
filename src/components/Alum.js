@@ -1,41 +1,68 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
-import Popover from "react-bootstrap/Popover";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { FaLinkedinIn } from "react-icons/fa";
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 function Alum(props) {
-
-  const popover = (
-    <Popover id="popover-basic">
-      <Popover.Header>{props.title}</Popover.Header>
-      <Popover.Body>
-        {props.degree}, {props.major} <br/> {props.role}
-      </Popover.Body>     
-    </Popover>
-  );
+  const showDetails = Boolean(props.degree || props.major || props.role);
 
   return (
-    <OverlayTrigger
-      placement="right"
-      overlay={popover}
-    >
-      <Col md={3} sm={6} xs={6} className="p-0">
-        <div className="team-photo-wrapper p-0">
-          <div className="team-photo">
-          <GatsbyImage image={props.photo} alt={props.title}/>
-          </div>
-          <div className="team-description px-3">
-            <h5 className="font-weight-bold mt-md-3">{props.title}</h5>
-            <a className="icon-link" href={props.linkedIn} target="_blank" rel="noreferrer">
-              <FaLinkedinIn />
-            </a>                  
-          </div>
-          <div className="team-gradient"></div>
+    <Col md={3} sm={6} xs={6} className="p-0">
+      <div
+        className={`team-photo-wrapper p-0 ${showDetails ? "hover-card" : ""}`}
+        tabIndex={showDetails ? 0 : undefined}
+      >
+        <div className="team-photo">
+          <GatsbyImage image={props.photo} alt={props.title} />
         </div>
-      </Col>
-    </OverlayTrigger>
+
+        <div className="team-description px-3">
+          <h5 className="font-weight-bold mb-0">{props.title}</h5>
+        </div>
+
+        <div className="team-gradient"></div>
+
+        {props.linkedIn && (
+          <div className="team-linkedin">
+            <a
+              className="icon-link"
+              href={props.linkedIn}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`${props.title} on LinkedIn`}
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
+        )}
+
+        {showDetails && (
+          <div className="hover-overlay px-3">
+            <h5 className="font-weight-bold mb-2">{props.title}</h5>
+            <dl className="hover-list mb-0">
+              {props.degree && (
+                <div className="hover-row">
+                  <dt>Degree</dt>
+                  <dd>{props.degree}</dd>
+                </div>
+              )}
+              {props.major && (
+                <div className="hover-row">
+                  <dt>Major</dt>
+                  <dd>{props.major}</dd>
+                </div>
+              )}
+              {props.role && (
+                <div className="hover-row">
+                  <dt>Role</dt>
+                  <dd>{props.role}</dd>
+                </div>
+              )}
+            </dl>
+          </div>
+        )}
+      </div>
+    </Col>
   );
 }
 

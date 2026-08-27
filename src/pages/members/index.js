@@ -171,8 +171,13 @@ class MemberListTemplate extends React.Component {
           <div className="pt-1 mt-5">
             <PersonRow people={OUTREACH_ROW} members={members} centered />
             <PersonRow people={FINANCE_SOCIAL_MARKETING} members={members} centered />
-            <PersonRow people={DESIGN} members={members} />
           </div>
+
+          <ShoutOutSection
+            title="Design Committee"
+            people={DESIGN}
+            members={members}
+          />
         </Container>
       </Layout>
     );

@@ -110,7 +110,7 @@ export default Member
 
 export const pageQuery = graphql`
   query MemberByAndrewID($id: String!) {
-    markdownRemark(id: {eq: $id}) {
+    markdownRemark(id: { eq: $id }) {
       id
       frontmatter {
         title
@@ -124,10 +124,16 @@ export const pageQuery = graphql`
         }
         photo {
           childImageSharp {
-            gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
+            gatsbyImageData(
+              width: 500
+              aspectRatio: 0.8 # 4:5 portrait — every image comes out identical
+              layout: CONSTRAINED
+              transformOptions: { fit: COVER, cropFocus: ATTENTION }
+              placeholder: BLURRED
+            )
           }
         }
       }
     }
   }
-`
+`;
