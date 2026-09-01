@@ -48,7 +48,6 @@ const OUTREACH_ROW = [
 const FINANCE_SOCIAL_MARKETING = [
   { name: "Jamie Jane Figueroa Weston", role: "Social Chair" },
   { name: "Kashish Sindhwani", role: "Head of Finance" },
-  { name: "Riya Shenvi", role: "Head of Marketing" },
 ];
 
 const DESIGN = [
