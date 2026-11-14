@@ -46,7 +46,7 @@ function Navigation() {
                     ProdHacks
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    href="https://btech2025.framer.website/"
+                    href="https://btech2026.framer.website/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
