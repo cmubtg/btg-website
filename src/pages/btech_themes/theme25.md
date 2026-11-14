@@ -5,5 +5,5 @@ overview: Big Tech Gathering 2025 explores how artificial intelligence is reshap
 active: T
 photo: /img/btg_logo.png
 descriptionPhoto: /img/open_gym_event.jpeg
-link: https://www.google.com/
+link: https://btech2026.framer.website/
 ---
